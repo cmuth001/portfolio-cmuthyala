@@ -1,0 +1,22 @@
+.color-blue {
+  color: #003963;
+}
+.flex-spacer {
+    flex: 1 1 auto;
+    
+  }
+.fixed-header {
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000;
+  cursor: pointer;
+}
+.top-header-bacground-image{
+    background-image: linear-gradient(to left, #dff7bd, #40f2ec, #add2ed, #ffb2ff);
+}
+img {
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 6px;
+}
