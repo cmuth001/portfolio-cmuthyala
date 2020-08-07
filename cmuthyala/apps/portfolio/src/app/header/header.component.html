@@ -1,34 +1,72 @@
 <section>
-    <mat-toolbar class = "color-blue top-header-bacground-image">
-        <img src="assets/image-avatar.jpeg">
-        <span >Chandrasekhar Reddy, Muthyala</span>
-        <span class="flex-spacer"></span>
-        
-            <!-- <mat-slide-toggle >Dark theme</mat-slide-toggle> -->
-      </mat-toolbar>
-<div>
-    <mat-tab-group class="fixed-header color-blue">
-        <mat-tab class="color-blue" label="Home"> 
+    <mat-card class="example-card top-header-bacground-image ">
+        <mat-card-header>
+            <img mat-card-avatar class=" example-header-image " src="assets/image-avatar.jpeg">
+            <mat-card-title>Chandrasekhar Muthyala</mat-card-title>
+            <mat-card-subtitle class="">Full Stack Developer</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+    <div>
+        <mat-tab-group class="color-blue">
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+                    Home
+                </ng-template>
+                <div class=" example-large-box "></div>
+                <mat-card class = "about-card" >
+                    <p class = "about-paragraph">
+                        Results-driven senior software engineer with 5 years of experience in development and a year of Experience in leading a team of 6
+                        developers to deliver incremental value on multiple projects via an Agile Development Methodology. I prioritize and apply targeted
+                        effort to the work that matters most and meet deadlines.
 
-        </mat-tab>
-        <mat-tab label="About">
-            <cmuthyala-about></cmuthyala-about>
-        </mat-tab>
-        <mat-tab label="Education">
-            <cmuthyala-education></cmuthyala-education>
-        </mat-tab>
-        <mat-tab label="Experience">
-            <cmuthyala-experience></cmuthyala-experience>
-        </mat-tab>
-        <mat-tab label="Projects">
-            <cmuthyala-projects></cmuthyala-projects>
-        </mat-tab>
-        <mat-tab label="Certifications">
-            <cmuthyala-certifications></cmuthyala-certifications>
-        </mat-tab>
-        <mat-tab label="Testimonies">
-            <cmuthyala-testimonies></cmuthyala-testimonies>
-        </mat-tab>
-    </mat-tab-group>
-</div>
+                    </p>
+                </mat-card>
+                <!-- <p class = "about-paragraph">
+                    Results-driven senior software engineer with 5 years of experience in development and a year of Experience in leading a team of 6
+                    developers to deliver incremental value on multiple projects via an Agile Development Methodology. I prioritize and apply targeted
+                    effort to the work that matters most and meet deadlines.
+
+                </p> -->
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon aria-hidden="false" aria-label="local_library">local_library</mat-icon>
+                    Education
+                </ng-template>
+                <cmuthyala-education></cmuthyala-education>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">work</mat-icon>
+                    Experience
+                </ng-template>
+
+                <cmuthyala-experience></cmuthyala-experience>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">folder_special</mat-icon>
+                    Projects
+                </ng-template>
+                <cmuthyala-projects></cmuthyala-projects>
+            </mat-tab>
+
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">grade</mat-icon>
+                    Certifications
+                </ng-template>
+                <cmuthyala-certifications></cmuthyala-certifications>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">format_quote</mat-icon>
+                    Testimonies
+                </ng-template>
+
+                <cmuthyala-testimonies></cmuthyala-testimonies>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
 </section>
