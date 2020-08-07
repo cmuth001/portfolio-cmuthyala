@@ -1,13 +1,16 @@
 
+.footer-section-main{
+    padding: 34px 0px;
+    width: 100%;
+    background-color: #a5d6ed;
 
+    text-align: center;
+}
    .footer-section{
-    position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
-    min-height: 40px;
-    background-color: grey;
-    color: white;
-    text-align: center;
-    
+    font-size: x-large;
+    color: black;
+    font-family: cursive;
+    letter-spacing: 2px;
    }

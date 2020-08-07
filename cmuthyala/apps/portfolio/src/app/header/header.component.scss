@@ -2,6 +2,9 @@
     background-image: linear-gradient(to left, #dff7bd, #40f2ec, #add2ed, #ffb2ff);
     
 }
+// .mat-tab-header{
+//   padding-top: 20px !important;
+// }
 .mat-card-avatar {
   height: 50px;
   width: 50px;
@@ -9,35 +12,8 @@
   flex-shrink: 0;
   object-fit: cover;
 }
-.example-large-box {
-  padding: 16px; 
-  margin-top: 40px;
-  margin-right: 20%;
-  margin-left: 10%;
-  height: 250px;
-  background: linear-gradient(90deg, #eeaeca 36%, #94c0e9 36%);
-  border-radius: 15px;
-}
-.mat-card-subtitle {
-  display: block;
-  margin-bottom: 0px;
-}
+
 
 mat-icon{
   margin-right: 5px;
-}
-.about-card{
-  padding: 5%;
-    margin-top: -150px;
-    margin-right: 10%;
-    margin-left: 15%;
-    font-size: 1.2rem;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-.about-paragraph{
-  font-size: 24px;
-    font-family: cursive;
-    letter-spacing: 2px;
-    line-height: normal;
 }

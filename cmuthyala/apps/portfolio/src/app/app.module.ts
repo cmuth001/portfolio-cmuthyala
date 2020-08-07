@@ -21,6 +21,8 @@ import { ThankYouNoteComponent } from './thank-you-note/thank-you-note.component
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbdCarouselBasicModule } from './about/carousel-basic.module';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, ExperienceComponent, EducationComponent, AboutComponent, CertificationsComponent, TestimoniesComponent, FooterComponent, HeaderComponent, ThankYouNoteComponent, ContactFormComponent, ProjectsComponent],
@@ -33,7 +35,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatSlideToggleModule,
     MatCardModule,
     MatButtonModule,
-    MatGridListModule
+    MatGridListModule,
+    NgbModule,
+    NgbdCarouselBasicModule
 
   ],
   providers: [],
