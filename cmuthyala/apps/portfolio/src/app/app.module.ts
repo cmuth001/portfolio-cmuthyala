@@ -7,6 +7,9 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -23,9 +26,10 @@ import { ProjectsComponent } from './projects/projects.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdCarouselBasicModule } from './about/carousel-basic.module';
+import { SocialMediaComponent } from './social-media/social-media.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ExperienceComponent, EducationComponent, AboutComponent, CertificationsComponent, TestimoniesComponent, FooterComponent, HeaderComponent, ThankYouNoteComponent, ContactFormComponent, ProjectsComponent],
+  declarations: [AppComponent, HomeComponent, ExperienceComponent, EducationComponent, AboutComponent, CertificationsComponent, TestimoniesComponent, FooterComponent, HeaderComponent, ThankYouNoteComponent, ContactFormComponent, ProjectsComponent, SocialMediaComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -37,7 +41,10 @@ import { NgbdCarouselBasicModule } from './about/carousel-basic.module';
     MatButtonModule,
     MatGridListModule,
     NgbModule,
-    NgbdCarouselBasicModule
+    NgbdCarouselBasicModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
 
   ],
   providers: [],
