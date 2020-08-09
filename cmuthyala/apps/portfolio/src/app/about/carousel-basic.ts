@@ -5,7 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './carousel-basic.html',
   styleUrls: ['./carousel-basic.scss']
 })
-export class NgbdCarouselBasic {
+export class NgbdCarouselBasic  {
+   
+  
     showNavigationArrows = false;
     showNavigationIndicators = true;
   images = [
@@ -13,4 +15,5 @@ export class NgbdCarouselBasic {
         `/assets/carousal-image5.jpeg`,
         `/assets/carousal-image3.jpeg`    
 ];
+
 }

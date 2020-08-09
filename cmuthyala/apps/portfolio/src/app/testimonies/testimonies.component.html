@@ -1,1 +1,116 @@
-<p>testimonies works!</p>
+<section class="testimonial-section">
+    <mat-card class="testimonial-mat-card-main">
+        <div>
+
+            <h1 class="testimonial-title">Testimonials </h1>
+        </div>
+        <mat-card class="mat-card-1 " id="timKing">
+            <mat-card-content class = "mat-card-content-style">
+
+                <p class="p-text"><i class="fa fa-quote-left" aria-hidden="true"></i>
+                    I currently work with Chandrasekhar (Chandu) on the same team at Highmark Health. It has been my
+                    pleasure to work along side him on multiple projects. With every project or task that Chandu has
+                    been assigned, he makes it his personal business to master the technologies involved. This is
+                    particularly noteworthy as our team requires true, full-stack, expertise. Chandu has successfully
+                    completed work in a variety of platforms and languages ranging from nodejs and google cloud, to sql
+                    and java.
+                    Chandu is extremely hard working, and learns very quickly. He would be a tremendous addition to any
+                    software development team.
+                </p>
+                <!-- <mat-divider [inset]="true"></mat-divider> -->
+            </mat-card-content>
+            <mat-card-header>
+                <div mat-card-avatar class="timKing-img"></div>
+                <mat-card-title>Tim King</mat-card-title>
+                <mat-card-subtitle>Software Engineer at Highmark Health</mat-card-subtitle>
+            </mat-card-header>
+        </mat-card>
+
+        <mat-card class="mat-card-1  left-side" id="jyothi">
+            <mat-card-content class = "mat-card-content-style">
+                <p class="p-text"><i class="fa fa-quote-left" aria-hidden="true"></i>
+                    Chandrasekhar is focused, calm and committed and is a great addition to any team. He worked with me
+                    on a collaboration project for the Center of Learning and Teaching in Old Dominion University. He
+                    quickly established himself as an invaluable member and came up with several fresh ideas at the
+                    meetings that we successfully implemented. A confident and friendly co-worker, Chandrasekhar is
+                    popular with his colleagues and stakeholders alike and has a real passion and enthusiasm for the
+                    software industry.
+                </p>
+                <!-- <mat-divider [inset]="true"></mat-divider> -->
+            </mat-card-content>
+            <mat-card-header>
+                <div mat-card-avatar class="jyothi-img"></div>
+                <mat-card-title>Jyothi Gummadi</mat-card-title>
+                <mat-card-subtitle>Senior Delivery Data Analyst at ConnectYourCare</mat-card-subtitle>
+            </mat-card-header>
+        </mat-card>
+
+        <mat-card class="mat-card-1" id="yasaswy">
+            <mat-card-content class = "mat-card-content-style">
+                <p class="p-text"><i class="fa fa-quote-left" aria-hidden="true"></i>
+                    He was my peer when i was working in Synopsys banglore. He is very hardworking and can adapt to the
+                    existing system in very faster way. He played a key role in optimizing the VCS incremental build
+                    issues. Wish you all the best for furture endeavours 😁
+                </p>
+                <!-- <mat-divider [inset]="true"></mat-divider> -->
+            </mat-card-content>
+            <mat-card-header>
+                <div mat-card-avatar class="yasaswy-img"></div>
+                <mat-card-title>Yasaswy Aluri</mat-card-title>
+                <mat-card-subtitle>Sr Data Analyst at Synopsys Inc</mat-card-subtitle>
+            </mat-card-header>
+        </mat-card>
+        
+
+      
+            
+<ng-container *ngIf="isCollapsed==true">
+    <mat-card class="mat-card-1 left-side" id="kristen">
+        <mat-card-content>
+            <p class="p-text"><i class="fa fa-quote-left" aria-hidden="true"></i>
+                I coached a student hackathon, where Chandra and his teammates did an outstanding job working
+                together and ultimately placing in the competition. Chandra was focused and adaptable during this
+                high stress time, and was a pleasure to work with! I would highly recommend Chandra in any position,
+                because he worked so well within a team, and was always open to suggestion for the project!
+            </p>
+            <mat-divider [inset]="true"></mat-divider>
+        </mat-card-content>
+        <mat-card-header>
+            <div mat-card-avatar class="kristen-img"></div>
+            <mat-card-title>Kristen Carros</mat-card-title>
+            <mat-card-subtitle>Cloud Software Engineer at Cloudreach</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+
+    <mat-card class="mat-card-1" id="justin">
+        <mat-card-content>
+            <p class="p-text"><i class="fa fa-quote-left" aria-hidden="true"></i>
+                I had the pleasure of serving as Chandra's coach during the 2018 Dominion Enterprises Hackathon.
+                Through out the Hackathon, Chandra stayed focused and collaborated with his team to deliver a great
+                product. I was particularly impressed Chandra's ability remain calm while being under such a short
+                turn around time for his project. With his assistance his team took home the third place prize. I
+                would highly recommend Chandra and would welcome the opportunity to work with him again in the
+                future.
+            </p>
+            <mat-divider [inset]="true"></mat-divider>
+        </mat-card-content>
+        <mat-card-header>
+            <div mat-card-avatar class="justin-img"></div>
+            <mat-card-title>Justin Russell</mat-card-title>
+            <mat-card-subtitle>Product Manager</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+
+</ng-container>
+        <div class = "viewMoreButtonDiv">
+
+            <button mat-button class = "viewMoreButton" color="primary" (click) = "toggleViewMore()">VIEW MORE
+                <i class="material-icons arrow1">
+                    east
+                </i>
+              </button>
+        </div>
+
+    </mat-card>
+
+</section>

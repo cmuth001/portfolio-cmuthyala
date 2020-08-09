@@ -1,37 +1,37 @@
 
 <section class = "contact-form-section">
-    <mat-card class = "mat-card-form" >
-            <h1 class = "contact-title">Contact me here</h1>
-            
-        <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
-            <div class="example-container">
-                <mat-form-field appearance="fill">
-                  <mat-label>Enter your Name</mat-label>
-                  <input matInput placeholder="Robert Downey" formControlName="name" required>
-                  <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
-                </mat-form-field>
-              </div>
-              <div class="example-container">
-                <mat-form-field appearance="fill">
-                  <mat-label>Enter your email</mat-label>
-                  <input matInput placeholder="pat@example.com" formControlName="email" required>
-                  <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
-                </mat-form-field>
-              </div>
-              <mat-form-field class="example-full-width">
-                <mat-label>Leave a comment</mat-label>
-                <textarea  cdkTextareaAutosize
-                cdkAutosizeMinRows="10"matInput placeholder="Ex. It makes me feel..." formControlName="message"></textarea>
-              </mat-form-field>
-              <div class="example-button-row">
-                <button mat-button color="primary">SUBMIT</button>
-                  <button mat-button color="primary">CLEAR</button>
-              </div>
-        <div class = "contact-help-text">
-            <p>Happy to help!</p>
-        </div>
-          </form>
-    </mat-card>
+        <mat-card class = "mat-card-form" >
+                <h1 class = "contact-title">Contact me here</h1>
+                
+            <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+                <div class="example-container">
+                    <mat-form-field appearance="fill">
+                      <mat-label>Enter your Name</mat-label>
+                      <input matInput placeholder="Robert Downey" formControlName="name" required>
+                      <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+                    </mat-form-field>
+                  </div>
+                  <div class="example-container">
+                    <mat-form-field appearance="fill">
+                      <mat-label>Enter your email</mat-label>
+                      <input matInput placeholder="pat@example.com" formControlName="email" required>
+                      <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+                    </mat-form-field>
+                  </div>
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Leave a comment</mat-label>
+                    <textarea  cdkTextareaAutosize
+                    cdkAutosizeMinRows="5"matInput placeholder="Ex. It makes me feel..." formControlName="message"></textarea>
+                  </mat-form-field>
+                  <div class="example-button-row">
+                    <button mat-button color="primary">SUBMIT</button>
+                      <button mat-button color="primary">CLEAR</button>
+                  </div>
+            <div class = "contact-help-text">
+                <p>Happy to help!</p>
+            </div>
+              </form>
+        </mat-card>
 
 </section>
 

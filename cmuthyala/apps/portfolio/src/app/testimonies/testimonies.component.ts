@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class TestimoniesComponent implements OnInit {
 
   constructor() { }
-
+  isCollapsed = false;
   ngOnInit(): void {
   }
 
+  toggleViewMore(){
+    this.isCollapsed  = !this.isCollapsed;
+  }
 }
