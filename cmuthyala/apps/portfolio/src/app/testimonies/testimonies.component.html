@@ -1,9 +1,10 @@
 <section class="testimonial-section">
-    <mat-card class="testimonial-mat-card-main">
-        <div>
+    <div>
 
-            <h1 class="testimonial-title">Testimonials </h1>
-        </div>
+        <h1 class="testimonial-title">Testimonials </h1>
+    </div>
+    <mat-card class="testimonial-mat-card-main">
+        
         <mat-card class="mat-card-1 " id="timKing">
             <mat-card-content class = "mat-card-content-style">
 
@@ -45,26 +46,37 @@
             </mat-card-header>
         </mat-card>
 
-        <mat-card class="mat-card-1" id="yasaswy">
-            <mat-card-content class = "mat-card-content-style">
-                <p class="p-text"><i class="fa fa-quote-left" aria-hidden="true"></i>
-                    He was my peer when i was working in Synopsys banglore. He is very hardworking and can adapt to the
-                    existing system in very faster way. He played a key role in optimizing the VCS incremental build
-                    issues. Wish you all the best for furture endeavours 😁
-                </p>
-                <!-- <mat-divider [inset]="true"></mat-divider> -->
-            </mat-card-content>
-            <mat-card-header>
-                <div mat-card-avatar class="yasaswy-img"></div>
-                <mat-card-title>Yasaswy Aluri</mat-card-title>
-                <mat-card-subtitle>Sr Data Analyst at Synopsys Inc</mat-card-subtitle>
-            </mat-card-header>
-        </mat-card>
         
+        <div class = "viewMoreButtonDiv">
+
+            <button mat-button class = "viewMoreButton" color="primary" (click) = "toggleViewMore()">{{testimonyToggleText}}
+                <!-- <i class="material-icons arrow1">
+                    expand_more
+                </i> -->
+                <i class="material-icons">
+                    {{testimonyToggleIcon}}
+                </i>
+              </button>
+        </div>
 
       
             
 <ng-container *ngIf="isCollapsed==true">
+    <mat-card class="mat-card-1" id="yasaswy">
+        <mat-card-content class = "mat-card-content-style">
+            <p class="p-text"><i class="fa fa-quote-left" aria-hidden="true"></i>
+                He was my peer when i was working in Synopsys banglore. He is very hardworking and can adapt to the
+                existing system in very faster way. He played a key role in optimizing the VCS incremental build
+                issues. Wish you all the best for furture endeavours 😁
+            </p>
+            <!-- <mat-divider [inset]="true"></mat-divider> -->
+        </mat-card-content>
+        <mat-card-header>
+            <div mat-card-avatar class="yasaswy-img"></div>
+            <mat-card-title>Yasaswy Aluri</mat-card-title>
+            <mat-card-subtitle>Sr Data Analyst at Synopsys Inc</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
     <mat-card class="mat-card-1 left-side" id="kristen">
         <mat-card-content>
             <p class="p-text"><i class="fa fa-quote-left" aria-hidden="true"></i>
@@ -102,14 +114,7 @@
     </mat-card>
 
 </ng-container>
-        <div class = "viewMoreButtonDiv">
-
-            <button mat-button class = "viewMoreButton" color="primary" (click) = "toggleViewMore()">VIEW MORE
-                <i class="material-icons arrow1">
-                    east
-                </i>
-              </button>
-        </div>
+        
 
     </mat-card>
 

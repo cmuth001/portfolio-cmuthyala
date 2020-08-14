@@ -1,0 +1,47 @@
+.example-card {
+    // max-width: 400px;
+    display: inline-block;
+    padding: 30px 30px;
+    box-shadow: none;
+  }
+  .cm-education-section{
+    
+    background: -webkit-gradient(linear, left top, right top, from(#effaff), to(#d9e7ff));
+    padding: 2%;
+    margin-top: 100px;
+    
+  }
+  .cm-education-main-div{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+
+  }
+  .example-header-image {
+    background-image: url('../../assets/odu-education-logo.png');
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+  }
+  .amrita-header-image{
+    background-image: url('../../assets/amrita-education-logo.png');
+  }
+  .odu-header-image{
+    background-image: url('../../assets/odu-education-logo.png');
+  }
+  .education-title{
+    font-family: cursive;
+    letter-spacing: 2px;
+    line-height: normal;
+    font-size: xxx-large;
+    font-weight: 500;
+    text-align: center;
+    // margin-top: 40px;
+    // padding-top: 20px;
+
+  }
+  mat-card-actions{
+      float: right;
+  }
+  
