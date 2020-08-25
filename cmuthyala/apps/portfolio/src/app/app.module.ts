@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -48,6 +49,7 @@ import { SocialMediaComponent } from './social-media/social-media.component';
     MatFormFieldModule,
     MatInputModule,
     MatDividerModule,
+    MatListModule,
     HttpClientModule
 
 
