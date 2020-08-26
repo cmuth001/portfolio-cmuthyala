@@ -1,10 +1,14 @@
 <section class = 'experience-section'>
+    
     <h1 class="experience-title">Experience</h1>
     <mat-card class="experience-mat-card-main">
+        <mat-vertical-stepper [linear]="true"  #stepper>
+            <mat-step [stepControl] = "true" >
+                <ng-template   matStepLabel> Highmark Health (Oct 2019 - Present)</ng-template>
         <mat-card-header>
           <div mat-card-avatar class="highmark-header-image"></div>
           <mat-card-title>Software Engineer, Digital Innovation</mat-card-title>
-          <mat-card-subtitle>Highmark Health (Oct 2019 - Present)</mat-card-subtitle>
+          <mat-card-subtitle>Greater Pittsburgh Area, Pennsylvania</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content class = 'experience-content'>
             • Implemented HTTP requests using RxJS Observable library to handle multiple values over time.<br>
@@ -26,20 +30,15 @@
             <div class = "seeMoreDiv">
                 <a class = "seeMoreLink" (click) = "highmarkSeeMoreToggle()">{{seeMoreHighmarkText}}</a>
             </div>
-            <!-- <br> -->
 
         </mat-card-content>
-        <!-- <mat-divider [inset]="true"></mat-divider> -->
-
-        <!-- <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions> -->
-
+        </mat-step >
+        <mat-step [stepControl] = "true" >
+            <ng-template matStepLabel> Old Dominion University (Aug 2017 - Sep 2019)</ng-template>
         <mat-card-header>
             <div mat-card-avatar class="odu-header-image"></div>
             <mat-card-title>Software Developer (Research Assistant)</mat-card-title>
-            <mat-card-subtitle>Old Dominion University (May 2018 - Sep 2019)</mat-card-subtitle>
+            <mat-card-subtitle>Norfolk, Virginia (May 2018 - Sep 2019)</mat-card-subtitle>
           </mat-card-header>
           <mat-card-content class = 'experience-content'>
             • Developed machine learning models to profile the patients, detect anger with an accuracy of 0.821 and alert the authorities immediately and Implemented Intervention methods to sooth the agitated dementia patients.<br>
@@ -51,13 +50,12 @@
               <div class = "seeMoreDiv">
                 <a class = "seeMoreLink" (click) = "oduSeeMoreToggle1()">{{seeMoreOduText1}}</a>
             </div>
-            <!-- <br> -->
           </mat-card-content>
 
            <mat-card-header>
-            <!-- <div mat-card-avatar class="odu-header-image"></div> -->
+            <div mat-card-avatar class="odu-header-image"></div>
             <mat-card-title>Full Stack Developer</mat-card-title>
-            <mat-card-subtitle>Old Dominion University (Aug 2017 - April 2018)</mat-card-subtitle>
+            <mat-card-subtitle>Norfolk, Virginia (Aug 2017 - April 2018)</mat-card-subtitle>
           </mat-card-header>
           <mat-card-content class = 'experience-content'>
             • Served as a technical lead at The Hands-on Lab.<br>
@@ -72,16 +70,14 @@
               <div class = "seeMoreDiv">
                 <a class = "seeMoreLink" (click) = "oduSeeMoreToggle2()">{{seeMoreOduText2}}</a>
             </div>
-            <!-- <br> -->
           </mat-card-content>
-           <!-- <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions> -->
+        </mat-step >
+        <mat-step [stepControl] = "true">
+            <ng-template matStepLabel> Synopsys (Sep 2015 - July 2017)</ng-template>
         <mat-card-header>
              <div mat-card-avatar class="synopsys-header-image"></div>
             <mat-card-title>Software Engineer</mat-card-title>
-            <mat-card-subtitle>Synopsys (Sep 2015 - July 2017)</mat-card-subtitle>
+            <mat-card-subtitle>Bengaluru Area, India</mat-card-subtitle>
           </mat-card-header>
           <mat-card-content class = 'experience-content'>
             • Designed and developed a single page web app using RESTful API's. was involved in the complete development cycle involving planning, designing, development, testing, and deployment of this portal.<br>
@@ -98,10 +94,7 @@
                 <a class = "seeMoreLink" (click) = "synopsysSeeMoreToggle()">{{seeMoreSynopsysText}}</a>
             </div>
           </mat-card-content>
-           <!-- <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions> -->
-
+    </mat-step >
+        </mat-vertical-stepper>
       </mat-card>
 </section>

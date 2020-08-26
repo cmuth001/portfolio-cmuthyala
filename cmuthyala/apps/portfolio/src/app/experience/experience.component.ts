@@ -12,8 +12,9 @@ export class ExperienceComponent implements OnInit {
   seeMoreOduToggle1 = false;
   seeMoreOduText2 = "...see more"
   seeMoreOduToggle2 = false;
-  seeMoreSynopsysText = "..see more"
+  seeMoreSynopsysText = "...see more"
   seeMoreSynopsysToggle = false;
+  completed = true;
   constructor() { }
 
   ngOnInit(): void {

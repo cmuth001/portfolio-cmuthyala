@@ -12,6 +12,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import {MatStepperModule} from '@angular/material/stepper';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -30,7 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdCarouselBasicModule } from './about/carousel-basic.module';
 import { SocialMediaComponent } from './social-media/social-media.component';
-
+import { GoogleMapsModule } from '@angular/google-maps'
 @NgModule({
   declarations: [AppComponent, HomeComponent, ExperienceComponent, EducationComponent, AboutComponent, CertificationsComponent, TestimoniesComponent, FooterComponent, HeaderComponent, ThankYouNoteComponent, ContactFormComponent, ProjectsComponent, SocialMediaComponent],
   imports: [
@@ -50,6 +51,8 @@ import { SocialMediaComponent } from './social-media/social-media.component';
     MatInputModule,
     MatDividerModule,
     MatListModule,
+    GoogleMapsModule,
+    MatStepperModule,
     HttpClientModule
 
 

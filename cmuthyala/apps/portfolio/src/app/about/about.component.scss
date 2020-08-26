@@ -1,9 +1,9 @@
 .example-large-box {
     padding: 16px; 
-    margin-top: 100px;
+    // margin-top: 100px;
     margin-right: 20%;
     margin-left: 10%;
-    height: 250px;
+    height: 450px;
     background: linear-gradient(90deg, #eeaeca 36%, #94c0e9 36%);
     border-radius: 15px;
   }
@@ -13,7 +13,7 @@
   }
   .about-card{
     padding : 20px;
-      margin-top: -150px;
+      margin-top: -350px;
       margin-right: 10%;
       margin-left: 15%;
       font-size: 1.2rem;
@@ -21,10 +21,12 @@
       margin-bottom: 20px;
   }
   .about-paragraph{
-    font-size: 20px;
-      font-family: fantasy;
-      letter-spacing: 2px;
-      line-height: normal;
+    padding: 10px 50px;
+    line-height: 2rem;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-style: italic;
+    // font-family: cursive;
   }
 
   .about-title{
@@ -42,4 +44,7 @@
 background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+  }
+  .competencies{
+    // text-decoration: underline;
   }
