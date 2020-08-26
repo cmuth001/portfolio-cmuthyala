@@ -14,6 +14,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatStepperModule} from '@angular/material/stepper';
 import { HttpClientModule } from '@angular/common/http';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -53,6 +54,7 @@ import { GoogleMapsModule } from '@angular/google-maps'
     MatListModule,
     GoogleMapsModule,
     MatStepperModule,
+    MatSnackBarModule,
     HttpClientModule
 
 

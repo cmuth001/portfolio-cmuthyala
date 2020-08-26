@@ -1,7 +1,7 @@
 .example-card {
     // max-width: 400px;
     display: inline-block;
-    padding: 30px 30px;
+    padding: 2rem 2rem;
     box-shadow: none;
   }
   .cm-education-section{
@@ -21,8 +21,8 @@
   .example-header-image {
     background-image: url('../../assets/odu-education-logo.png');
     background-size: contain;
-    width: 150px;
-    height: 150px;
+    width: 5rem;
+    height: 5rem;
   }
   .amrita-header-image{
     background-image: url('../../assets/amrita-education-logo.png');
@@ -34,7 +34,7 @@
     font-family: cursive;
     letter-spacing: 2px;
     line-height: normal;
-    font-size: xxx-large;
+    font-size: 2.5rem;
     font-weight: 500;
     text-align: center;
     // margin-top: 40px;

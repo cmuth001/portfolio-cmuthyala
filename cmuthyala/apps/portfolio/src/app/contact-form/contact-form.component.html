@@ -4,7 +4,7 @@
         <mat-card class = "mat-card-form" >
                 
                 
-            <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+            <form [formGroup]="myForm" >
                 <div class="example-container">
                     <mat-form-field appearance="fill">
                       <mat-label>Enter your Name</mat-label>
@@ -25,11 +25,16 @@
                     cdkAutosizeMinRows="5"matInput placeholder="Ex. It makes me feel..." formControlName="message"></textarea>
                   </mat-form-field>
                   <div class="example-button-row">
-                    <button mat-button color="primary">SUBMIT</button>
-                      <button mat-button color="primary">CLEAR</button>
+                    <button 
+                    mat-button
+                    color="primary"
+                    [disabled] = "!myForm.valid"
+                    (click) = "onSubmit(myForm)"
+                    >SUBMIT</button>
+                      <!-- <button mat-button color="primary" >CLEAR</button> -->
                   </div>
             <div class = "contact-help-text">
-                <p>Happy to help!</p>
+                <!-- <p>Happy to help!</p> -->
             </div>
               </form>
         </mat-card>
