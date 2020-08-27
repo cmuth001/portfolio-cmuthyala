@@ -2,17 +2,17 @@
     <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
         <ng-template ngbSlide>
           <div class="picsum-img-wrapper">
-            <img class = "carousel-img " [src]="images[0]" alt="Random first slide">
+            <img class = "carousel-img " src="{{images[0]}}" alt="Random first slide">
           </div>
           <div class="carousel-caption">
-            <h3>Hackathon (Hack U7), 2019</h3>
-            <p>Developed  a <strong>Realtor 3D-View Mobile App</strong>  for <i><a href = "https://www.dominionenterprises.com/" target="_blank"> Dominion Enterprises</a></i></p>
+            <p>Hackathon (Hack U7), 2019</p>
+            <p>Developed  a <strong>Realtor 3D-View Mobile App</strong>  for <i><a class = "linkStyle" href = "https://www.dominionenterprises.com/" target="_blank"> Dominion Enterprises</a></i></p>
             
           </div>
         </ng-template>
         <ng-template ngbSlide>
           <div class="picsum-img-wrapper">
-            <img class = "carousel-img " [src]="images[1]" alt="Random second slide">
+            <img class = "carousel-img " src="{{images[1]}}" alt="Random second slide">
           </div>
           <div class="carousel-caption">
             <!-- <h3>Udacity Nano Degree</h3>
@@ -21,11 +21,11 @@
         </ng-template>
         <ng-template ngbSlide>
           <div class="picsum-img-wrapper">
-            <img class = "carousel-img " [src]="images[2]" alt="Random third slide">
+            <img class = "carousel-img " src="{{images[2]}}" alt="Random third slide">
           </div>
           <div class="carousel-caption">
-            <h3>Hackathon (Hack U7), 2019</h3>
-            <p>Developed  a <strong>Google Home Assistant</strong>  for <i><a href = "https://www.dominionenterprises.com/" target="_blank"> Dominion Enterprises</a></i></p>
+            <p>Hackathon (Hack U7), 2019</p>
+            <p>Developed  a <strong>Google Home Assistant</strong>  for <i><a class = "linkStyle" href = "https://www.dominionenterprises.com/" target="_blank"> Dominion Enterprises</a></i></p>
           </div>
         </ng-template>
       </ngb-carousel>
