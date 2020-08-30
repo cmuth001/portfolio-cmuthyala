@@ -39,8 +39,11 @@
     text-align: center;
     // margin-top: 40px;
     // padding-top: 20px;
-
   }
+   .mat-card-title{
+      font-size: 0.9rem !important;
+    }
+  
   mat-card-actions{
       float: right;
   }
