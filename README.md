@@ -16,6 +16,8 @@ Publish to github pages:
  ng build --prod --base-href https://cmuth001.github.io/portfolio-cmuthyala
  ngh --dir=dist/apps/portfolio/
  ```
+ Github Url: https://cmuth001.github.io/portfolio-cmuthyala/
+ 
 References:
 
 https://medium.com/tech-insights/how-to-deploy-angular-apps-to-github-pages-gh-pages-896c4e10f9b4
