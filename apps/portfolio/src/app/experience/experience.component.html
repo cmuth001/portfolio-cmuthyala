@@ -1,86 +1,121 @@
-<section class='experience-section'>
-
+<section class="experience-section">
   <h1 class="experience-title">Experience</h1>
   <mat-card class="experience-mat-card-main">
     <mat-vertical-stepper [linear]="true" #stepper>
       <mat-step [stepControl]="true">
-        <ng-template matStepLabel> Highmark Health (Oct 2019 - Present)</ng-template>
+        <ng-template matStepLabel>
+          Highmark Health (Oct 2019 - Present)</ng-template
+        >
         <mat-card-header>
           <div mat-card-avatar class="highmark-header-image"></div>
           <mat-card-title>Software Engineer, Digital Innovation</mat-card-title>
-          <mat-card-subtitle>Greater Pittsburgh Area, Pennsylvania</mat-card-subtitle>
+          <mat-card-subtitle
+            >Greater Pittsburgh Area, Pennsylvania</mat-card-subtitle
+          >
         </mat-card-header>
-        <mat-card-content class='experience-content'>
-          • Implemented HTTP requests using RxJS Observable library to handle multiple values over time.<br>
-          • Created reusable components and services to consume API's using Component-based architecture provided by
-          angular.<br>
-          • Implemented various Validation Controls for form validation and implemented custom validation controls with
-          Regular Expressions.<br>
+        <mat-card-content class="experience-content">
+          • Implemented HTTP requests using RxJS Observable library to handle
+          multiple values over time.<br />
+          • Created reusable components and services to consume API's using
+          Component-based architecture provided by angular.<br />
+          • Implemented various Validation Controls for form validation and
+          implemented custom validation controls with Regular Expressions.<br />
 
-          <ng-container *ngIf="seeMoreHighmarkToggle==true">
-            • Communicated Business Analyst and UX team and transformed wireframes and mockups into responsive,
-            interactive features.<br>
-            • Experience in hybrid operations using Ionic & Angular framework, Mobile Angular UI, and Cordova.<br>
-            • Implemented a feature toggling functionality for targeted users.<br>
-            • Proficient in using SASS for writing CSS styles more easily with the Mixins, Parametric mixins, Nested
-            Rules, Operations, Namespaces, etc.<br>
-            • Developed a custom and re-usable model popups for warning, success, information, and error messages.<br>
-            • Implemented a push notification service for cross platforms using Firebase Cloud Messaging (FCM).<br>
+          <ng-container *ngIf="seeMoreHighmarkToggle == true">
+            • Communicated Business Analyst and UX team and transformed
+            wireframes and mockups into responsive, interactive features.<br />
+            • Experience in hybrid operations using Ionic & Angular framework,
+            Mobile Angular UI, and Cordova.<br />
+            • Implemented a feature toggling functionality for targeted
+            users.<br />
+            • Proficient in using SASS for writing CSS styles more easily with
+            the Mixins, Parametric mixins, Nested Rules, Operations, Namespaces,
+            etc.<br />
+            • Developed a custom and re-usable model popups for warning,
+            success, information, and error messages.<br />
+            • Implemented a push notification service for cross platforms using
+            Firebase Cloud Messaging (FCM).<br />
             <!-- • Implemented a Bug Tracking functionality for testing environment web applications.<br> -->
             <!-- • Reviewing the quality of code for the high-volume progressive web application (PWA) maintaining code and design consistency across different team members.<br> -->
-            • Actively took part in technical meetings, requirements gathering, analysis, planning, effort estimations,
-            development and testing under Agile Methodologies (Scrum) to manage full life-cycle development of the
-            project.<br>
-            <strong>Tech Stack:</strong> NodeJS, Cloud Firestore, HTML5, SASS, CSS3, Typescript, ExpressJS, Angular 7+,
-            Cordova, Postman, Stoplight<br>
+            • Actively took part in technical meetings, requirements gathering,
+            analysis, planning, effort estimations, development and testing
+            under Agile Methodologies (Scrum) to manage full life-cycle
+            development of the project.<br />
+            <strong>Tech Stack:</strong> NodeJS, Cloud Firestore, HTML5, SASS,
+            CSS3, Typescript, ExpressJS, Angular 7+, Cordova, Postman,
+            Stoplight<br />
           </ng-container>
           <div class="seeMoreDiv">
-            <a class="seeMoreLink" (click)="highmarkSeeMoreToggle()">{{seeMoreHighmarkText}}</a>
+            <a class="seeMoreLink" (click)="highmarkSeeMoreToggle()">{{
+              seeMoreHighmarkText
+            }}</a>
           </div>
-
         </mat-card-content>
       </mat-step>
       <mat-step [stepControl]="true">
-        <ng-template matStepLabel> Old Dominion University (Aug 2017 - Sep 2019)</ng-template>
+        <ng-template matStepLabel>
+          Old Dominion University (Aug 2017 - Sep 2019)</ng-template
+        >
         <mat-card-header>
           <div mat-card-avatar class="odu-header-image"></div>
-          <mat-card-title>Software Developer (Research Assistant)</mat-card-title>
-          <mat-card-subtitle>Norfolk, Virginia (May 2018 - Sep 2019)</mat-card-subtitle>
+          <mat-card-title
+            >Software Developer (Research Assistant)</mat-card-title
+          >
+          <mat-card-subtitle
+            >Norfolk, Virginia (May 2018 - Sep 2019)</mat-card-subtitle
+          >
         </mat-card-header>
-        <mat-card-content class='experience-content'>
-          • Developed machine learning models to profile the patients, detect anger with an accuracy of 0.821 and alert
-          the authorities immediately and Implemented Intervention methods to sooth the agitated dementia patients.<br>
-          • Developed a tool to automate the process of generating interactive visualizations to provide insights and
-          trends in analyzing hotel revenue (AIRBNB), US employment and populate them in PowerPoint slides.<br>
-          <ng-container *ngIf="seeMoreOduToggle1==true">
-            • Led a summer research workshop mentoring 30 interns in machine learning tasks for multiple datasets.<br>
+        <mat-card-content class="experience-content">
+          • Developed machine learning models to profile the patients, detect
+          anger with an accuracy of 0.821 and alert the authorities immediately
+          and Implemented Intervention methods to sooth the agitated dementia
+          patients.<br />
+          • Developed a tool to automate the process of generating interactive
+          visualizations to provide insights and trends in analyzing hotel
+          revenue (AIRBNB), US employment and populate them in PowerPoint
+          slides.<br />
+          <ng-container *ngIf="seeMoreOduToggle1 == true">
+            • Led a summer research workshop mentoring 30 interns in machine
+            learning tasks for multiple datasets.<br />
           </ng-container>
           <!-- <strong>Tech Stack:</strong> NodeJS, Cloud Firestore, HTML5, SASS, CSS3, Typescript, ExpressJS, Angular 7+, Cordova, Postman, Stoplight<br> -->
           <div class="seeMoreDiv">
-            <a class="seeMoreLink" (click)="oduSeeMoreToggle1()">{{seeMoreOduText1}}</a>
+            <a class="seeMoreLink" (click)="oduSeeMoreToggle1()">{{
+              seeMoreOduText1
+            }}</a>
           </div>
         </mat-card-content>
-        
+
         <mat-card-header>
           <div mat-card-avatar class="odu-header-image"></div>
           <mat-card-title>Full Stack Developer</mat-card-title>
-          <mat-card-subtitle>Norfolk, Virginia (Aug 2017 - April 2018)</mat-card-subtitle>
+          <mat-card-subtitle
+            >Norfolk, Virginia (Aug 2017 - April 2018)</mat-card-subtitle
+          >
         </mat-card-header>
-        <mat-card-content class='experience-content'>
-          • Served as a technical lead at The Hands-on Lab.<br>
-          • Developed a website using LAMP stack for Multiple Organizations Learning Management System for ODU School of
-          Nursing. Innovated the student’s evaluation methods using data analysis techniques.<br>
-          • Developed an interactive web application using MEAN stack , communicating with REST API.<br>
-          <ng-container *ngIf="seeMoreOduToggle2==true">
-            • Delivered incremental value via an Agile Development Methodology.<br>
-            • Assisted co-developers on support needs and provide guidance on architectural issues.<br>
-            • Implemented modern features like Two Factor Authentication(2FA), user profile search, login with GitHub
-            association, bot verification with reCAPTCHA and user Activity Graph.<br>
-            <strong>Tech Stack:</strong> NodeJS, Cloud Firestore, HTML5, SASS, CSS3, Typescript, ExpressJS, Angular 7+,
-            Cordova, Postman, Stoplight<br>
+        <mat-card-content class="experience-content">
+          • Served as a technical lead at The Hands-on Lab.<br />
+          • Developed a website using LAMP stack for Multiple Organizations
+          Learning Management System for ODU School of Nursing. Innovated the
+          student’s evaluation methods using data analysis techniques.<br />
+          • Developed an interactive web application using MEAN stack ,
+          communicating with REST API.<br />
+          <ng-container *ngIf="seeMoreOduToggle2 == true">
+            • Delivered incremental value via an Agile Development
+            Methodology.<br />
+            • Assisted co-developers on support needs and provide guidance on
+            architectural issues.<br />
+            • Implemented modern features like Two Factor Authentication(2FA),
+            user profile search, login with GitHub association, bot verification
+            with reCAPTCHA and user Activity Graph.<br />
+            <strong>Tech Stack:</strong> NodeJS, Cloud Firestore, HTML5, SASS,
+            CSS3, Typescript, ExpressJS, Angular 7+, Cordova, Postman,
+            Stoplight<br />
           </ng-container>
           <div class="seeMoreDiv">
-            <a class="seeMoreLink" (click)="oduSeeMoreToggle2()">{{seeMoreOduText2}}</a>
+            <a class="seeMoreLink" (click)="oduSeeMoreToggle2()">{{
+              seeMoreOduText2
+            }}</a>
           </div>
         </mat-card-content>
       </mat-step>
@@ -91,22 +126,30 @@
           <mat-card-title>Software Engineer</mat-card-title>
           <mat-card-subtitle>Bengaluru Area, India</mat-card-subtitle>
         </mat-card-header>
-        <mat-card-content class='experience-content'>
-          • Designed and developed a single page web app using RESTful API's. was involved in the complete development
-          cycle involving planning, designing, development, testing, and deployment of this portal.<br>
-          • Developed, documented and validated complex business rules vital for data transformation.<br>
-          • Designed ETL flows to extract data from CRM application and stored in Oracle DB.<br>
-          <ng-container *ngIf="seeMoreSynopsysToggle==true">
-            • Implemented RESTful APIs, JSON architecture for development of newly generated daily logs.<br>
-            • Modified the file driven mechanism of portal to Database driven, using PostgreSQL.<br>
-            • Developed an automated system which can find the hardcoded paths associated with all Verification Group
-            (VG) products.<br>
-            • Wrote a script that automatically detect and removes the unused code and it increased the efficiency by
-            2%.<br>
-            • Fixing the errors generated by GCC after removing the -Wno- switches from Makefiles.<br>
+        <mat-card-content class="experience-content">
+          • Designed and developed a single page web app using RESTful API's.
+          was involved in the complete development cycle involving planning,
+          designing, development, testing, and deployment of this portal.<br />
+          • Developed, documented and validated complex business rules vital for
+          data transformation.<br />
+          • Designed ETL flows to extract data from CRM application and stored
+          in Oracle DB.<br />
+          <ng-container *ngIf="seeMoreSynopsysToggle == true">
+            • Implemented RESTful APIs, JSON architecture for development of
+            newly generated daily logs.<br />
+            • Modified the file driven mechanism of portal to Database driven,
+            using PostgreSQL.<br />
+            • Developed an automated system which can find the hardcoded paths
+            associated with all Verification Group (VG) products.<br />
+            • Wrote a script that automatically detect and removes the unused
+            code and it increased the efficiency by 2%.<br />
+            • Fixing the errors generated by GCC after removing the -Wno-
+            switches from Makefiles.<br />
           </ng-container>
           <div class="seeMoreDiv">
-            <a class="seeMoreLink" (click)="synopsysSeeMoreToggle()">{{seeMoreSynopsysText}}</a>
+            <a class="seeMoreLink" (click)="synopsysSeeMoreToggle()">{{
+              seeMoreSynopsysText
+            }}</a>
           </div>
         </mat-card-content>
       </mat-step>

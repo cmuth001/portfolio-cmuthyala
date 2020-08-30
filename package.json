@@ -29,6 +29,12 @@
     "help": "nx help"
   },
   "private": true,
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && ng lint && ng test --watch=false",
+      "pre-push": "ng build --aot true"
+    }
+  },
   "dependencies": {
     "@angular/animations": "^10.0.8",
     "@angular/cdk": "^10.1.2",
@@ -62,12 +68,15 @@
     "cypress": "^4.1.0",
     "dotenv": "6.2.0",
     "eslint": "6.8.0",
+    "husky": "^4.2.5",
     "jest": "25.2.3",
     "jest-preset-angular": "8.1.2",
-    "prettier": "2.0.4",
+    "prettier": "^2.0.4",
+    "pretty-quick": "^3.0.0",
     "ts-jest": "25.2.1",
     "ts-node": "~7.0.0",
     "tslint": "~6.0.0",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "~3.9.3"
   }
 }
