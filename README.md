@@ -13,7 +13,7 @@
 Publish to github pages:
 
  ```
- ng build --prod --base-href https://cmuth001.github.io/portfolio-cmuthyala/cmuthyala
+ ng build --prod --base-href https://cmuth001.github.io/portfolio-cmuthyala
  ngh --dir=dist/apps/portfolio/
  ```
 References:
