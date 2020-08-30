@@ -5,7 +5,7 @@ https://www.daptontechnologies.com/angular-prettier-husky/
 https://docs.aws.amazon.com/codebuild/latest/userguide/sample-build-badges.html
 
 
-![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiMXZmaTFGQ2ZRRWZ6bVViZTV1ZjY2RXY4Q3hwYmFSMEltTjdJNDl3RkozUmZLc28wTGdnTjJsN2lDY00yTjFPaGRiRDUzRzE2bVVKU2ZYbmoyeWdLYUxFPSIsIml2UGFyYW1ldGVyU3BlYyI6IklHWGhpaS9PRU9mR2I3L2MiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+# ![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiMXZmaTFGQ2ZRRWZ6bVViZTV1ZjY2RXY4Q3hwYmFSMEltTjdJNDl3RkozUmZLc28wTGdnTjJsN2lDY00yTjFPaGRiRDUzRzE2bVVKU2ZYbmoyeWdLYUxFPSIsIml2UGFyYW1ldGVyU3BlYyI6IklHWGhpaS9PRU9mR2I3L2MiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 
 
 Note:
