@@ -1,7 +1,7 @@
 .testimonial-section{
   
   padding-top: 1%;
-  padding-right: 10%;
+  // padding-right: 10%;
   padding-bottom: 1%;
   padding-left: 10%;
     // margin-top: 100px;
@@ -47,7 +47,7 @@
     // background-color: rgba(230,233,236,.56);
     box-shadow: none;
     border-radius: 0px;
-    // padding: 50px;
+    padding: 0px;
     
     //   float: left;
   }
@@ -55,7 +55,7 @@
     // background: inherit;
     // position: relative;
       display: grid;
-      padding: 3%;
+      // padding: 3%;
       box-shadow: none;
       background: inherit;
       // background-image: url('../../assets//testimonial-bg.svg');
@@ -63,11 +63,12 @@
   }
   .testimonial-title{
     font-family: cursive;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: normal;
     font-size: 2.5rem;
     font-weight: 500;
     text-align: center;
+    margin-bottom: 0px;
   }
   .mat-card-content-style{
     //   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
@@ -131,6 +132,7 @@
     color: coral;
     font-size: 0.6rem;
     text-align: center;
+    margin: 0px;
     
   }
   

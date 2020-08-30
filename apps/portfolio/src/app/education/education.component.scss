@@ -1,7 +1,7 @@
 .example-card {
     // max-width: 400px;
     display: inline-block;
-    padding: 2rem 2rem;
+    // padding: 2rem 2rem;
     box-shadow: none;
   }
   .cm-education-section{
@@ -13,9 +13,9 @@
   }
   .cm-education-main-div{
     margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
+    // margin-right: 10%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 
   }
   .example-header-image {
@@ -24,6 +24,7 @@
     width: 5rem;
     height: 5rem;
   }
+  
   .amrita-header-image{
     background-image: url('../../assets/amrita-education-logo.png');
   }
@@ -32,7 +33,7 @@
   }
   .education-title{
     font-family: cursive;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: normal;
     font-size: 2.5rem;
     font-weight: 500;
@@ -41,10 +42,14 @@
     // padding-top: 20px;
   }
    .mat-card-title{
-      font-size: 0.9rem !important;
+      font-size: 1rem !important;
     }
   
-  mat-card-actions{
-      float: right;
+  // mat-card-actions{
+  //     // float: right;
+  // }
+  example-card {
+    padding: 0;
+    
   }
   

@@ -1,7 +1,7 @@
 .experience-mat-card-main{
     font-family: "Times New Roman", Times, serif;
     font-style: italic;
-    // padding: 50px;
+    padding: 0px;
     box-shadow: none;
 }
 .highmark-header-image {
@@ -61,4 +61,8 @@
   .mat-card-header .mat-card-title{
     font-size: 1rem !important;
     font-style: normal;
+  }
+
+  .mat-vertical-content{
+    padding: 0px !important;
   }
