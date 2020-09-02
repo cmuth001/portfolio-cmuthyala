@@ -86,10 +86,7 @@
               "apps/portfolio/tsconfig.app.json",
               "apps/portfolio/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/portfolio/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/portfolio/**/*"]
           }
         },
         "test": {
@@ -124,13 +121,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/portfolio-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/portfolio-e2e/**/*"
-            ]
+            "tsConfig": ["apps/portfolio-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/portfolio-e2e/**/*"]
           }
         }
       }

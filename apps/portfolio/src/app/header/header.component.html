@@ -1,68 +1,76 @@
 <section>
-    <mat-card class="example-card top-header-bacground-image ">
-        <mat-card-header>
-            <img mat-card-avatar class=" example-header-image " src="assets/dp-1.jpg">
-            <mat-card-title>Chandrasekhar Muthyala</mat-card-title>
-            <mat-card-subtitle class="">Full Stack Developer 👨‍🚀
+  <mat-card class="example-card top-header-bacground-image">
+    <mat-card-header>
+      <img mat-card-avatar class="example-header-image" src="assets/dp-1.jpg" />
+      <mat-card-title>Chandrasekhar Muthyala</mat-card-title>
+      <mat-card-subtitle class="">Full Stack Developer 👨‍🚀 </mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+  <div>
+    <mat-tab-group class="color-blue">
+      <mat-tab class="mat-tab-padding">
+        <ng-template mat-tab-label>
+          <mat-icon aria-hidden="false" aria-label="Example home icon"
+            >home</mat-icon
+          >
+          Home
+        </ng-template>
+        <cmuthyala-about></cmuthyala-about>
+        <cmuthyala-education></cmuthyala-education>
+        <cmuthyala-experience></cmuthyala-experience>
+        <cmuthyala-certifications></cmuthyala-certifications>
+        <cmuthyala-testimonies></cmuthyala-testimonies>
+        <cmuthyala-contact-form></cmuthyala-contact-form>
+        <cmuthyala-social-media></cmuthyala-social-media>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon aria-hidden="false" aria-label="local_library"
+            >local_library</mat-icon
+          >
+          Education
+        </ng-template>
+        <cmuthyala-education></cmuthyala-education>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon aria-hidden="false" aria-label="Example home icon"
+            >work</mat-icon
+          >
+          Experience
+        </ng-template>
 
-            </mat-card-subtitle>
+        <cmuthyala-experience></cmuthyala-experience>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon aria-hidden="false" aria-label="Example home icon"
+            >folder_special</mat-icon
+          >
+          Projects
+        </ng-template>
+        <cmuthyala-projects></cmuthyala-projects>
+      </mat-tab>
 
-        </mat-card-header>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon aria-hidden="false" aria-label="Example home icon"
+            >grade</mat-icon
+          >
+          Certifications
+        </ng-template>
+        <cmuthyala-certifications></cmuthyala-certifications>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon aria-hidden="false" aria-label="Example home icon"
+            >format_quote</mat-icon
+          >
+          Testimonials
+        </ng-template>
 
-    </mat-card>
-    <div>
-        <mat-tab-group class="color-blue">
-            <mat-tab class="mat-tab-padding">
-                <ng-template mat-tab-label>
-                    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
-                    Home
-                </ng-template>
-                <cmuthyala-about></cmuthyala-about>
-                <cmuthyala-education></cmuthyala-education>
-                <cmuthyala-experience></cmuthyala-experience>
-                <cmuthyala-certifications></cmuthyala-certifications>
-                <cmuthyala-testimonies></cmuthyala-testimonies>
-                <cmuthyala-contact-form></cmuthyala-contact-form>
-                <cmuthyala-social-media></cmuthyala-social-media>
-            </mat-tab>
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <mat-icon aria-hidden="false" aria-label="local_library">local_library</mat-icon>
-                    Education
-                </ng-template>
-                <cmuthyala-education></cmuthyala-education>
-            </mat-tab>
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <mat-icon aria-hidden="false" aria-label="Example home icon">work</mat-icon>
-                    Experience
-                </ng-template>
-
-                <cmuthyala-experience></cmuthyala-experience>
-            </mat-tab>
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <mat-icon aria-hidden="false" aria-label="Example home icon">folder_special</mat-icon>
-                    Projects
-                </ng-template>
-                <cmuthyala-projects></cmuthyala-projects>
-            </mat-tab>
-
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <mat-icon aria-hidden="false" aria-label="Example home icon">grade</mat-icon>
-                    Certifications
-                </ng-template>
-                <cmuthyala-certifications></cmuthyala-certifications>
-            </mat-tab>
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <mat-icon aria-hidden="false" aria-label="Example home icon">format_quote</mat-icon>
-                    Testimonials
-                </ng-template>
-
-                <cmuthyala-testimonies></cmuthyala-testimonies>
-            </mat-tab>
-        </mat-tab-group>
-    </div>
+        <cmuthyala-testimonies></cmuthyala-testimonies>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
 </section>

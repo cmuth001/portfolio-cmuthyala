@@ -5,22 +5,42 @@
       <div class="example-container">
         <mat-form-field appearance="fill">
           <mat-label>Enter your Name</mat-label>
-          <input matInput placeholder="Robert Downey" formControlName="name" required />
+          <input
+            matInput
+            placeholder="Robert Downey"
+            formControlName="name"
+            required
+          />
         </mat-form-field>
       </div>
       <div class="example-container">
         <mat-form-field appearance="fill">
           <mat-label>Enter your email</mat-label>
-          <input matInput placeholder="pat@example.com" formControlName="email" required />
+          <input
+            matInput
+            placeholder="pat@example.com"
+            formControlName="email"
+            required
+          />
         </mat-form-field>
       </div>
       <mat-form-field class="example-full-width">
         <mat-label>Leave a comment</mat-label>
-        <textarea cdkTextareaAutosize cdkAutosizeMinRows="5" matInput placeholder="Ex. It makes me feel..."
-          formControlName="message"></textarea>
+        <textarea
+          cdkTextareaAutosize
+          cdkAutosizeMinRows="5"
+          matInput
+          placeholder="Ex. It makes me feel..."
+          formControlName="message"
+        ></textarea>
       </mat-form-field>
       <div class="example-button-row">
-        <button mat-button color="primary" [disabled]="!myForm.valid" (click)="onSubmit(myForm)">
+        <button
+          mat-button
+          color="primary"
+          [disabled]="!myForm.valid"
+          (click)="onSubmit(myForm)"
+        >
           SUBMIT
         </button>
       </div>

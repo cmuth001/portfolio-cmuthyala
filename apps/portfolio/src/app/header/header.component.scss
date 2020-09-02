@@ -1,6 +1,11 @@
-.top-header-bacground-image{
-    background-image: linear-gradient(to left, #dff7bd, #40f2ec, #add2ed, #ffb2ff);
-    
+.top-header-bacground-image {
+  background-image: linear-gradient(
+    to left,
+    #dff7bd,
+    #40f2ec,
+    #add2ed,
+    #ffb2ff
+  );
 }
 .mat-card-avatar {
   height: 50px;
@@ -10,8 +15,6 @@
   object-fit: cover;
 }
 
-
-mat-icon{
+mat-icon {
   margin-right: 5px;
 }
-
