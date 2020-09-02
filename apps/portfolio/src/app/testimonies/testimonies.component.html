@@ -19,14 +19,11 @@
           very quickly. He would be a tremendous addition to any software
           development team.
         </p>
-        <!-- <mat-divider [inset]="true"></mat-divider> -->
       </mat-card-content>
       <mat-card-header>
         <div mat-card-avatar class="timKing-img"></div>
         <mat-card-title>Tim King</mat-card-title>
-        <mat-card-subtitle
-          >Software Engineer at Highmark Health</mat-card-subtitle
-        >
+        <mat-card-subtitle>Software Engineer at Highmark Health</mat-card-subtitle>
       </mat-card-header>
     </mat-card>
 
@@ -43,31 +40,15 @@
           colleagues and stakeholders alike and has a real passion and
           enthusiasm for the software industry.
         </p>
-        <!-- <mat-divider [inset]="true"></mat-divider> -->
       </mat-card-content>
       <mat-card-header>
         <div mat-card-avatar class="jyothi-img"></div>
         <mat-card-title>Jyothi Gummadi</mat-card-title>
-        <mat-card-subtitle
-          >Senior Delivery Data Analyst at ConnectYourCare</mat-card-subtitle
-        >
+        <mat-card-subtitle>Senior Delivery Data Analyst at ConnectYourCare</mat-card-subtitle>
       </mat-card-header>
     </mat-card>
 
-    <div class="viewMoreButtonDiv">
-      <button
-        mat-button
-        class="viewMoreButton"
-        color="primary"
-        (click)="toggleViewMore()"
-      >
-        {{ testimonyToggleText }}
 
-        <i class="material-icons">
-          {{ testimonyToggleIcon }}
-        </i>
-      </button>
-    </div>
 
     <ng-container *ngIf="isCollapsed == true">
       <mat-card class="mat-card-1" id="yasaswy">
@@ -79,7 +60,6 @@
             He played a key role in optimizing the VCS incremental build issues.
             Wish you all the best for furture endeavours 😁
           </p>
-          <!-- <mat-divider [inset]="true"></mat-divider> -->
         </mat-card-content>
         <mat-card-header>
           <div mat-card-avatar class="yasaswy-img"></div>
@@ -98,14 +78,11 @@
             recommend Chandra in any position, because he worked so well within
             a team, and was always open to suggestion for the project!
           </p>
-          <!-- <mat-divider [inset]="true"></mat-divider> -->
         </mat-card-content>
         <mat-card-header>
           <div mat-card-avatar class="kristen-img"></div>
           <mat-card-title>Kristen Carros</mat-card-title>
-          <mat-card-subtitle
-            >Cloud Software Engineer at Cloudreach</mat-card-subtitle
-          >
+          <mat-card-subtitle>Cloud Software Engineer at Cloudreach</mat-card-subtitle>
         </mat-card-header>
       </mat-card>
 
@@ -122,7 +99,6 @@
             would highly recommend Chandra and would welcome the opportunity to
             work with him again in the future.
           </p>
-          <!-- <mat-divider [inset]="true"></mat-divider> -->
         </mat-card-content>
         <mat-card-header>
           <div mat-card-avatar class="justin-img"></div>
@@ -131,5 +107,14 @@
         </mat-card-header>
       </mat-card>
     </ng-container>
+    <div class="viewMoreButtonDiv">
+      <button mat-button class="viewMoreButton" color="primary" (click)="toggleViewMore()">
+        {{ testimonyToggleText }}
+
+        <i class="material-icons">
+          {{ testimonyToggleIcon }}
+        </i>
+      </button>
+    </div>
   </mat-card>
 </section>

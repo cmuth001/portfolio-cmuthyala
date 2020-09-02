@@ -22,7 +22,6 @@ export class ExperienceComponent implements OnInit {
   highmarkSeeMoreToggle(){
     this.seeMoreHighmarkToggle = !this.seeMoreHighmarkToggle;
     this.seeMoreHighmarkText = this.seeMoreHighmarkToggle ? "see less" : "...see more"
-    // console.log(this.seeMoreHighmarkText, this.seeMoreHighmarkToggle);
   }
   oduSeeMoreToggle1(){
     this.seeMoreOduToggle1 = !this.seeMoreOduToggle1;

@@ -23,11 +23,9 @@ export class ContactFormComponent implements OnInit {
     if(this.myForm .valid){
       this.myForm.reset();
       this._snackBar.open("Your response is successfully submitted!", "OK", {
-        duration: 3000,
+        duration: 5000,
       });
     }
-    
-    // console.log(form.value);
   }
 
 }
