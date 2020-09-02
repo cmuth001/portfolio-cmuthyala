@@ -3,7 +3,7 @@
     <h1 class="testimonial-title">Testimonials</h1>
     <p class="p-note">Note: Loaded from LinkedIn recommendation section.</p>
   </div>
-  <mat-card class="testimonial-mat-card-main">
+  <div class="mat-card-border">
     <mat-card class="mat-card-1" id="timKing">
       <mat-card-content class="mat-card-content-style">
         <p class="p-text">
@@ -23,10 +23,13 @@
       <mat-card-header>
         <div mat-card-avatar class="timKing-img"></div>
         <mat-card-title>Tim King</mat-card-title>
-        <mat-card-subtitle>Software Engineer at Highmark Health</mat-card-subtitle>
+        <mat-card-subtitle
+          >Software Engineer at Highmark Health</mat-card-subtitle
+        >
       </mat-card-header>
     </mat-card>
-
+  </div>
+  <div class="mat-card-border">
     <mat-card class="mat-card-1 left-side" id="jyothi">
       <mat-card-content class="mat-card-content-style">
         <p class="p-text">
@@ -44,13 +47,15 @@
       <mat-card-header>
         <div mat-card-avatar class="jyothi-img"></div>
         <mat-card-title>Jyothi Gummadi</mat-card-title>
-        <mat-card-subtitle>Senior Delivery Data Analyst at ConnectYourCare</mat-card-subtitle>
+        <mat-card-subtitle
+          >Senior Delivery Data Analyst at ConnectYourCare</mat-card-subtitle
+        >
       </mat-card-header>
     </mat-card>
+  </div>
 
-
-
-    <ng-container *ngIf="isCollapsed == true">
+  <ng-container *ngIf="isCollapsed == true">
+    <div class="mat-card-border">
       <mat-card class="mat-card-1" id="yasaswy">
         <mat-card-content class="mat-card-content-style">
           <p class="p-text">
@@ -67,6 +72,8 @@
           <mat-card-subtitle>Sr Data Analyst at Synopsys Inc</mat-card-subtitle>
         </mat-card-header>
       </mat-card>
+    </div>
+    <div class="mat-card-border">
       <mat-card class="mat-card-1 left-side" id="kristen">
         <mat-card-content>
           <p class="p-text">
@@ -82,10 +89,13 @@
         <mat-card-header>
           <div mat-card-avatar class="kristen-img"></div>
           <mat-card-title>Kristen Carros</mat-card-title>
-          <mat-card-subtitle>Cloud Software Engineer at Cloudreach</mat-card-subtitle>
+          <mat-card-subtitle
+            >Cloud Software Engineer at Cloudreach</mat-card-subtitle
+          >
         </mat-card-header>
       </mat-card>
-
+    </div>
+    <div class="mat-card-border">
       <mat-card class="mat-card-1" id="justin">
         <mat-card-content>
           <p class="p-text">
@@ -106,15 +116,20 @@
           <mat-card-subtitle>Product Manager</mat-card-subtitle>
         </mat-card-header>
       </mat-card>
-    </ng-container>
-    <div class="viewMoreButtonDiv">
-      <button mat-button class="viewMoreButton" color="primary" (click)="toggleViewMore()">
-        {{ testimonyToggleText }}
-
-        <i class="material-icons">
-          {{ testimonyToggleIcon }}
-        </i>
-      </button>
     </div>
-  </mat-card>
+  </ng-container>
+  <div class="viewMoreButtonDiv">
+    <button
+      mat-button
+      class="viewMoreButton"
+      color="primary"
+      (click)="toggleViewMore()"
+    >
+      {{ testimonyToggleText }}
+
+      <i class="material-icons">
+        {{ testimonyToggleIcon }}
+      </i>
+    </button>
+  </div>
 </section>

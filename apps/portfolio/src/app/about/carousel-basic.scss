@@ -1,32 +1,32 @@
-.carousel-img{ 
-    width:100%;
-} 
-.carousel-caption{
-    position: absolute;
-    right: 15%;
-    bottom: 0.1rem;
-    left: 15%;
-    z-index: 10;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: #fff;
-    text-align: center;
+.carousel-img {
+  width: 100%;
 }
-.linkStyle{
-    color: white;
-    font-style: italic;
-    text-align: center;
-    text-decoration: underline;
-    cursor: pointer;
-    font-weight: 900;
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 0.1rem;
+  left: 15%;
+  z-index: 10;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+}
+.linkStyle {
+  color: white;
+  font-style: italic;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 900;
 }
 p {
-    margin: 0rem 0rem 1rem 0rem;
-    font-size: 1.1rem;
-    }
+  margin: 0rem 0rem 1rem 0rem;
+  font-size: 1rem;
+}
 @media only screen and (max-width: 600px) {
-    p {
-        margin: 0rem 0rem 0.5rem 0rem;
-        font-size: 0.5rem;
-        }
+  p {
+    margin: 0rem 0rem 0.5rem 0rem;
+    font-size: 0.5rem;
   }
+}

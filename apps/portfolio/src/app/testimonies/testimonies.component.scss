@@ -1,7 +1,5 @@
 .testimonial-section {
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-left: 10%;
+  padding: 1% 10%;
 }
 .timKing-img {
   background-image: url('https://media-exp1.licdn.com/dms/image/C4D03AQFL3pM_d1LwPw/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=gO1mNe0OH-D4WvjZSFsC7K2odOdJeLwspj027NXF1Ek');
@@ -26,11 +24,11 @@
 }
 
 .mat-card-1 {
-  margin-right: 1%;
   background: inherit;
   box-shadow: none;
   border-radius: 0px;
   padding: 0px;
+  // margin-top: 1rem;
 }
 .testimonial-mat-card-main {
   display: grid;
@@ -51,10 +49,11 @@
   padding: 1rem;
   font-size: 1rem;
   background: white;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
-  font-family: 'Times New Roman', Times, serif;
+  // font-family: 'Times New Roman', Times, serif;
 }
 .viewMoreButton {
   padding: 0.5rem;
@@ -80,10 +79,19 @@
     transform: translate(10px, 0);
   }
 }
-
+.mat-card-border {
+  border: 1px solid lightgrey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 2%;
+}
 .p-note {
   color: coral;
   font-size: 0.6rem;
   text-align: center;
   margin: 0px;
+}
+
+mat-card-header {
+  padding-left: 1rem;
 }
