@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { ColorSchemeService } from './services/color-scheme.service'
 
 @Component({
   selector: 'cmuthyala-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'portfolio'
+  constructor(private colorSchemeService: ColorSchemeService) {
+    // Load Color Scheme
+    console.log(this.colorSchemeService.currentActive())
+    this.colorSchemeService.update('dark')
+  }
 }

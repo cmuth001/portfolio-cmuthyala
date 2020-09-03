@@ -3,7 +3,7 @@
     <h1 class="testimonial-title">Testimonials</h1>
     <p class="p-note">Note: Loaded from LinkedIn recommendation section.</p>
   </div>
-  <div class="mat-card-border">
+  <mat-card class="mat-card-border">
     <mat-card class="mat-card-1" id="timKing">
       <mat-card-content class="mat-card-content-style">
         <p class="p-text">
@@ -28,8 +28,9 @@
         >
       </mat-card-header>
     </mat-card>
-  </div>
-  <div class="mat-card-border">
+  </mat-card>
+
+  <mat-card class="mat-card-border">
     <mat-card class="mat-card-1 left-side" id="jyothi">
       <mat-card-content class="mat-card-content-style">
         <p class="p-text">
@@ -52,10 +53,10 @@
         >
       </mat-card-header>
     </mat-card>
-  </div>
+  </mat-card>
 
   <ng-container *ngIf="isCollapsed == true">
-    <div class="mat-card-border">
+    <mat-card class="mat-card-border">
       <mat-card class="mat-card-1" id="yasaswy">
         <mat-card-content class="mat-card-content-style">
           <p class="p-text">
@@ -72,8 +73,8 @@
           <mat-card-subtitle>Sr Data Analyst at Synopsys Inc</mat-card-subtitle>
         </mat-card-header>
       </mat-card>
-    </div>
-    <div class="mat-card-border">
+    </mat-card>
+    <mat-card class="mat-card-border">
       <mat-card class="mat-card-1 left-side" id="kristen">
         <mat-card-content>
           <p class="p-text">
@@ -94,8 +95,8 @@
           >
         </mat-card-header>
       </mat-card>
-    </div>
-    <div class="mat-card-border">
+    </mat-card>
+    <mat-card class="mat-card-border">
       <mat-card class="mat-card-1" id="justin">
         <mat-card-content>
           <p class="p-text">
@@ -116,7 +117,7 @@
           <mat-card-subtitle>Product Manager</mat-card-subtitle>
         </mat-card-header>
       </mat-card>
-    </div>
+    </mat-card>
   </ng-container>
   <div class="viewMoreButtonDiv">
     <button
@@ -132,4 +133,5 @@
       </i>
     </button>
   </div>
+  <!-- </mat-card> -->
 </section>
