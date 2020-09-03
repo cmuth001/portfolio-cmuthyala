@@ -15,15 +15,12 @@
       <span class="example-spacer"></span>
       <div class="theme-switch-div">
         <!-- <span>Dark Theme {{ darkThemeStatus }}</span> -->
-        <button
-          class="theme-switch-btn"
-          (click)="toggleTheme($event)"
-          mat-button
-        >
+        <button class="theme-switch-btn" mat-button>
           <mat-icon mat-list-icon>wb_sunny</mat-icon>
           <mat-slide-toggle
             class="theme-switch"
             [checked]="useDefaultTheme"
+            (change)="toggleTheme($event)"
           ></mat-slide-toggle>
           <mat-icon mat-list-icon>brightness_3</mat-icon>
         </button>

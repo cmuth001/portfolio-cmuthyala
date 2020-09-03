@@ -14,7 +14,7 @@ body {
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 $inside-primary: mat-palette($mat-light-blue);
-$inside-accent: mat-palette($mat-light-blue);
+$inside-accent: mat-palette($mat-yellow);
 $inside-warn: mat-palette($mat-red);
 $inside-theme-dark: mat-dark-theme(
   $inside-primary,

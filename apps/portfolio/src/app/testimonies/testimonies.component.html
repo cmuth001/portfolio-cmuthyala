@@ -54,7 +54,20 @@
       </mat-card-header>
     </mat-card>
   </mat-card>
+  <div class="viewMoreButtonDiv">
+    <button
+      mat-button
+      class="viewMoreButton"
+      color="primary"
+      (click)="toggleViewMore()"
+    >
+      {{ testimonyToggleText }}
 
+      <i class="material-icons">
+        {{ testimonyToggleIcon }}
+      </i>
+    </button>
+  </div>
   <ng-container *ngIf="isCollapsed == true">
     <mat-card class="mat-card-border">
       <mat-card class="mat-card-1" id="yasaswy">
@@ -119,19 +132,6 @@
       </mat-card>
     </mat-card>
   </ng-container>
-  <div class="viewMoreButtonDiv">
-    <button
-      mat-button
-      class="viewMoreButton"
-      color="primary"
-      (click)="toggleViewMore()"
-    >
-      {{ testimonyToggleText }}
 
-      <i class="material-icons">
-        {{ testimonyToggleIcon }}
-      </i>
-    </button>
-  </div>
   <!-- </mat-card> -->
 </section>

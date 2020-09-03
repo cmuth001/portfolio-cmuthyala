@@ -26,6 +26,6 @@ export class HeaderComponent implements OnInit {
     const theme = this.useDefaultTheme ? 'dark' : 'light'
     this.darkThemeStatus = this.useDefaultTheme ? 'ON' : 'OFF'
     this.colorSchemeService.update(theme)
-    // console.log(event);
+    console.log(event)
   }
 }
