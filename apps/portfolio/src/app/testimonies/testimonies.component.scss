@@ -54,7 +54,7 @@
   border-top-right-radius: 10px;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
-  // font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 .viewMoreButton {
   padding: 0.5rem;
@@ -94,8 +94,14 @@
   font-size: 0.6rem;
   text-align: center;
   margin: 0px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-mat-card-header {
-  padding-left: 1rem;
+.mat-card-header .mat-card-title {
+  font-size: 1rem !important;
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+}
+mat-card-subtitle {
+  font-family: 'Times New Roman', Times, serif;
 }

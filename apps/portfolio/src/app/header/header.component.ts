@@ -22,7 +22,6 @@ export class HeaderComponent implements OnInit {
   constructor(private colorSchemeService: ColorSchemeService) {}
   ngOnInit(): void {}
   toggleTheme(event) {
-    event.checked
     this.useDefaultTheme = !this.useDefaultTheme
     const theme = this.useDefaultTheme ? 'dark' : 'light'
     this.darkThemeStatus = this.useDefaultTheme ? 'ON' : 'OFF'

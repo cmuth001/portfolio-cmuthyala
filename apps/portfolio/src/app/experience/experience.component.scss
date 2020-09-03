@@ -28,6 +28,7 @@
   // font-family: 'Times New Roman', Times, serif;
   font-size: 1rem;
   font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
 }
 .experience-title {
   font-family: cursive;
@@ -44,8 +45,11 @@
 .mat-card-header .mat-card-title {
   font-size: 1rem !important;
   font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .mat-vertical-content {
-  padding: 0px !important;
+  // padding: 0px !important;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0 24px 0px 24px;
 }

@@ -1,17 +1,18 @@
 .top-header-bacground-image {
-  box-shadow: none !important;
+  // box-shadow: none !important;
   border-radius: 0px !important;
-  background-image: linear-gradient(
-    to left,
-    #dff7bd,
-    #40f2ec,
-    #add2ed,
-    #ffb2ff
-  );
-  color: black;
+  // background-image: linear-gradient(
+  //   to left,
+  //   #dff7bd,
+  //   #40f2ec,
+  //   #add2ed,
+  //   #ffb2ff
+  // );
+  // color: black;
+  font-family: 'Times New Roman', Times, serif;
 }
 .position {
-  color: black;
+  // color: black;
 }
 .mat-card-avatar {
   height: 50px;
@@ -34,6 +35,9 @@ mat-icon {
 }
 .example-spacer {
   flex: 1 1 auto;
+}
+.theme-switch-btn {
+  padding: 0rem;
 }
 // used for dark theme
 // background-color: #444444 !important;
