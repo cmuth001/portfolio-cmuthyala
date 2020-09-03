@@ -1,6 +1,8 @@
 .top-header-bacground-image {
   // box-shadow: none !important;
   border-radius: 0px !important;
+  padding-top: 20px;
+  background-color: #a5d6ed;
   // background-image: linear-gradient(
   //   to left,
   //   #dff7bd,
@@ -8,11 +10,11 @@
   //   #add2ed,
   //   #ffb2ff
   // );
-  // color: black;
+  color: black;
   font-family: 'Times New Roman', Times, serif;
 }
 .position {
-  // color: black;
+  color: black;
 }
 .mat-card-avatar {
   height: 50px;
@@ -41,3 +43,7 @@ mat-icon {
 }
 // used for dark theme
 // background-color: #444444 !important;
+
+.mat-card-header .mat-card-title {
+  margin-bottom: 0rem;
+}
