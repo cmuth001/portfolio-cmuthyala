@@ -1,4 +1,6 @@
 .top-header-bacground-image {
+  box-shadow: none;
+  border-radius: 0px;
   background-image: linear-gradient(
     to left,
     #dff7bd,
@@ -18,3 +20,6 @@
 mat-icon {
   margin-right: 5px;
 }
+
+// used for dark theme
+// background-color: #444444 !important;
