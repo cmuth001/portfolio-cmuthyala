@@ -2,7 +2,7 @@
   padding: 2rem 0rem;
   width: 100%;
   background-color: #a5d6ed;
-
+  color: black;
   text-align: center;
 }
 .footer-section {
@@ -18,4 +18,10 @@
   font-size: 1rem;
   font-style: italic;
   text-align: center;
+  color: black;
+}
+mat-card {
+  box-shadow: none;
+  border-radius: 0rem;
+  padding: 0em;
 }

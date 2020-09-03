@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { ColorSchemeService } from '../services/color-scheme.service'
 
 export interface Tile {
   color: string
@@ -16,7 +17,16 @@ export class HeaderComponent implements OnInit {
     { text: 'Three', cols: 2, rows: 1, color: 'lightpink' },
     { text: 'Four', cols: 2, rows: 1, color: '#DDBDF1' },
   ]
-  constructor() {}
-
+  useDefaultTheme = true
+  darkThemeStatus = 'ON'
+  constructor(private colorSchemeService: ColorSchemeService) {}
   ngOnInit(): void {}
+  toggleTheme(event) {
+    event.checked
+    this.useDefaultTheme = !this.useDefaultTheme
+    const theme = this.useDefaultTheme ? 'dark' : 'light'
+    this.darkThemeStatus = this.useDefaultTheme ? 'ON' : 'OFF'
+    this.colorSchemeService.update(theme)
+    // console.log(event);
+  }
 }

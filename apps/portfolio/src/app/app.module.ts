@@ -15,7 +15,7 @@ import { MatListModule } from '@angular/material/list'
 import { MatStepperModule } from '@angular/material/stepper'
 import { HttpClientModule } from '@angular/common/http'
 import { MatSnackBarModule } from '@angular/material/snack-bar'
-
+import { MatSidenavModule } from '@angular/material/sidenav'
 import { AppComponent } from './app.component'
 import { HomeComponent } from './home/home.component'
 import { ExperienceComponent } from './experience/experience.component'
@@ -70,6 +70,7 @@ import { GoogleMapsModule } from '@angular/google-maps'
     MatStepperModule,
     MatSnackBarModule,
     HttpClientModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
