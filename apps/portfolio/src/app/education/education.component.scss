@@ -2,13 +2,13 @@
   display: inline-block;
   box-shadow: none;
   font-family: 'Times New Roman', Times, serif;
+  box-shadow: none !important;
 }
 .cm-education-section {
   padding: 1% 10%;
   font-family: 'Times New Roman', Times, serif;
 }
 .example-header-image {
-  background-image: url('../../assets/odu-education-logo.png');
   background-size: contain;
   width: 5rem;
   height: 5rem;
@@ -31,9 +31,6 @@
 .mat-card-title {
   font-size: 1rem !important;
   font-family: 'Times New Roman', Times, serif;
-}
-example-card {
-  padding: 0;
 }
 mat-card {
   border-radius: 0px !important;

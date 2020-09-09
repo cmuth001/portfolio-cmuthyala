@@ -6,7 +6,7 @@ import { Component } from '@angular/core'
   styleUrls: ['./carousel-basic.scss'],
 })
 export class NgbdCarouselBasic {
-  showNavigationArrows = false
+  showNavigationArrows = true
   showNavigationIndicators = true
   images = [
     `./assets/carousal-image1.jpeg`,

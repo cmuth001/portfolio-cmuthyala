@@ -1,47 +1,28 @@
 <section class="cm-education-section">
   <div class="cm-education-main-div">
     <h1 class="education-title">Education</h1>
-    <mat-card class="example-card col-md-6">
-      <mat-card-header>
-        <div
-          mat-card-avatar
-          class="example-header-image amrita-header-image"
-        ></div>
-        <mat-card-title class="card-title-size"
-          >Amrita University</mat-card-title
-        >
-        <mat-card-subtitle
-          >B.Tech in Computer Science, CGPA: 7.67/10.0</mat-card-subtitle
-        >
-      </mat-card-header>
-      <mat-card-actions>
-        <a href="https://www.amrita.edu/" target="_blank">
-          <button mat-button color="primary">
-            VISIT <mat-icon mat-list-icon>launch</mat-icon>
-          </button>
-        </a>
-      </mat-card-actions>
-    </mat-card>
-    <mat-card class="example-card col-md-6">
-      <mat-card-header>
-        <div
-          mat-card-avatar
-          class="example-header-image odu-header-image"
-        ></div>
-        <mat-card-title class="card-title-size"
-          >Old Dominion University</mat-card-title
-        >
-        <mat-card-subtitle
-          >Master's in Computer Science, CGPA: 3.77/4.0</mat-card-subtitle
-        >
-      </mat-card-header>
-      <mat-card-actions>
-        <a href="https://www.odu.edu/" target="_blank">
-          <button mat-button color="primary">
-            VISIT <mat-icon mat-list-icon>launch</mat-icon>
-          </button>
-        </a>
-      </mat-card-actions>
-    </mat-card>
+    <ng-container *ngFor="let college of colleges">
+      <mat-card class="example-card col-md-6">
+        <mat-card-header>
+          <div
+            mat-card-avatar
+            class="example-header-image {{ college.class }}"
+          ></div>
+          <mat-card-title class="card-title-size">{{
+            college.name
+          }}</mat-card-title>
+          <mat-card-subtitle
+            >{{ college.degree }}, {{ college.cgpa }}</mat-card-subtitle
+          >
+        </mat-card-header>
+        <mat-card-actions>
+          <a href="{{ college.url }}" target="_blank">
+            <button mat-button color="primary">
+              VISIT <mat-icon mat-list-icon>launch</mat-icon>
+            </button>
+          </a>
+        </mat-card-actions>
+      </mat-card>
+    </ng-container>
   </div>
 </section>

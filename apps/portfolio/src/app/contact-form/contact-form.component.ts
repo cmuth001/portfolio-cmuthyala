@@ -8,7 +8,7 @@ import { MatSnackBar } from '@angular/material/snack-bar'
 })
 export class ContactFormComponent implements OnInit {
   myForm: FormGroup
-
+  title = `Contact me here`
   constructor(private fb: FormBuilder, private _snackBar: MatSnackBar) {}
 
   ngOnInit() {
@@ -17,6 +17,15 @@ export class ContactFormComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       message: ['', [Validators.required, Validators.minLength(15)]],
     })
+  }
+  getErrorMessage() {
+    if (this.myForm.controls.email.hasError('required')) {
+      return 'You must enter a value'
+    }
+
+    return this.myForm.controls.email.hasError('email')
+      ? 'Not a valid email'
+      : ''
   }
   onSubmit(form: FormGroup) {
     if (this.myForm.valid) {

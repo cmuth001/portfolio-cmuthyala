@@ -1,5 +1,5 @@
 <section class="contact-form-section">
-  <h1 class="contact-title">Contact me here</h1>
+  <h1 class="contact-title">{{ title }}</h1>
   <mat-card class="mat-card-form">
     <form [formGroup]="myForm">
       <div class="example-container">
@@ -11,6 +11,7 @@
             formControlName="name"
             required
           />
+          <mat-error *ngIf="myForm.controls.name.invalid">* Required</mat-error>
         </mat-form-field>
       </div>
       <div class="example-container">
@@ -22,6 +23,9 @@
             formControlName="email"
             required
           />
+          <mat-error *ngIf="myForm.controls.email.invalid">{{
+            getErrorMessage()
+          }}</mat-error>
         </mat-form-field>
       </div>
       <mat-form-field class="example-full-width">
@@ -30,9 +34,15 @@
           cdkTextareaAutosize
           cdkAutosizeMinRows="5"
           matInput
-          placeholder="Ex. It makes me feel..."
+          placeholder="Leave a message what you feel about this website or if you need help in Angular 2+."
           formControlName="message"
         ></textarea>
+        <mat-error *ngIf="myForm.controls.message.errors?.required"
+          >* Required</mat-error
+        >
+        <mat-error *ngIf="myForm.controls.message.errors?.minlength"
+          >* min required length 15</mat-error
+        >
       </mat-form-field>
       <div class="example-button-row">
         <button
