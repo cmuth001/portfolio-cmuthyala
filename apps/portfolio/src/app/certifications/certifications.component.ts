@@ -1,13 +1,6 @@
 import { Component, OnInit } from '@angular/core'
+import { Icertification } from '../../../../../libs/models/src/lib/models'
 
-export interface Icertification {
-  class: string
-  title: string
-  issuedby: string
-  date: string
-  credentials?: string
-  url?: string
-}
 @Component({
   selector: 'cmuthyala-certifications',
   templateUrl: './certifications.component.html',

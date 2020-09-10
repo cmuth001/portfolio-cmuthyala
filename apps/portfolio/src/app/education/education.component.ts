@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core'
-export interface Icollege {
-  name: string
-  class: string
-  degree: string
-  cgpa: string
-  url: string
-}
+import { Icollege } from '../../../../../libs/models/src/lib/models'
+
 @Component({
   selector: 'cmuthyala-education',
   templateUrl: './education.component.html',

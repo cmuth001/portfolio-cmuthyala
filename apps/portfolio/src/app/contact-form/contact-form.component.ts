@@ -20,11 +20,11 @@ export class ContactFormComponent implements OnInit {
   }
   getErrorMessage() {
     if (this.myForm.controls.email.hasError('required')) {
-      return 'You must enter a value'
+      return '* You must enter a value'
     }
 
     return this.myForm.controls.email.hasError('email')
-      ? 'Not a valid email'
+      ? '* Not a valid email'
       : ''
   }
   onSubmit(form: FormGroup) {

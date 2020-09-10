@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { Itestimonial } from '../../../../../libs/models/src/lib/models'
 
 @Component({
   selector: 'cmuthyala-testimonies',
@@ -10,7 +11,7 @@ export class TestimoniesComponent implements OnInit {
   testimonyToggleText = 'VIEW MORE'
   testimonyToggleIcon = 'expand_more'
   note = 'Note: Loaded from LinkedIn recommendation section.'
-  testimonialsViewMore = [
+  testimonialsViewMore: Itestimonial[] = [
     {
       id: 'yasaswy',
       name: 'Yasaswy Aluri',
@@ -48,7 +49,7 @@ export class TestimoniesComponent implements OnInit {
       role: 'Product Manager',
     },
   ]
-  testimonials = [
+  testimonials: Itestimonial[] = [
     {
       id: 'timKing',
       name: 'Tim King',

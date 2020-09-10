@@ -57,6 +57,23 @@
         class AboutComponent {
           constructor(http) {
             this.http = http;
+            this.title = `About Me`;
+            this.aboutContent = `Results-driven senior software engineer with 5+ years of experience in
+                    development and a year of Experience in leading a team of 6 developers to
+                    deliver incremental value on multiple projects via an Agile Development
+                    Methodology. Expertise at scripting dialects on both client and server
+                    side. Capable at creating reusable solutions with object-oriented
+                    programming (OOP) concepts, strong understanding of Software Development
+                    Life Cycle (SDLC) with the ability to work from scratch in designing and
+                    developing web applications.`;
+            this.competencies = `Angular 7, ExpressJS,
+                  ES6, NodeJS, REST API, PHP, Python, AWS(EC2, S3, IAM, AWS Lambda
+                  Serverless, VPC, IaC, Redshift, Apache Airflow, EMR, Athena, and Amazon
+                  Glue), MySQL, NoSQL, MongoDB, D3JS, JIRA, Test Driven Development(TDD),
+                  Jasmin-Unit testing, Agile Development Methodology, SDLC, Scrum Meetings,
+                  Daily standups, Documenting the work.`;
+            this.highlightSummary = `=> Team Lead, Hackathon Winner, Online Certifications, Linkedin
+                      Recommendations.`;
           }
           ngOnInit() {}
         }
@@ -73,7 +90,7 @@
           type: AboutComponent,
           selectors: [["cmuthyala-about"]],
           decls: 16,
-          vars: 0,
+          vars: 4,
           consts: [
             [1, "cs-about-section"],
             [1, "example-large-box"],
@@ -108,20 +125,14 @@
                 "h1",
                 3
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                5,
-                "About Me"
-              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
                 6,
                 "p",
                 4
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                7,
-                " Results-driven senior software engineer with 5+ years of experience in development and a year of Experience in leading a team of 6 developers to deliver incremental value on multiple projects via an Agile Development Methodology. Expertise at scripting dialects on both client and server side. Capable at creating reusable solutions with object-oriented programming (OOP) concepts, strong understanding of Software Development Life Cycle (SDLC) with the ability to work from scratch in designing and developing web applications. "
-              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "br");
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "br");
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
@@ -134,19 +145,37 @@
                 "Competencies"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                12,
-                " : Angular 7, ExpressJS, ES6, NodeJS, REST API, PHP, Python, AWS(EC2, S3, IAM, AWS Lambda Serverless, VPC, IaC, Redshift, Apache Airflow, EMR, Athena, and Amazon Glue), MySQL, NoSQL, MongoDB, D3JS, JIRA, Test Driven Development(TDD), Jasmin-Unit testing, Agile Development Methodology, SDLC, Scrum Meetings, Daily standups, Documenting the work. "
-              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "br");
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "br");
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                15,
-                " => Team Lead, Hackathon Winner, Online Certifications, Linkedin Recommendations. "
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            }
+            if (rf & 2) {
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](
+                ctx.title
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](
+                " ",
+                ctx.aboutContent,
+                " "
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](
+                " : ",
+                ctx.competencies,
+                " "
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](
+                " ",
+                ctx.highlightSummary,
+                " "
+              );
             }
           },
           directives: [
@@ -571,7 +600,7 @@
         }
         class NgbdCarouselBasic {
           constructor() {
-            this.showNavigationArrows = false;
+            this.showNavigationArrows = true;
             this.showNavigationIndicators = true;
             this.images = [
               `./assets/carousal-image1.jpeg`,
@@ -1307,22 +1336,67 @@
         /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
           /*! @angular/material/card */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/card.js"
         );
-        /* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-          /*! @angular/material/divider */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/divider.js"
-        );
-        /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+        /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
           /*! @angular/common */ "../../node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js"
         );
+        /* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+          /*! @angular/material/divider */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/divider.js"
+        );
 
-        function CertificationsComponent_ng_container_47_Template(rf, ctx) {
+        function CertificationsComponent_ng_container_5_mat_divider_1_Template(
+          rf,
+          ctx
+        ) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
+              0,
+              "mat-divider",
+              11
+            );
+          }
+          if (rf & 2) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
+              "inset",
+              true
+            );
+          }
+        }
+        function CertificationsComponent_ng_container_5_a_10_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              0,
+              "a",
+              12
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
+              1,
+              "See credential"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          }
+          if (rf & 2) {
+            const cert_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵnextContext"
+            ]().$implicit;
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"](
+              "href",
+              cert_r2.url,
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]
+            );
+          }
+        }
+        function CertificationsComponent_ng_container_5_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__[
               "ɵɵelementContainerStart"
             ](0);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
+              1,
+              CertificationsComponent_ng_container_5_mat_divider_1_Template,
+              1,
               1,
               "mat-divider",
-              6
+              8
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
@@ -1332,371 +1406,31 @@
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
               4,
               "div",
-              10
+              9
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               5,
               "mat-card-title"
             );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              6,
-              "MEAN stack"
-            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               7,
               "mat-card-subtitle"
             );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              8,
-              "Udemy, Issued on August 2019, Credential ID: UC-U0Q0G9DN "
-            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               9,
               "p"
             );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
               10,
+              CertificationsComponent_ng_container_5_a_10_Template,
+              2,
+              1,
               "a",
-              15
+              10
             );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              11,
-              "See credential"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              12,
-              "mat-divider",
-              6
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "br");
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              14,
-              "mat-card-header"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              15,
-              "div",
-              16
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              16,
-              "mat-card-title"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              17,
-              "Gold Badge SQL"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              18,
-              "mat-card-subtitle"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              19,
-              "HackerRank, Issued on August 2019 "
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              20,
-              "p"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              21,
-              "a",
-              17
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              22,
-              "See credential"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              23,
-              "mat-divider",
-              6
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "br");
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              25,
-              "mat-card-header"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              26,
-              "div",
-              18
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              27,
-              "mat-card-title"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              28,
-              "Data Engineering Nanodegree"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              29,
-              "mat-card-subtitle"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              30,
-              "Udacity, Issued on April 2019, Credential ID: E9AU43CU "
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              31,
-              "p"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              32,
-              "a",
-              19
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              33,
-              "See credential"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              34,
-              "mat-divider",
-              6
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](35, "br");
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              36,
-              "mat-card-header"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              37,
-              "div",
-              20
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              38,
-              "mat-card-title"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              39,
-              "Introduction to Data Science in Python "
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              40,
-              "mat-card-subtitle"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              41,
-              "Coursera, By University of Michigan(Grade Achieved: 90.0%), Issued on March 2017 "
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              42,
-              "mat-divider",
-              6
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](43, "br");
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              44,
-              "mat-card-header"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              45,
-              "div",
-              20
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              46,
-              "mat-card-title"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              47,
-              "Python Data Structures "
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              48,
-              "mat-card-subtitle"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              49,
-              "Coursera, By University of Michigan(Grade Achieved: 100.0%), Issued on January 2017 "
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              50,
-              "mat-divider",
-              6
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](51, "br");
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              52,
-              "mat-card-header"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              53,
-              "div",
-              20
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              54,
-              "mat-card-title"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              55,
-              "Using Python to Access Web Data "
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              56,
-              "mat-card-subtitle"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              57,
-              "Coursera, By University of Michigan(Grade Achieved: 98.4%) , Issued on November 2016 "
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              58,
-              "mat-divider",
-              6
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](59, "br");
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              60,
-              "mat-card-header"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              61,
-              "div",
-              20
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              62,
-              "mat-card-title"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              63,
-              "Using Databases with Python"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              64,
-              "mat-card-subtitle"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              65,
-              "Coursera, By University of Michigan(Grade Achieved: 98.9%), Issued on December 2016 "
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              66,
-              "mat-divider",
-              6
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](67, "br");
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              68,
-              "mat-card-header"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              69,
-              "div",
-              21
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              70,
-              "mat-card-title"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              71,
-              "Certificate of Completion: Python Course"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              72,
-              "mat-card-subtitle"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              73,
-              "SoloLearn, Issued on November 2016, Credential ID: 1073-2777149 "
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              74,
-              "p"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              75,
-              "a",
-              22
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              76,
-              "See credential"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              77,
-              "mat-divider",
-              6
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](78, "br");
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              79,
-              "mat-card-header"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              80,
-              "div",
-              23
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              81,
-              "mat-card-title"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              82,
-              "HTML5 Animated Image Gallery"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              83,
-              "mat-card-subtitle"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              84,
-              "Eduonix Learning Solutions Pvt Ltd, Issued on May 2016, Credential ID: d163249f2d "
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              85,
-              "p"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              86,
-              "a",
-              24
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              87,
-              "See credential"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1705,58 +1439,289 @@
             ]();
           }
           if (rf & 2) {
+            const cert_r2 = ctx.$implicit;
+            const i_r3 = ctx.index;
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
+              "ngIf",
+              i_r3 > 0
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](
+              cert_r2.class
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](
+              cert_r2.title
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate3"](
+              "",
+              cert_r2.issuedby,
+              ", ",
+              cert_r2.date,
+              ", Credential ID: ",
+              cert_r2 == null ? null : cert_r2.credentials,
+              " "
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
+              "ngIf",
+              cert_r2 == null ? null : cert_r2.url
+            );
+          }
+        }
+        function CertificationsComponent_ng_container_6_ng_container_1_a_10_Template(
+          rf,
+          ctx
+        ) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              0,
+              "a",
+              12
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
+              1,
+              "See credential"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          }
+          if (rf & 2) {
+            const cert_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵnextContext"
+            ]().$implicit;
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"](
+              "href",
+              cert_r8.url,
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]
+            );
+          }
+        }
+        function CertificationsComponent_ng_container_6_ng_container_1_Template(
+          rf,
+          ctx
+        ) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵelementContainerStart"
+            ](0);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
+              1,
+              "mat-divider",
+              11
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              3,
+              "mat-card-header"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
+              4,
+              "div",
+              9
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              5,
+              "mat-card-title"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              7,
+              "mat-card-subtitle"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              9,
+              "p"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
+              10,
+              CertificationsComponent_ng_container_6_ng_container_1_a_10_Template,
+              2,
+              1,
+              "a",
+              10
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵelementContainerEnd"
+            ]();
+          }
+          if (rf & 2) {
+            const cert_r8 = ctx.$implicit;
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
               "inset",
               true
             );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
-              "inset",
-              true
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](
+              cert_r8.class
             );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
-              "inset",
-              true
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](
+              cert_r8.title
             );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
-              "inset",
-              true
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate3"](
+              "",
+              cert_r8.issuedby,
+              ", ",
+              cert_r8.date,
+              ", Credential ID: ",
+              cert_r8 == null ? null : cert_r8.credentials,
+              " "
             );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
-              "inset",
-              true
+              "ngIf",
+              cert_r8 == null ? null : cert_r8.url
             );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
-              "inset",
-              true
+          }
+        }
+        function CertificationsComponent_ng_container_6_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵelementContainerStart"
+            ](0);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
+              1,
+              CertificationsComponent_ng_container_6_ng_container_1_Template,
+              11,
+              9,
+              "ng-container",
+              4
             );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵelementContainerEnd"
+            ]();
+          }
+          if (rf & 2) {
+            const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵnextContext"
+            ]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
-              "inset",
-              true
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
-              "inset",
-              true
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
-              "inset",
-              true
+              "ngForOf",
+              ctx_r1.showMoreCertifications
             );
           }
         }
         class CertificationsComponent {
           constructor() {
+            this.title = `Certifications`;
             this.isCollapsed = false;
             this.certToggleText = "...show more";
             this.certToggleIcon = "expand_more";
+            this.showMoreCertifications = [
+              {
+                class: "udemy-header-image",
+                title: "MEAN stack",
+                issuedby: "Udemy",
+                date: "Issued on August 2019",
+                credentials: "UC-U0Q0G9DN",
+                url: "https://www.udemy.com/certificate/UC-U0Q0G9DN/",
+              },
+              {
+                class: "hackerrank-header-image",
+                title: "Gold Badge SQL",
+                issuedby: "HackerRank",
+                date: "Issued on August 2019",
+                credentials: "N/A",
+                url: "https://www.hackerrank.com/mchandrasekharr1",
+              },
+              {
+                class: "udacity-header-image",
+                title: "Data Engineering Nanodegree",
+                issuedby: "Udacity",
+                date: "Issued on April 2019",
+                credentials: "E9AU43CU",
+                url: "https://confirm.udacity.com/E9AU43CU",
+              },
+              {
+                class: "coursera-header-image",
+                title: "Python Data Structures ",
+                issuedby:
+                  "Coursera, By University of Michigan(Grade Achieved: 100.0%)",
+                date: "Issued on January 2017",
+                credentials: "N/A",
+              },
+              {
+                class: "coursera-header-image",
+                title: "Python Data Structures ",
+                issuedby:
+                  "Coursera, By University of Michigan(Grade Achieved: 100.0%)",
+                date: "Issued on January 2017",
+                credentials: "N/A",
+              },
+              {
+                class: "coursera-header-image",
+                title: "Using Databases with Python",
+                issuedby:
+                  "Coursera, By University of Michigan(Grade Achieved: 98.9%)",
+                date: "Issued on December 2016",
+                credentials: "N/A",
+              },
+              {
+                class: "sololearn-header-image",
+                title: "Certificate of Completion: Python Course",
+                issuedby: "SoloLearn",
+                date: "Issued on November 2016",
+                credentials: "073-2777149",
+                url: "http://www.sololearn.com/Profile/2777149/",
+              },
+              {
+                class: "eduonix-header-image",
+                title: "HTML5 Animated Image Gallery",
+                issuedby: "Eduonix Learning Solutions Pvt Ltd",
+                date: "Issued on May 2016",
+                credentials: "d163249f2d",
+                url: "https://www.eduonix.com/certificate/d163249f2d",
+              },
+            ];
+            this.certifications = [
+              {
+                class: "comptia-header-image",
+                title: "Google Cloud Platform Essential Training",
+                issuedby: "CompTIA",
+                date: "Issued on November 2019",
+                credentials: "AcZdHpPbzwgWvNFnn0buBN2yCEXG",
+                url:
+                  "http://www.linkedin.com/learning/google-cloud-platform-essential-training-3?trk=flagship-lil_details_certificati",
+              },
+              {
+                class: "aws-header-image",
+                title: "Introduction to Amazon API Gateway",
+                issuedby: "Amazon Web Services (AWS)",
+                date: " Issued on September 2019",
+                credentials: "S6bcLuyvAEaj2zWdKXkHTQ2",
+                url:
+                  "https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=S6bcLuyvAEaj2zWdKXkHTQ2",
+              },
+              {
+                class: "aws-header-image",
+                title: "Introduction to Amazon ElastiCache",
+                issuedby: "Amazon Web Services (AWS)",
+                date: "Issued on September 2019",
+                credentials: "y4CRFEispUS_2v3E8LXblw2",
+                url:
+                  "https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=y4CRFEispUS_2v3E8LXblw2",
+              },
+              {
+                class: "udemy-header-image",
+                title:
+                  "Web Design for Web Developers: Build Beautiful Websites!",
+                issuedby: "Udemy",
+                date: "Issued on September 2019",
+                credentials: "UC-W28IW9HK",
+                url:
+                  "https://www.udemy.com/certificate/UC-W28IW9HK/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email",
+              },
+            ];
           }
           ngOnInit() {}
           toggleViewMore() {
@@ -1779,79 +1744,22 @@
         ]({
           type: CertificationsComponent,
           selectors: [["cmuthyala-certifications"]],
-          decls: 51,
-          vars: 5,
+          decls: 10,
+          vars: 4,
           consts: [
             [1, "cm-cert-section"],
             [1, "cm-cert-main-div"],
             [1, "cert-title"],
             [1, "example-card"],
-            ["mat-card-avatar", "", 1, "comptia-header-image"],
-            [
-              "href",
-              "http://www.linkedin.com/learning/google-cloud-platform-essential-training-3?trk=flagship-lil_details_certification",
-              "target",
-              "_blank",
-            ],
-            [3, "inset"],
-            ["mat-card-avatar", "", 1, "aws-header-image"],
-            [
-              "href",
-              "https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=S6bcLuyvAEaj2zWdKXkHTQ2",
-              "target",
-              "_blank",
-            ],
-            [
-              "href",
-              "https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=y4CRFEispUS_2v3E8LXblw2",
-              "target",
-              "_blank",
-            ],
-            ["mat-card-avatar", "", 1, "udemy-header-image"],
-            [
-              "href",
-              "https://www.udemy.com/certificate/UC-W28IW9HK/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email",
-              "target",
-              "_blank",
-            ],
+            [4, "ngFor", "ngForOf"],
             [4, "ngIf"],
             [1, "seeMoreDiv"],
             [1, "seeMoreLink", 3, "click"],
-            [
-              "href",
-              "https://www.udemy.com/certificate/UC-U0Q0G9DN/",
-              "target",
-              "_blank",
-            ],
-            ["mat-card-avatar", "", 1, "hackerrank-header-image"],
-            [
-              "href",
-              "https://www.hackerrank.com/mchandrasekharr1",
-              "target",
-              "_blank",
-            ],
-            ["mat-card-avatar", "", 1, "udacity-header-image"],
-            [
-              "href",
-              "https://confirm.udacity.com/E9AU43CU",
-              "target",
-              "_blank",
-            ],
-            ["mat-card-avatar", "", 1, "coursera-header-image"],
-            ["mat-card-avatar", "", 1, "sololearn-header-image"],
-            [
-              "href",
-              "http://www.sololearn.com/Profile/2777149/",
-              "target",
-              "_blank",
-            ],
-            ["mat-card-avatar", "", 1, "eduonix-header-image"],
-            [
-              "href",
-              "https://www.eduonix.com/certificate/d163249f2d",
-              "target",
-              "_blank",
-            ],
+            [3, "inset", 4, "ngIf"],
+            ["mat-card-avatar", ""],
+            ["target", "_blank", 3, "href", 4, "ngIf"],
+            [3, "inset"],
+            ["target", "_blank", 3, "href"],
           ],
           template: function CertificationsComponent_Template(rf, ctx) {
             if (rf & 1) {
@@ -1870,231 +1778,46 @@
                 "h1",
                 2
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                3,
-                "Certifications"
-              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
                 4,
                 "mat-card",
                 3
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
                 5,
-                "mat-card-header"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                6,
-                "div",
+                CertificationsComponent_ng_container_5_Template,
+                11,
+                9,
+                "ng-container",
                 4
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
+                6,
+                CertificationsComponent_ng_container_6_Template,
+                2,
+                1,
+                "ng-container",
+                5
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
                 7,
-                "mat-card-title"
+                "div",
+                6
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
                 8,
-                "Google Cloud Platform Essential Training"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                9,
-                "mat-card-subtitle"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                10,
-                "CompTIA, Issued on November 2019, Credential ID:AcZdHpPbzwgWvNFnn0buBN2yCEXG "
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                11,
-                "p"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                12,
                 "a",
-                5
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                13,
-                "See credential"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                14,
-                "mat-divider",
-                6
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "br");
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                16,
-                "mat-card-header"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                17,
-                "div",
                 7
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                18,
-                "mat-card-title"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                19,
-                "Introduction to Amazon API Gateway"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                20,
-                "mat-card-subtitle"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                21,
-                "Amazon Web Services (AWS), Issued on September 2019, Credential ID:S6bcLuyvAEaj2zWdKXkHTQ2 "
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                22,
-                "p"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                23,
-                "a",
-                8
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                24,
-                "See credential"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                25,
-                "mat-divider",
-                6
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](26, "br");
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                27,
-                "mat-card-header"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                28,
-                "div",
-                7
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                29,
-                "mat-card-title"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                30,
-                "Introduction to Amazon ElastiCache"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                31,
-                "mat-card-subtitle"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                32,
-                "Amazon Web Services (AWS), Issued on September 2019, Credential ID: y4CRFEispUS_2v3E8LXblw2 "
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                33,
-                "p"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                34,
-                "a",
-                9
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                35,
-                "See credential"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                36,
-                "mat-divider",
-                6
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](37, "br");
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                38,
-                "mat-card-header"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                39,
-                "div",
-                10
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                40,
-                "mat-card-title"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                41,
-                "Web Design for Web Developers: Build Beautiful Websites!"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                42,
-                "mat-card-subtitle"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                43,
-                "Udemy, Issued on September 2019, Credential ID: UC-W28IW9HK "
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                44,
-                "p"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                45,
-                "a",
-                11
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                46,
-                "See credential "
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
-                47,
-                CertificationsComponent_ng_container_47_Template,
-                88,
-                9,
-                "ng-container",
-                12
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                48,
-                "div",
-                13
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                49,
-                "a",
-                14
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"](
                 "click",
-                function CertificationsComponent_Template_a_click_49_listener() {
+                function CertificationsComponent_Template_a_click_8_listener() {
                   return ctx.toggleViewMore();
                 }
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](50);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2102,22 +1825,16 @@
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             }
             if (rf & 2) {
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](14);
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
-                "inset",
-                true
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](
+                ctx.title
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
-                "inset",
-                true
+                "ngForOf",
+                ctx.certifications
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
-                "inset",
-                true
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
                 "ngIf",
                 ctx.isCollapsed == true
@@ -2132,6 +1849,8 @@
           },
           directives: [
             _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCard"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"],
             _angular_material_card__WEBPACK_IMPORTED_MODULE_1__[
               "MatCardHeader"
             ],
@@ -2142,10 +1861,9 @@
             _angular_material_card__WEBPACK_IMPORTED_MODULE_1__[
               "MatCardSubtitle"
             ],
-            _angular_material_divider__WEBPACK_IMPORTED_MODULE_2__[
+            _angular_material_divider__WEBPACK_IMPORTED_MODULE_3__[
               "MatDivider"
             ],
-            _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"],
           ],
           styles: [
             '.aws-header-image[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C4D0BAQGzuSBRRRuphw/company-logo_100_100/0?e=1606348800&v=beta&t=rpWlFUkYYQhzYCpHLek-N0rDYS8rTFLEkd4NJ4Y4x1s");\n  background-size: cover;\n}\n\n.comptia-header-image[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C560BAQERAz2JBkUHzw/company-logo_100_100/0?e=1606348800&v=beta&t=tPlaEE9fxaYSqimX7HNReR9wRzAX98maANzkH_n00jo");\n  background-size: cover;\n}\n\n.udemy-header-image[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C560BAQH0VNXBrdkklA/company-logo_100_100/0?e=1606348800&v=beta&t=49RhGZRxHDkRo3OkijZbZcisKJ9MWcR6lX8pAwH2h0o");\n  background-size: cover;\n}\n\n.hackerrank-header-image[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C560BAQHli6etYJTCrA/company-logo_100_100/0?e=1606348800&v=beta&t=ExDI961K-gQsEXZhWSL2qAaBJHiQCTUd8GSafRbUJIU");\n  background-size: cover;\n}\n\n.udacity-header-image[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C560BAQGSBVNHbqKIdA/company-logo_100_100/0?e=1606348800&v=beta&t=pkSDwNg9-t0x76TtdsNdWoVMeugN69gkPMwxDb5QyOs");\n  background-size: cover;\n}\n\n.coursera-header-image[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C4E0BAQGt72dvhq4yRA/company-logo_100_100/0?e=1606348800&v=beta&t=jTS6RyqIFzsmWlgoweNnjW7t9p5RiJ0mDCsWULx0TYg");\n  background-size: cover;\n}\n\n.sololearn-header-image[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C4E0BAQHXcZlXhNCAJg/company-logo_100_100/0?e=1606348800&v=beta&t=Vjd5t3vrQkeQpsUkdmGq9msyVbyhdS1tXBJLtBilEKU");\n  background-size: cover;\n}\n\n.eduonix-header-image[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C510BAQFkPgJZqd7XKw/company-logo_100_100/0?e=1606348800&v=beta&t=lelImTapwxhrhP3FoqVj9ykH-mZQy_tNsDPkOD9L7yA");\n  background-size: cover;\n}\n\n.seeMoreLink[_ngcontent-%COMP%] {\n  text-decoration: underline;\n  cursor: pointer;\n  font-style: italic;\n}\n\n.cm-cert-section[_ngcontent-%COMP%] {\n  padding: 1% 10%;\n}\n\n.cm-cert-main-div[_ngcontent-%COMP%] {\n  word-break: break-word;\n}\n\n.cert-title[_ngcontent-%COMP%] {\n  font-family: cursive;\n  letter-spacing: 1.5px;\n  line-height: normal;\n  font-size: 2.5rem;\n  font-weight: 500;\n  text-align: center;\n}\n\n.mat-card-header[_ngcontent-%COMP%]   .mat-card-title[_ngcontent-%COMP%] {\n  font-size: 1rem !important;\n  font-style: normal;\n  font-family: "Times New Roman", Times, serif;\n}\n\nmat-card-subtitle[_ngcontent-%COMP%] {\n  font-family: "Times New Roman", Times, serif;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvY2VydGlmaWNhdGlvbnMvY2VydGlmaWNhdGlvbnMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSw0S0FBQTtFQUNBLHNCQUFBO0FBQ0Y7O0FBQ0E7RUFDRSw0S0FBQTtFQUNBLHNCQUFBO0FBRUY7O0FBQ0E7RUFDRSw0S0FBQTtFQUNBLHNCQUFBO0FBRUY7O0FBQ0E7RUFDRSw0S0FBQTtFQUNBLHNCQUFBO0FBRUY7O0FBQUE7RUFDRSw0S0FBQTtFQUNBLHNCQUFBO0FBR0Y7O0FBREE7RUFDRSw0S0FBQTtFQUNBLHNCQUFBO0FBSUY7O0FBRkE7RUFDRSw0S0FBQTtFQUNBLHNCQUFBO0FBS0Y7O0FBSEE7RUFDRSw0S0FBQTtFQUNBLHNCQUFBO0FBTUY7O0FBSkE7RUFDRSwwQkFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtBQU9GOztBQUxBO0VBQ0UsZUFBQTtBQVFGOztBQU5BO0VBQ0Usc0JBQUE7QUFTRjs7QUFQQTtFQUNFLG9CQUFBO0VBQ0EscUJBQUE7RUFDQSxtQkFBQTtFQUNBLGlCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxrQkFBQTtBQVVGOztBQVJBO0VBQ0UsMEJBQUE7RUFDQSxrQkFBQTtFQUNBLDRDQUFBO0FBV0Y7O0FBVEE7RUFDRSw0Q0FBQTtBQVlGIiwiZmlsZSI6ImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvY2VydGlmaWNhdGlvbnMvY2VydGlmaWNhdGlvbnMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYXdzLWhlYWRlci1pbWFnZSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzREMEJBUUd6dVNCUlJSdXBody9jb21wYW55LWxvZ29fMTAwXzEwMC8wP2U9MTYwNjM0ODgwMCZ2PWJldGEmdD1ycFdsRlVrWVlRaHpZQ3BITGVrLU4wckRZUzhyVEZMRWtkNE5KNFk0eDFzJyk7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4uY29tcHRpYS1oZWFkZXItaW1hZ2Uge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJ2h0dHBzOi8vbWVkaWEtZXhwMS5saWNkbi5jb20vZG1zL2ltYWdlL0M1NjBCQVFFUkF6MkpCa1VIencvY29tcGFueS1sb2dvXzEwMF8xMDAvMD9lPTE2MDYzNDg4MDAmdj1iZXRhJnQ9dFBsYUVFOWZ4YVlTcWltWDdITlJlUjl3UnpBWDk4bWFBTnprSF9uMDBqbycpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuXG4udWRlbXktaGVhZGVyLWltYWdlIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCdodHRwczovL21lZGlhLWV4cDEubGljZG4uY29tL2Rtcy9pbWFnZS9DNTYwQkFRSDBWTlhCcmRra2xBL2NvbXBhbnktbG9nb18xMDBfMTAwLzA/ZT0xNjA2MzQ4ODAwJnY9YmV0YSZ0PTQ5UmhHWlJ4SERrUm8zT2tpalpiWmNpc0tKOU1XY1I2bFg4cEF3SDJoMG8nKTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cblxuLmhhY2tlcnJhbmstaGVhZGVyLWltYWdlIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCdodHRwczovL21lZGlhLWV4cDEubGljZG4uY29tL2Rtcy9pbWFnZS9DNTYwQkFRSGxpNmV0WUpUQ3JBL2NvbXBhbnktbG9nb18xMDBfMTAwLzA/ZT0xNjA2MzQ4ODAwJnY9YmV0YSZ0PUV4REk5NjFLLWdRc0VYWmhXU0wycUFhQkpIaVFDVFVkOEdTYWZSYlVKSVUnKTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cbi51ZGFjaXR5LWhlYWRlci1pbWFnZSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MEJBUUdTQlZOSGJxS0lkQS9jb21wYW55LWxvZ29fMTAwXzEwMC8wP2U9MTYwNjM0ODgwMCZ2PWJldGEmdD1wa1NEd05nOS10MHg3NlR0ZHNOZFdvVk1ldWdONjlna1BNd3hEYjVReU9zJyk7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4uY291cnNlcmEtaGVhZGVyLWltYWdlIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCdodHRwczovL21lZGlhLWV4cDEubGljZG4uY29tL2Rtcy9pbWFnZS9DNEUwQkFRR3Q3MmR2aHE0eVJBL2NvbXBhbnktbG9nb18xMDBfMTAwLzA/ZT0xNjA2MzQ4ODAwJnY9YmV0YSZ0PWpUUzZSeXFJRnpzbVdsZ293ZU5ualc3dDlwNVJpSjBtRENzV1VMeDBUWWcnKTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cbi5zb2xvbGVhcm4taGVhZGVyLWltYWdlIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCdodHRwczovL21lZGlhLWV4cDEubGljZG4uY29tL2Rtcy9pbWFnZS9DNEUwQkFRSFhjWmxYaE5DQUpnL2NvbXBhbnktbG9nb18xMDBfMTAwLzA/ZT0xNjA2MzQ4ODAwJnY9YmV0YSZ0PVZqZDV0M3ZyUWtlUXBzVWtkbUdxOW1zeVZieWhkUzF0WEJKTHRCaWxFS1UnKTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cbi5lZHVvbml4LWhlYWRlci1pbWFnZSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzUxMEJBUUZrUGdKWnFkN1hLdy9jb21wYW55LWxvZ29fMTAwXzEwMC8wP2U9MTYwNjM0ODgwMCZ2PWJldGEmdD1sZWxJbVRhcHd4aHJoUDNGb3FWajl5a0gtbVpReV90TnNEUGtPRDlMN3lBJyk7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4uc2VlTW9yZUxpbmsge1xuICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBmb250LXN0eWxlOiBpdGFsaWM7XG59XG4uY20tY2VydC1zZWN0aW9uIHtcbiAgcGFkZGluZzogMSUgMTAlO1xufVxuLmNtLWNlcnQtbWFpbi1kaXYge1xuICB3b3JkLWJyZWFrOiBicmVhay13b3JkO1xufVxuLmNlcnQtdGl0bGUge1xuICBmb250LWZhbWlseTogY3Vyc2l2ZTtcbiAgbGV0dGVyLXNwYWNpbmc6IDEuNXB4O1xuICBsaW5lLWhlaWdodDogbm9ybWFsO1xuICBmb250LXNpemU6IDIuNXJlbTtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLm1hdC1jYXJkLWhlYWRlciAubWF0LWNhcmQtdGl0bGUge1xuICBmb250LXNpemU6IDFyZW0gIWltcG9ydGFudDtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIFRpbWVzLCBzZXJpZjtcbn1cbm1hdC1jYXJkLXN1YnRpdGxlIHtcbiAgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBUaW1lcywgc2VyaWY7XG59XG4iXX0= */',
@@ -2209,17 +1927,79 @@
         /* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
           /*! @angular/material/input */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/input.js"
         );
-        /* harmony import */ var _angular_cdk_text_field__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+        /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+          /*! @angular/common */ "../../node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js"
+        );
+        /* harmony import */ var _angular_cdk_text_field__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
           /*! @angular/cdk/text-field */ "../../node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/text-field.js"
         );
-        /* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+        /* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
           /*! @angular/material/button */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js"
         );
 
+        function ContactFormComponent_mat_error_10_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              0,
+              "mat-error"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
+              1,
+              "* Required"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          }
+        }
+        function ContactFormComponent_mat_error_16_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              0,
+              "mat-error"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          }
+          if (rf & 2) {
+            const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵnextContext"
+            ]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](
+              ctx_r1.getErrorMessage()
+            );
+          }
+        }
+        function ContactFormComponent_mat_error_21_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              0,
+              "mat-error"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
+              1,
+              "* Required"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          }
+        }
+        function ContactFormComponent_mat_error_22_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              0,
+              "mat-error"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
+              1,
+              "* min required length 15"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          }
+        }
         class ContactFormComponent {
           constructor(fb, _snackBar) {
             this.fb = fb;
             this._snackBar = _snackBar;
+            this.title = `Contact me here`;
           }
           ngOnInit() {
             this.myForm = this.fb.group({
@@ -2248,6 +2028,14 @@
                 ],
               ],
             });
+          }
+          getErrorMessage() {
+            if (this.myForm.controls.email.hasError("required")) {
+              return "You must enter a value";
+            }
+            return this.myForm.controls.email.hasError("email")
+              ? "Not a valid email"
+              : "";
           }
           onSubmit(form) {
             if (this.myForm.valid) {
@@ -2279,8 +2067,8 @@
         ]({
           type: ContactFormComponent,
           selectors: [["cmuthyala-contact-form"]],
-          decls: 24,
-          vars: 2,
+          decls: 28,
+          vars: 7,
           consts: [
             [1, "contact-form-section"],
             [1, "contact-title"],
@@ -2298,6 +2086,7 @@
               "required",
               "",
             ],
+            [4, "ngIf"],
             [
               "matInput",
               "",
@@ -2317,7 +2106,7 @@
               "matInput",
               "",
               "placeholder",
-              "Ex. It makes me feel...",
+              "Leave a message what you feel about this website or if you need help in Angular 2+.",
               "formControlName",
               "message",
             ],
@@ -2337,10 +2126,7 @@
                 "h1",
                 1
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                2,
-                "Contact me here"
-              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
                 3,
@@ -2376,96 +2162,156 @@
                 "input",
                 6
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
                 10,
-                "div",
-                4
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                11,
-                "mat-form-field",
-                5
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                12,
-                "mat-label"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                13,
-                "Enter your email"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                14,
-                "input",
+                ContactFormComponent_mat_error_10_Template,
+                2,
+                0,
+                "mat-error",
                 7
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                15,
-                "mat-form-field",
-                8
+                11,
+                "div",
+                4
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                16,
+                12,
+                "mat-form-field",
+                5
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+                13,
                 "mat-label"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
+                14,
+                "Enter your email"
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
+                15,
+                "input",
+                8
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
+                16,
+                ContactFormComponent_mat_error_16_Template,
+                2,
+                1,
+                "mat-error",
+                7
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
                 17,
+                "mat-form-field",
+                9
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+                18,
+                "mat-label"
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
+                19,
                 "Leave a comment"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                18,
+                20,
                 "textarea",
-                9
+                10
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
+                21,
+                ContactFormComponent_mat_error_21_Template,
+                2,
+                0,
+                "mat-error",
+                7
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
+                22,
+                ContactFormComponent_mat_error_22_Template,
+                2,
+                0,
+                "mat-error",
+                7
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                19,
+                23,
                 "div",
-                10
+                11
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                20,
+                24,
                 "button",
-                11
+                12
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"](
                 "click",
-                function ContactFormComponent_Template_button_click_20_listener() {
+                function ContactFormComponent_Template_button_click_24_listener() {
                   return ctx.onSubmit(ctx.myForm);
                 }
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                21,
+                25,
                 " SUBMIT "
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                22,
+                26,
                 "div",
-                12
+                13
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                23,
+                27,
                 "section"
               );
             }
             if (rf & 2) {
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](
+                ctx.title
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
                 "formGroup",
                 ctx.myForm
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](16);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
+                "ngIf",
+                ctx.myForm.controls.name.invalid
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
+                "ngIf",
+                ctx.myForm.controls.email.invalid
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
+                "ngIf",
+                ctx.myForm.controls.message.errors == null
+                  ? null
+                  : ctx.myForm.controls.message.errors.required
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
+                "ngIf",
+                ctx.myForm.controls.message.errors == null
+                  ? null
+                  : ctx.myForm.controls.message.errors.minlength
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
                 "disabled",
                 !ctx.myForm.valid
@@ -2490,10 +2336,14 @@
             _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_1__["RequiredValidator"],
-            _angular_cdk_text_field__WEBPACK_IMPORTED_MODULE_6__[
+            _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"],
+            _angular_cdk_text_field__WEBPACK_IMPORTED_MODULE_7__[
               "CdkTextareaAutosize"
             ],
-            _angular_material_button__WEBPACK_IMPORTED_MODULE_7__["MatButton"],
+            _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButton"],
+            _angular_material_form_field__WEBPACK_IMPORTED_MODULE_4__[
+              "MatError"
+            ],
           ],
           styles: [
             "mat-form-field[_ngcontent-%COMP%] {\n  width: 100%;\n}\n\n.contact-form-section[_ngcontent-%COMP%] {\n  margin-top: 1rem;\n  background-repeat: no-repeat;\n  padding: 2%;\n}\n\n.mat-card-form[_ngcontent-%COMP%] {\n  padding: 2%;\n  width: 60%;\n  margin: auto;\n}\n\n.contact-title[_ngcontent-%COMP%] {\n  font-family: cursive;\n  letter-spacing: 1px;\n  line-height: normal;\n  font-size: 2.5rem;\n  font-weight: 500;\n  text-align: center;\n}\n\n.contact-help-text[_ngcontent-%COMP%] {\n  text-align: center;\n}\n\n.theme-switch[_ngcontent-%COMP%] {\n  float: right;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvY29udGFjdC1mb3JtL2NvbnRhY3QtZm9ybS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQUE7QUFDRjs7QUFDQTtFQUNFLGdCQUFBO0VBRUEsNEJBQUE7RUFDQSxXQUFBO0FBQ0Y7O0FBQ0E7RUFDRSxXQUFBO0VBQ0EsVUFBQTtFQUNBLFlBQUE7QUFFRjs7QUFBQTtFQUNFLG9CQUFBO0VBQ0EsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLGlCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxrQkFBQTtBQUdGOztBQURBO0VBRUUsa0JBQUE7QUFHRjs7QUFBQTtFQUNFLFlBQUE7QUFHRiIsImZpbGUiOiJhcHBzL3BvcnRmb2xpby9zcmMvYXBwL2NvbnRhY3QtZm9ybS9jb250YWN0LWZvcm0uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtZm9ybS1maWVsZCB7XG4gIHdpZHRoOiAxMDAlO1xufVxuLmNvbnRhY3QtZm9ybS1zZWN0aW9uIHtcbiAgbWFyZ2luLXRvcDogMXJlbTtcbiAgLy8gYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvY29udGFjdC1iZy1pbWFnZS5zdmcnKTtcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgcGFkZGluZzogMiU7XG59XG4ubWF0LWNhcmQtZm9ybSB7XG4gIHBhZGRpbmc6IDIlO1xuICB3aWR0aDogNjAlO1xuICBtYXJnaW46IGF1dG87XG59XG4uY29udGFjdC10aXRsZSB7XG4gIGZvbnQtZmFtaWx5OiBjdXJzaXZlO1xuICBsZXR0ZXItc3BhY2luZzogMXB4O1xuICBsaW5lLWhlaWdodDogbm9ybWFsO1xuICBmb250LXNpemU6IDIuNXJlbTtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLmNvbnRhY3QtaGVscC10ZXh0IHtcbiAgLy8gZm9udC1mYW1pbHk6IGN1cnNpdmU7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLnRoZW1lLXN3aXRjaCB7XG4gIGZsb2F0OiByaWdodDtcbn1cbiJdfQ== */",
@@ -2553,21 +2403,130 @@
         /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
           /*! @angular/core */ "../../node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js"
         );
-        /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+        /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+          /*! @angular/common */ "../../node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js"
+        );
+        /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
           /*! @angular/material/card */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/card.js"
         );
-        /* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+        /* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
           /*! @angular/material/button */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js"
         );
-        /* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+        /* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
           /*! @angular/material/icon */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/icon.js"
         );
-        /* harmony import */ var _angular_material_list__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+        /* harmony import */ var _angular_material_list__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
           /*! @angular/material/list */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/list.js"
         );
 
+        function EducationComponent_ng_container_4_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵelementContainerStart"
+            ](0);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              1,
+              "mat-card",
+              4
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              2,
+              "mat-card-header"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
+              3,
+              "div",
+              5
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              4,
+              "mat-card-title",
+              6
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              6,
+              "mat-card-subtitle"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              8,
+              "mat-card-actions"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              9,
+              "a",
+              7
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              10,
+              "button",
+              8
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, " VISIT ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              12,
+              "mat-icon",
+              9
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "launch");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵelementContainerEnd"
+            ]();
+          }
+          if (rf & 2) {
+            const college_r1 = ctx.$implicit;
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵclassMapInterpolate1"
+            ]("example-header-image ", college_r1.class, "");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](
+              college_r1.name
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](
+              "",
+              college_r1.degree,
+              ", ",
+              college_r1.cgpa,
+              ""
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"](
+              "href",
+              college_r1.url,
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]
+            );
+          }
+        }
         class EducationComponent {
-          constructor() {}
+          constructor() {
+            this.colleges = [
+              {
+                name: "Amrita University",
+                class: "amrita-header-image",
+                degree: "B.Tech in Computer Science",
+                cgpa: "CGPA: 7.67/10.0",
+                url: "https://www.amrita.edu/",
+              },
+              {
+                name: "Old Dominion University",
+                class: "odu-header-image",
+                degree: "Master's in Computer Science",
+                cgpa: "CGPA: 3.77/4.0",
+                url: "https://www.odu.edu/",
+              },
+            ];
+          }
           ngOnInit() {}
         }
         EducationComponent.ɵfac = function EducationComponent_Factory(t) {
@@ -2578,32 +2537,19 @@
         ]({
           type: EducationComponent,
           selectors: [["cmuthyala-education"]],
-          decls: 30,
-          vars: 0,
+          decls: 5,
+          vars: 1,
           consts: [
             [1, "cm-education-section"],
             [1, "cm-education-main-div"],
             [1, "education-title"],
+            [4, "ngFor", "ngForOf"],
             [1, "example-card", "col-md-6"],
-            [
-              "mat-card-avatar",
-              "",
-              1,
-              "example-header-image",
-              "amrita-header-image",
-            ],
+            ["mat-card-avatar", ""],
             [1, "card-title-size"],
-            ["href", "https://www.amrita.edu/", "target", "_blank"],
+            ["target", "_blank", 3, "href"],
             ["mat-button", "", "color", "primary"],
             ["mat-list-icon", ""],
-            [
-              "mat-card-avatar",
-              "",
-              1,
-              "example-header-image",
-              "odu-header-image",
-            ],
-            ["href", "https://www.odu.edu/", "target", "_blank"],
           ],
           template: function EducationComponent_Template(rf, ctx) {
             if (rf & 1) {
@@ -2627,165 +2573,49 @@
                 "Education"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
                 4,
-                "mat-card",
-                3
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                5,
-                "mat-card-header"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                6,
-                "div",
-                4
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                7,
-                "mat-card-title",
-                5
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                8,
-                "Amrita University"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                9,
-                "mat-card-subtitle"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                10,
-                "B.Tech in Computer Science, CGPA: 7.67/10.0"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                11,
-                "mat-card-actions"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                12,
-                "a",
-                6
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                13,
-                "button",
-                7
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
+                EducationComponent_ng_container_4_Template,
                 14,
-                " VISIT "
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                15,
-                "mat-icon",
-                8
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                16,
-                "launch"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                17,
-                "mat-card",
+                7,
+                "ng-container",
                 3
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                18,
-                "mat-card-header"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                19,
-                "div",
-                9
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                20,
-                "mat-card-title",
-                5
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                21,
-                "Old Dominion University"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                22,
-                "mat-card-subtitle"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                23,
-                "Master's in Computer Science, CGPA: 3.77/4.0"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                24,
-                "mat-card-actions"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                25,
-                "a",
-                10
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                26,
-                "button",
-                7
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                27,
-                " VISIT "
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                28,
-                "mat-icon",
-                8
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                29,
-                "launch"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             }
+            if (rf & 2) {
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
+                "ngForOf",
+                ctx.colleges
+              );
+            }
           },
           directives: [
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCard"],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_1__[
+            _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCard"],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_2__[
               "MatCardHeader"
             ],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_1__[
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_2__[
               "MatCardAvatar"
             ],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardTitle"],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_1__[
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardTitle"],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_2__[
               "MatCardSubtitle"
             ],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_1__[
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_2__[
               "MatCardActions"
             ],
-            _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButton"],
-            _angular_material_icon__WEBPACK_IMPORTED_MODULE_3__["MatIcon"],
-            _angular_material_list__WEBPACK_IMPORTED_MODULE_4__[
+            _angular_material_button__WEBPACK_IMPORTED_MODULE_3__["MatButton"],
+            _angular_material_icon__WEBPACK_IMPORTED_MODULE_4__["MatIcon"],
+            _angular_material_list__WEBPACK_IMPORTED_MODULE_5__[
               "MatListIconCssMatStyler"
             ],
           ],
           styles: [
-            ".example-card[_ngcontent-%COMP%] {\n  display: inline-block;\n  box-shadow: none;\n  font-family: \"Times New Roman\", Times, serif;\n}\n\n.cm-education-section[_ngcontent-%COMP%] {\n  padding: 1% 10%;\n  font-family: \"Times New Roman\", Times, serif;\n}\n\n.example-header-image[_ngcontent-%COMP%] {\n  background-image: url('odu-education-logo.png');\n  background-size: contain;\n  width: 5rem;\n  height: 5rem;\n}\n\n.amrita-header-image[_ngcontent-%COMP%] {\n  background-image: url('amrita-education-logo.png');\n}\n\n.odu-header-image[_ngcontent-%COMP%] {\n  background-image: url('odu-education-logo.png');\n}\n\n.education-title[_ngcontent-%COMP%] {\n  font-family: cursive;\n  letter-spacing: 1px;\n  line-height: normal;\n  font-size: 2.5rem;\n  font-weight: 500;\n  text-align: center;\n}\n\n.mat-card-title[_ngcontent-%COMP%] {\n  font-size: 1rem !important;\n  font-family: \"Times New Roman\", Times, serif;\n}\n\nexample-card[_ngcontent-%COMP%] {\n  padding: 0;\n}\n\nmat-card[_ngcontent-%COMP%] {\n  border-radius: 0px !important;\n}\n\nmat-icon[_ngcontent-%COMP%] {\n  font-size: 18px;\n}\n\nmat-card-actions[_ngcontent-%COMP%] {\n  float: right;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvZWR1Y2F0aW9uL2VkdWNhdGlvbi5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFBO0VBQ0EsZ0JBQUE7RUFDQSw0Q0FBQTtBQUNGOztBQUNBO0VBQ0UsZUFBQTtFQUNBLDRDQUFBO0FBRUY7O0FBQUE7RUFDRSwrQ0FBQTtFQUNBLHdCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7QUFHRjs7QUFBQTtFQUNFLGtEQUFBO0FBR0Y7O0FBREE7RUFDRSwrQ0FBQTtBQUlGOztBQUZBO0VBQ0Usb0JBQUE7RUFDQSxtQkFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0FBS0Y7O0FBSEE7RUFDRSwwQkFBQTtFQUNBLDRDQUFBO0FBTUY7O0FBSkE7RUFDRSxVQUFBO0FBT0Y7O0FBTEE7RUFDRSw2QkFBQTtBQVFGOztBQU5BO0VBQ0UsZUFBQTtBQVNGOztBQVBBO0VBQ0UsWUFBQTtBQVVGIiwiZmlsZSI6ImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvZWR1Y2F0aW9uL2VkdWNhdGlvbi5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5leGFtcGxlLWNhcmQge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGJveC1zaGFkb3c6IG5vbmU7XG4gIGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgVGltZXMsIHNlcmlmO1xufVxuLmNtLWVkdWNhdGlvbi1zZWN0aW9uIHtcbiAgcGFkZGluZzogMSUgMTAlO1xuICBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIFRpbWVzLCBzZXJpZjtcbn1cbi5leGFtcGxlLWhlYWRlci1pbWFnZSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL29kdS1lZHVjYXRpb24tbG9nby5wbmcnKTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb250YWluO1xuICB3aWR0aDogNXJlbTtcbiAgaGVpZ2h0OiA1cmVtO1xufVxuXG4uYW1yaXRhLWhlYWRlci1pbWFnZSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2Ftcml0YS1lZHVjYXRpb24tbG9nby5wbmcnKTtcbn1cbi5vZHUtaGVhZGVyLWltYWdlIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvb2R1LWVkdWNhdGlvbi1sb2dvLnBuZycpO1xufVxuLmVkdWNhdGlvbi10aXRsZSB7XG4gIGZvbnQtZmFtaWx5OiBjdXJzaXZlO1xuICBsZXR0ZXItc3BhY2luZzogMXB4O1xuICBsaW5lLWhlaWdodDogbm9ybWFsO1xuICBmb250LXNpemU6IDIuNXJlbTtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLm1hdC1jYXJkLXRpdGxlIHtcbiAgZm9udC1zaXplOiAxcmVtICFpbXBvcnRhbnQ7XG4gIGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgVGltZXMsIHNlcmlmO1xufVxuZXhhbXBsZS1jYXJkIHtcbiAgcGFkZGluZzogMDtcbn1cbm1hdC1jYXJkIHtcbiAgYm9yZGVyLXJhZGl1czogMHB4ICFpbXBvcnRhbnQ7XG59XG5tYXQtaWNvbiB7XG4gIGZvbnQtc2l6ZTogMThweDtcbn1cbm1hdC1jYXJkLWFjdGlvbnMge1xuICBmbG9hdDogcmlnaHQ7XG59XG4iXX0= */",
+            '.example-card[_ngcontent-%COMP%] {\n  display: inline-block;\n  box-shadow: none;\n  font-family: "Times New Roman", Times, serif;\n  box-shadow: none !important;\n}\n\n.cm-education-section[_ngcontent-%COMP%] {\n  padding: 1% 10%;\n  font-family: "Times New Roman", Times, serif;\n}\n\n.example-header-image[_ngcontent-%COMP%] {\n  background-size: contain;\n  width: 5rem;\n  height: 5rem;\n}\n\n.amrita-header-image[_ngcontent-%COMP%] {\n  background-image: url(\'amrita-education-logo.png\');\n}\n\n.odu-header-image[_ngcontent-%COMP%] {\n  background-image: url(\'odu-education-logo.png\');\n}\n\n.education-title[_ngcontent-%COMP%] {\n  font-family: cursive;\n  letter-spacing: 1px;\n  line-height: normal;\n  font-size: 2.5rem;\n  font-weight: 500;\n  text-align: center;\n}\n\n.mat-card-title[_ngcontent-%COMP%] {\n  font-size: 1rem !important;\n  font-family: "Times New Roman", Times, serif;\n}\n\nmat-card[_ngcontent-%COMP%] {\n  border-radius: 0px !important;\n}\n\nmat-icon[_ngcontent-%COMP%] {\n  font-size: 18px;\n}\n\nmat-card-actions[_ngcontent-%COMP%] {\n  float: right;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvZWR1Y2F0aW9uL2VkdWNhdGlvbi5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFBO0VBQ0EsZ0JBQUE7RUFDQSw0Q0FBQTtFQUNBLDJCQUFBO0FBQ0Y7O0FBQ0E7RUFDRSxlQUFBO0VBQ0EsNENBQUE7QUFFRjs7QUFBQTtFQUNFLHdCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7QUFHRjs7QUFBQTtFQUNFLGtEQUFBO0FBR0Y7O0FBREE7RUFDRSwrQ0FBQTtBQUlGOztBQUZBO0VBQ0Usb0JBQUE7RUFDQSxtQkFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0FBS0Y7O0FBSEE7RUFDRSwwQkFBQTtFQUNBLDRDQUFBO0FBTUY7O0FBSkE7RUFDRSw2QkFBQTtBQU9GOztBQUxBO0VBQ0UsZUFBQTtBQVFGOztBQU5BO0VBQ0UsWUFBQTtBQVNGIiwiZmlsZSI6ImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvZWR1Y2F0aW9uL2VkdWNhdGlvbi5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5leGFtcGxlLWNhcmQge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGJveC1zaGFkb3c6IG5vbmU7XG4gIGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgVGltZXMsIHNlcmlmO1xuICBib3gtc2hhZG93OiBub25lICFpbXBvcnRhbnQ7XG59XG4uY20tZWR1Y2F0aW9uLXNlY3Rpb24ge1xuICBwYWRkaW5nOiAxJSAxMCU7XG4gIGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgVGltZXMsIHNlcmlmO1xufVxuLmV4YW1wbGUtaGVhZGVyLWltYWdlIHtcbiAgYmFja2dyb3VuZC1zaXplOiBjb250YWluO1xuICB3aWR0aDogNXJlbTtcbiAgaGVpZ2h0OiA1cmVtO1xufVxuXG4uYW1yaXRhLWhlYWRlci1pbWFnZSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2Ftcml0YS1lZHVjYXRpb24tbG9nby5wbmcnKTtcbn1cbi5vZHUtaGVhZGVyLWltYWdlIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvb2R1LWVkdWNhdGlvbi1sb2dvLnBuZycpO1xufVxuLmVkdWNhdGlvbi10aXRsZSB7XG4gIGZvbnQtZmFtaWx5OiBjdXJzaXZlO1xuICBsZXR0ZXItc3BhY2luZzogMXB4O1xuICBsaW5lLWhlaWdodDogbm9ybWFsO1xuICBmb250LXNpemU6IDIuNXJlbTtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLm1hdC1jYXJkLXRpdGxlIHtcbiAgZm9udC1zaXplOiAxcmVtICFpbXBvcnRhbnQ7XG4gIGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgVGltZXMsIHNlcmlmO1xufVxubWF0LWNhcmQge1xuICBib3JkZXItcmFkaXVzOiAwcHggIWltcG9ydGFudDtcbn1cbm1hdC1pY29uIHtcbiAgZm9udC1zaXplOiAxOHB4O1xufVxubWF0LWNhcmQtYWN0aW9ucyB7XG4gIGZsb2F0OiByaWdodDtcbn1cbiJdfQ== */',
           ],
         });
         /*@__PURE__*/ (function () {
@@ -3534,7 +3364,7 @@
             _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"],
           ],
           styles: [
-            '.experience-mat-card-main[_ngcontent-%COMP%] {\n  padding: 0px;\n  box-shadow: none;\n}\n\n.highmark-header-image[_ngcontent-%COMP%] {\n  background-image: url(\'highmark.png\');\n  background-size: cover;\n}\n\n.odu-header-image[_ngcontent-%COMP%] {\n  background-image: url(\'odu-experience-logo.jpeg\');\n  background-size: cover;\n}\n\n.synopsys-header-image[_ngcontent-%COMP%] {\n  background-image: url("https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/57d2df1c11f0e8a619b79d84c88c042e");\n  background-size: cover;\n}\n\n.experience-section[_ngcontent-%COMP%] {\n  padding-top: 1%;\n  padding-right: 10%;\n  padding-bottom: 1%;\n  padding-left: 10%;\n}\n\n.experience-content[_ngcontent-%COMP%] {\n  line-height: 1.5rem;\n  font-size: 1rem;\n  font-style: normal;\n  font-family: "Times New Roman", Times, serif;\n}\n\n.experience-title[_ngcontent-%COMP%] {\n  font-family: cursive;\n  letter-spacing: 2px;\n  line-height: normal;\n  font-size: 2.5rem;\n  font-weight: 500;\n  text-align: center;\n}\n\n.seeMoreLink[_ngcontent-%COMP%] {\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n.mat-card-header[_ngcontent-%COMP%]   .mat-card-title[_ngcontent-%COMP%] {\n  font-size: 1rem !important;\n  font-style: normal;\n  font-family: "Times New Roman", Times, serif;\n}\n\n.mat-vertical-content[_ngcontent-%COMP%] {\n  font-family: "Times New Roman", Times, serif;\n  padding: 0 24px 0px 24px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvZXhwZXJpZW5jZS9leHBlcmllbmNlLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBR0UsWUFBQTtFQUNBLGdCQUFBO0FBREY7O0FBR0E7RUFDRSxxQ0FBQTtFQUNBLHNCQUFBO0FBQUY7O0FBRUE7RUFDRSxpREFBQTtFQUNBLHNCQUFBO0FBQ0Y7O0FBQ0E7RUFDRSw2R0FBQTtFQUNBLHNCQUFBO0FBRUY7O0FBQ0E7RUFDRSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtFQUNBLGlCQUFBO0FBRUY7O0FBQUE7RUFDRSxtQkFBQTtFQUVBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLDRDQUFBO0FBRUY7O0FBQUE7RUFDRSxvQkFBQTtFQUNBLG1CQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7QUFHRjs7QUFEQTtFQUNFLDBCQUFBO0VBQ0EsZUFBQTtBQUlGOztBQURBO0VBQ0UsMEJBQUE7RUFDQSxrQkFBQTtFQUNBLDRDQUFBO0FBSUY7O0FBREE7RUFFRSw0Q0FBQTtFQUNBLHdCQUFBO0FBR0YiLCJmaWxlIjoiYXBwcy9wb3J0Zm9saW8vc3JjL2FwcC9leHBlcmllbmNlL2V4cGVyaWVuY2UuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwZXJpZW5jZS1tYXQtY2FyZC1tYWluIHtcbiAgLy8gZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBUaW1lcywgc2VyaWY7XG4gIC8vIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgcGFkZGluZzogMHB4O1xuICBib3gtc2hhZG93OiBub25lO1xufVxuLmhpZ2htYXJrLWhlYWRlci1pbWFnZSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2hpZ2htYXJrLnBuZycpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuLm9kdS1oZWFkZXItaW1hZ2Uge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9vZHUtZXhwZXJpZW5jZS1sb2dvLmpwZWcnKTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cbi5zeW5vcHN5cy1oZWFkZXItaW1hZ2Uge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJ2h0dHBzOi8vZDJxNzlpdTd5NzQ4anouY2xvdWRmcm9udC5uZXQvcy9fc3F1YXJlbG9nby81N2QyZGYxYzExZjBlOGE2MTliNzlkODRjODhjMDQyZScpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuXG4uZXhwZXJpZW5jZS1zZWN0aW9uIHtcbiAgcGFkZGluZy10b3A6IDElO1xuICBwYWRkaW5nLXJpZ2h0OiAxMCU7XG4gIHBhZGRpbmctYm90dG9tOiAxJTtcbiAgcGFkZGluZy1sZWZ0OiAxMCU7XG59XG4uZXhwZXJpZW5jZS1jb250ZW50IHtcbiAgbGluZS1oZWlnaHQ6IDEuNXJlbTtcbiAgLy8gZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBUaW1lcywgc2VyaWY7XG4gIGZvbnQtc2l6ZTogMXJlbTtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIFRpbWVzLCBzZXJpZjtcbn1cbi5leHBlcmllbmNlLXRpdGxlIHtcbiAgZm9udC1mYW1pbHk6IGN1cnNpdmU7XG4gIGxldHRlci1zcGFjaW5nOiAycHg7XG4gIGxpbmUtaGVpZ2h0OiBub3JtYWw7XG4gIGZvbnQtc2l6ZTogMi41cmVtO1xuICBmb250LXdlaWdodDogNTAwO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4uc2VlTW9yZUxpbmsge1xuICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4ubWF0LWNhcmQtaGVhZGVyIC5tYXQtY2FyZC10aXRsZSB7XG4gIGZvbnQtc2l6ZTogMXJlbSAhaW1wb3J0YW50O1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgVGltZXMsIHNlcmlmO1xufVxuXG4ubWF0LXZlcnRpY2FsLWNvbnRlbnQge1xuICAvLyBwYWRkaW5nOiAwcHggIWltcG9ydGFudDtcbiAgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBUaW1lcywgc2VyaWY7XG4gIHBhZGRpbmc6IDAgMjRweCAwcHggMjRweDtcbn1cbiJdfQ== */',
+            '.experience-mat-card-main[_ngcontent-%COMP%] {\n  padding: 0px;\n  box-shadow: none !important;\n  border-left: 3px solid #f38230;\n}\n\n.highmark-header-image[_ngcontent-%COMP%] {\n  background-image: url(\'highmark.png\');\n  background-size: cover;\n}\n\n.odu-header-image[_ngcontent-%COMP%] {\n  background-image: url(\'odu-experience-logo.jpeg\');\n  background-size: cover;\n}\n\n.synopsys-header-image[_ngcontent-%COMP%] {\n  background-image: url("https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/57d2df1c11f0e8a619b79d84c88c042e");\n  background-size: cover;\n}\n\n.experience-section[_ngcontent-%COMP%] {\n  padding-top: 1%;\n  padding-right: 10%;\n  padding-bottom: 1%;\n  padding-left: 10%;\n}\n\n.experience-content[_ngcontent-%COMP%] {\n  line-height: 1.5rem;\n  font-size: 1rem;\n  font-style: normal;\n  font-family: "Times New Roman", Times, serif;\n}\n\n.experience-title[_ngcontent-%COMP%] {\n  font-family: cursive;\n  letter-spacing: 2px;\n  line-height: normal;\n  font-size: 2.5rem;\n  font-weight: 500;\n  text-align: center;\n}\n\n.seeMoreLink[_ngcontent-%COMP%] {\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n.mat-card-header[_ngcontent-%COMP%]   .mat-card-title[_ngcontent-%COMP%] {\n  font-size: 1rem !important;\n  font-style: normal;\n  font-family: "Times New Roman", Times, serif;\n}\n\n.mat-vertical-content[_ngcontent-%COMP%] {\n  font-family: "Times New Roman", Times, serif;\n  padding: 0 24px 0px 24px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvZXhwZXJpZW5jZS9leHBlcmllbmNlLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBR0UsWUFBQTtFQUNBLDJCQUFBO0VBQ0EsOEJBQUE7QUFERjs7QUFHQTtFQUNFLHFDQUFBO0VBQ0Esc0JBQUE7QUFBRjs7QUFFQTtFQUNFLGlEQUFBO0VBQ0Esc0JBQUE7QUFDRjs7QUFDQTtFQUNFLDZHQUFBO0VBQ0Esc0JBQUE7QUFFRjs7QUFDQTtFQUNFLGVBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7QUFFRjs7QUFBQTtFQUNFLG1CQUFBO0VBRUEsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsNENBQUE7QUFFRjs7QUFBQTtFQUNFLG9CQUFBO0VBQ0EsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLGlCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxrQkFBQTtBQUdGOztBQURBO0VBQ0UsMEJBQUE7RUFDQSxlQUFBO0FBSUY7O0FBREE7RUFDRSwwQkFBQTtFQUNBLGtCQUFBO0VBQ0EsNENBQUE7QUFJRjs7QUFEQTtFQUVFLDRDQUFBO0VBQ0Esd0JBQUE7QUFHRiIsImZpbGUiOiJhcHBzL3BvcnRmb2xpby9zcmMvYXBwL2V4cGVyaWVuY2UvZXhwZXJpZW5jZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5leHBlcmllbmNlLW1hdC1jYXJkLW1haW4ge1xuICAvLyBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIFRpbWVzLCBzZXJpZjtcbiAgLy8gZm9udC1zdHlsZTogaXRhbGljO1xuICBwYWRkaW5nOiAwcHg7XG4gIGJveC1zaGFkb3c6IG5vbmUgIWltcG9ydGFudDtcbiAgYm9yZGVyLWxlZnQ6IDNweCBzb2xpZCAjZjM4MjMwO1xufVxuLmhpZ2htYXJrLWhlYWRlci1pbWFnZSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2hpZ2htYXJrLnBuZycpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuLm9kdS1oZWFkZXItaW1hZ2Uge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9vZHUtZXhwZXJpZW5jZS1sb2dvLmpwZWcnKTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cbi5zeW5vcHN5cy1oZWFkZXItaW1hZ2Uge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJ2h0dHBzOi8vZDJxNzlpdTd5NzQ4anouY2xvdWRmcm9udC5uZXQvcy9fc3F1YXJlbG9nby81N2QyZGYxYzExZjBlOGE2MTliNzlkODRjODhjMDQyZScpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuXG4uZXhwZXJpZW5jZS1zZWN0aW9uIHtcbiAgcGFkZGluZy10b3A6IDElO1xuICBwYWRkaW5nLXJpZ2h0OiAxMCU7XG4gIHBhZGRpbmctYm90dG9tOiAxJTtcbiAgcGFkZGluZy1sZWZ0OiAxMCU7XG59XG4uZXhwZXJpZW5jZS1jb250ZW50IHtcbiAgbGluZS1oZWlnaHQ6IDEuNXJlbTtcbiAgLy8gZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBUaW1lcywgc2VyaWY7XG4gIGZvbnQtc2l6ZTogMXJlbTtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIFRpbWVzLCBzZXJpZjtcbn1cbi5leHBlcmllbmNlLXRpdGxlIHtcbiAgZm9udC1mYW1pbHk6IGN1cnNpdmU7XG4gIGxldHRlci1zcGFjaW5nOiAycHg7XG4gIGxpbmUtaGVpZ2h0OiBub3JtYWw7XG4gIGZvbnQtc2l6ZTogMi41cmVtO1xuICBmb250LXdlaWdodDogNTAwO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4uc2VlTW9yZUxpbmsge1xuICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4ubWF0LWNhcmQtaGVhZGVyIC5tYXQtY2FyZC10aXRsZSB7XG4gIGZvbnQtc2l6ZTogMXJlbSAhaW1wb3J0YW50O1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgVGltZXMsIHNlcmlmO1xufVxuXG4ubWF0LXZlcnRpY2FsLWNvbnRlbnQge1xuICAvLyBwYWRkaW5nOiAwcHggIWltcG9ydGFudDtcbiAgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBUaW1lcywgc2VyaWY7XG4gIHBhZGRpbmc6IDAgMjRweCAwcHggMjRweDtcbn1cbiJdfQ== */',
           ],
         });
         /*@__PURE__*/ (function () {
@@ -3659,7 +3489,7 @@
             _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCard"],
           ],
           styles: [
-            ".footer-section-main[_ngcontent-%COMP%] {\n  padding: 2rem 0rem;\n  width: 100%;\n  background-color: #a5d6ed;\n  color: black;\n  text-align: center;\n}\n\n.footer-section[_ngcontent-%COMP%] {\n  left: 0;\n  bottom: 0;\n  font-size: 1.5rem;\n  color: black;\n  font-family: cursive;\n  letter-spacing: 2px;\n}\n\n.p-quote[_ngcontent-%COMP%] {\n  font-size: 1rem;\n  font-style: italic;\n  text-align: center;\n  color: black;\n}\n\nmat-card[_ngcontent-%COMP%] {\n  box-shadow: none;\n  border-radius: 0rem;\n  padding: 0em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLHlCQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0FBQ0Y7O0FBQ0E7RUFDRSxPQUFBO0VBQ0EsU0FBQTtFQUNBLGlCQUFBO0VBQ0EsWUFBQTtFQUNBLG9CQUFBO0VBQ0EsbUJBQUE7QUFFRjs7QUFBQTtFQUVFLGVBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtBQUVGOztBQUFBO0VBQ0UsZ0JBQUE7RUFDQSxtQkFBQTtFQUNBLFlBQUE7QUFHRiIsImZpbGUiOiJhcHBzL3BvcnRmb2xpby9zcmMvYXBwL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9vdGVyLXNlY3Rpb24tbWFpbiB7XG4gIHBhZGRpbmc6IDJyZW0gMHJlbTtcbiAgd2lkdGg6IDEwMCU7XG4gIGJhY2tncm91bmQtY29sb3I6ICNhNWQ2ZWQ7XG4gIGNvbG9yOiBibGFjaztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLmZvb3Rlci1zZWN0aW9uIHtcbiAgbGVmdDogMDtcbiAgYm90dG9tOiAwO1xuICBmb250LXNpemU6IDEuNXJlbTtcbiAgY29sb3I6IGJsYWNrO1xuICBmb250LWZhbWlseTogY3Vyc2l2ZTtcbiAgbGV0dGVyLXNwYWNpbmc6IDJweDtcbn1cbi5wLXF1b3RlIHtcbiAgLy8gZm9udC1mYW1pbHk6IFwiVGltZXMgTmV3IFJvbWFuXCIsIFRpbWVzLCBzZXJpZjtcbiAgZm9udC1zaXplOiAxcmVtO1xuICBmb250LXN0eWxlOiBpdGFsaWM7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6IGJsYWNrO1xufVxubWF0LWNhcmQge1xuICBib3gtc2hhZG93OiBub25lO1xuICBib3JkZXItcmFkaXVzOiAwcmVtO1xuICBwYWRkaW5nOiAwZW07XG59XG4iXX0= */",
+            '.footer-section-main[_ngcontent-%COMP%] {\n  padding: 2rem 0rem;\n  width: 100%;\n  background-color: #a5d6ed;\n  color: black;\n  text-align: center;\n}\n\n.footer-section[_ngcontent-%COMP%] {\n  left: 0;\n  bottom: 0;\n  font-size: 1.5rem;\n  font-family: cursive;\n  letter-spacing: 2px;\n}\n\n.p-quote[_ngcontent-%COMP%] {\n  font-family: "Times New Roman", Times, serif;\n  font-size: 1rem;\n  font-style: italic;\n  text-align: center;\n  color: black;\n}\n\nmat-card[_ngcontent-%COMP%] {\n  box-shadow: none;\n  border-radius: 0rem;\n  padding: 0em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLHlCQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0FBQ0Y7O0FBQ0E7RUFDRSxPQUFBO0VBQ0EsU0FBQTtFQUNBLGlCQUFBO0VBRUEsb0JBQUE7RUFDQSxtQkFBQTtBQUNGOztBQUNBO0VBQ0UsNENBQUE7RUFDQSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7QUFFRjs7QUFBQTtFQUNFLGdCQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0FBR0YiLCJmaWxlIjoiYXBwcy9wb3J0Zm9saW8vc3JjL2FwcC9mb290ZXIvZm9vdGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvb3Rlci1zZWN0aW9uLW1haW4ge1xuICBwYWRkaW5nOiAycmVtIDByZW07XG4gIHdpZHRoOiAxMDAlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjYTVkNmVkO1xuICBjb2xvcjogYmxhY2s7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5mb290ZXItc2VjdGlvbiB7XG4gIGxlZnQ6IDA7XG4gIGJvdHRvbTogMDtcbiAgZm9udC1zaXplOiAxLjVyZW07XG4gIC8vIGNvbG9yOiBibGFjaztcbiAgZm9udC1mYW1pbHk6IGN1cnNpdmU7XG4gIGxldHRlci1zcGFjaW5nOiAycHg7XG59XG4ucC1xdW90ZSB7XG4gIGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgVGltZXMsIHNlcmlmO1xuICBmb250LXNpemU6IDFyZW07XG4gIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogYmxhY2s7XG59XG5tYXQtY2FyZCB7XG4gIGJveC1zaGFkb3c6IG5vbmU7XG4gIGJvcmRlci1yYWRpdXM6IDByZW07XG4gIHBhZGRpbmc6IDBlbTtcbn1cbiJdfQ== */',
           ],
         });
         /*@__PURE__*/ (function () {
@@ -3711,50 +3541,53 @@
         /* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
           /*! @angular/material/sidenav */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/sidenav.js"
         );
-        /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+        /* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+          /*! @angular/material/toolbar */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/toolbar.js"
+        );
+        /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
           /*! @angular/material/card */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/card.js"
         );
-        /* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+        /* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
           /*! @angular/material/button */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js"
         );
-        /* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+        /* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
           /*! @angular/material/icon */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/icon.js"
         );
-        /* harmony import */ var _angular_material_list__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+        /* harmony import */ var _angular_material_list__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
           /*! @angular/material/list */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/list.js"
         );
-        /* harmony import */ var _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+        /* harmony import */ var _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
           /*! @angular/material/slide-toggle */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/slide-toggle.js"
         );
-        /* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+        /* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
           /*! @angular/material/tabs */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/tabs.js"
         );
-        /* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+        /* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
           /*! ../about/about.component */ "./src/app/about/about.component.ts"
         );
-        /* harmony import */ var _education_education_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+        /* harmony import */ var _education_education_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
           /*! ../education/education.component */ "./src/app/education/education.component.ts"
         );
-        /* harmony import */ var _experience_experience_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+        /* harmony import */ var _experience_experience_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
           /*! ../experience/experience.component */ "./src/app/experience/experience.component.ts"
         );
-        /* harmony import */ var _certifications_certifications_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+        /* harmony import */ var _certifications_certifications_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
           /*! ../certifications/certifications.component */ "./src/app/certifications/certifications.component.ts"
         );
-        /* harmony import */ var _testimonies_testimonies_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+        /* harmony import */ var _testimonies_testimonies_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
           /*! ../testimonies/testimonies.component */ "./src/app/testimonies/testimonies.component.ts"
         );
-        /* harmony import */ var _contact_form_contact_form_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+        /* harmony import */ var _contact_form_contact_form_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
           /*! ../contact-form/contact-form.component */ "./src/app/contact-form/contact-form.component.ts"
         );
-        /* harmony import */ var _social_media_social_media_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+        /* harmony import */ var _social_media_social_media_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
           /*! ../social-media/social-media.component */ "./src/app/social-media/social-media.component.ts"
         );
-        /* harmony import */ var _projects_projects_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+        /* harmony import */ var _projects_projects_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
           /*! ../projects/projects.component */ "./src/app/projects/projects.component.ts"
         );
 
-        function HeaderComponent_ng_template_20_Template(rf, ctx) {
+        function HeaderComponent_ng_template_19_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               0,
@@ -3766,7 +3599,7 @@
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Home ");
           }
         }
-        function HeaderComponent_ng_template_29_Template(rf, ctx) {
+        function HeaderComponent_ng_template_28_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               0,
@@ -3784,7 +3617,7 @@
             );
           }
         }
-        function HeaderComponent_ng_template_32_Template(rf, ctx) {
+        function HeaderComponent_ng_template_31_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               0,
@@ -3799,7 +3632,7 @@
             );
           }
         }
-        function HeaderComponent_ng_template_35_Template(rf, ctx) {
+        function HeaderComponent_ng_template_34_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               0,
@@ -3817,7 +3650,7 @@
             );
           }
         }
-        function HeaderComponent_ng_template_38_Template(rf, ctx) {
+        function HeaderComponent_ng_template_37_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               0,
@@ -3832,7 +3665,7 @@
             );
           }
         }
-        function HeaderComponent_ng_template_41_Template(rf, ctx) {
+        function HeaderComponent_ng_template_40_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               0,
@@ -3883,7 +3716,7 @@
         ]({
           type: HeaderComponent,
           selectors: [["cmuthyala-header"]],
-          decls: 43,
+          decls: 42,
           vars: 1,
           consts: [
             [1, "example-card", "top-header-bacground-image"],
@@ -3891,7 +3724,7 @@
               "mat-card-avatar",
               "",
               "src",
-              "assets/dp-1.jpg",
+              "assets/dp-2.png",
               1,
               "example-header-image",
             ],
@@ -3919,7 +3752,7 @@
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
                 2,
-                "mat-card",
+                "mat-toolbar",
                 0
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
@@ -4002,137 +3835,136 @@
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "br");
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                18,
+                17,
                 "mat-tab-group",
                 8
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                19,
+                18,
                 "mat-tab",
                 9
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
-                20,
-                HeaderComponent_ng_template_20_Template,
+                19,
+                HeaderComponent_ng_template_19_Template,
                 3,
                 0,
                 "ng-template",
                 10
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                21,
+                20,
                 "cmuthyala-about"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                22,
+                21,
                 "cmuthyala-education"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                23,
+                22,
                 "cmuthyala-experience"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                24,
+                23,
                 "cmuthyala-certifications"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                25,
+                24,
                 "cmuthyala-testimonies"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                26,
+                25,
                 "cmuthyala-contact-form"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                27,
+                26,
                 "cmuthyala-social-media"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                28,
+                27,
                 "mat-tab"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
-                29,
-                HeaderComponent_ng_template_29_Template,
+                28,
+                HeaderComponent_ng_template_28_Template,
                 3,
                 0,
                 "ng-template",
                 10
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                30,
+                29,
                 "cmuthyala-education"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                31,
+                30,
                 "mat-tab"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
-                32,
-                HeaderComponent_ng_template_32_Template,
+                31,
+                HeaderComponent_ng_template_31_Template,
                 3,
                 0,
                 "ng-template",
                 10
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                33,
+                32,
                 "cmuthyala-experience"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                34,
+                33,
                 "mat-tab"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
-                35,
-                HeaderComponent_ng_template_35_Template,
+                34,
+                HeaderComponent_ng_template_34_Template,
                 3,
                 0,
                 "ng-template",
                 10
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                36,
+                35,
                 "cmuthyala-projects"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                37,
+                36,
                 "mat-tab"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
-                38,
-                HeaderComponent_ng_template_38_Template,
+                37,
+                HeaderComponent_ng_template_37_Template,
                 3,
                 0,
                 "ng-template",
                 10
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                39,
+                38,
                 "cmuthyala-certifications"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                40,
+                39,
                 "mat-tab"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
-                41,
-                HeaderComponent_ng_template_41_Template,
+                40,
+                HeaderComponent_ng_template_40_Template,
                 3,
                 0,
                 "ng-template",
                 10
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                42,
+                41,
                 "cmuthyala-testimonies"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -4152,55 +3984,57 @@
             _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_2__[
               "MatSidenavContainer"
             ],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCard"],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_3__[
+            _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_3__[
+              "MatToolbar"
+            ],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_4__[
               "MatCardHeader"
             ],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_3__[
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_4__[
               "MatCardAvatar"
             ],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardTitle"],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_3__[
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_4__["MatCardTitle"],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_4__[
               "MatCardSubtitle"
             ],
-            _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButton"],
-            _angular_material_icon__WEBPACK_IMPORTED_MODULE_5__["MatIcon"],
-            _angular_material_list__WEBPACK_IMPORTED_MODULE_6__[
+            _angular_material_button__WEBPACK_IMPORTED_MODULE_5__["MatButton"],
+            _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__["MatIcon"],
+            _angular_material_list__WEBPACK_IMPORTED_MODULE_7__[
               "MatListIconCssMatStyler"
             ],
-            _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_7__[
+            _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_8__[
               "MatSlideToggle"
             ],
-            _angular_material_tabs__WEBPACK_IMPORTED_MODULE_8__["MatTabGroup"],
-            _angular_material_tabs__WEBPACK_IMPORTED_MODULE_8__["MatTab"],
-            _angular_material_tabs__WEBPACK_IMPORTED_MODULE_8__["MatTabLabel"],
-            _about_about_component__WEBPACK_IMPORTED_MODULE_9__[
+            _angular_material_tabs__WEBPACK_IMPORTED_MODULE_9__["MatTabGroup"],
+            _angular_material_tabs__WEBPACK_IMPORTED_MODULE_9__["MatTab"],
+            _angular_material_tabs__WEBPACK_IMPORTED_MODULE_9__["MatTabLabel"],
+            _about_about_component__WEBPACK_IMPORTED_MODULE_10__[
               "AboutComponent"
             ],
-            _education_education_component__WEBPACK_IMPORTED_MODULE_10__[
+            _education_education_component__WEBPACK_IMPORTED_MODULE_11__[
               "EducationComponent"
             ],
-            _experience_experience_component__WEBPACK_IMPORTED_MODULE_11__[
+            _experience_experience_component__WEBPACK_IMPORTED_MODULE_12__[
               "ExperienceComponent"
             ],
-            _certifications_certifications_component__WEBPACK_IMPORTED_MODULE_12__[
+            _certifications_certifications_component__WEBPACK_IMPORTED_MODULE_13__[
               "CertificationsComponent"
             ],
-            _testimonies_testimonies_component__WEBPACK_IMPORTED_MODULE_13__[
+            _testimonies_testimonies_component__WEBPACK_IMPORTED_MODULE_14__[
               "TestimoniesComponent"
             ],
-            _contact_form_contact_form_component__WEBPACK_IMPORTED_MODULE_14__[
+            _contact_form_contact_form_component__WEBPACK_IMPORTED_MODULE_15__[
               "ContactFormComponent"
             ],
-            _social_media_social_media_component__WEBPACK_IMPORTED_MODULE_15__[
+            _social_media_social_media_component__WEBPACK_IMPORTED_MODULE_16__[
               "SocialMediaComponent"
             ],
-            _projects_projects_component__WEBPACK_IMPORTED_MODULE_16__[
+            _projects_projects_component__WEBPACK_IMPORTED_MODULE_17__[
               "ProjectsComponent"
             ],
           ],
           styles: [
-            '.top-header-bacground-image[_ngcontent-%COMP%] {\n  border-radius: 0px !important;\n  font-family: "Times New Roman", Times, serif;\n}\n\n.mat-card-avatar[_ngcontent-%COMP%] {\n  height: 50px;\n  width: 50px;\n  border-radius: 50%;\n  flex-shrink: 0;\n  object-fit: cover;\n}\n\nmat-icon[_ngcontent-%COMP%] {\n  margin-right: 5px;\n}\n\n.mat-global[_ngcontent-%COMP%] {\n  padding: 0;\n  border-radius: 0rem;\n  box-shadow: none;\n}\n\n.theme-switch-div[_ngcontent-%COMP%] {\n  float: right;\n}\n\n.example-spacer[_ngcontent-%COMP%] {\n  flex: 1 1 auto;\n}\n\n.theme-switch-btn[_ngcontent-%COMP%] {\n  padding: 0rem;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUVFLDZCQUFBO0VBU0EsNENBQUE7QUFSRjs7QUFhQTtFQUNFLFlBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7RUFDQSxjQUFBO0VBQ0EsaUJBQUE7QUFWRjs7QUFhQTtFQUNFLGlCQUFBO0FBVkY7O0FBWUE7RUFDRSxVQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtBQVRGOztBQVdBO0VBQ0UsWUFBQTtBQVJGOztBQVVBO0VBQ0UsY0FBQTtBQVBGOztBQVNBO0VBQ0UsYUFBQTtBQU5GIiwiZmlsZSI6ImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi50b3AtaGVhZGVyLWJhY2dyb3VuZC1pbWFnZSB7XG4gIC8vIGJveC1zaGFkb3c6IG5vbmUgIWltcG9ydGFudDtcbiAgYm9yZGVyLXJhZGl1czogMHB4ICFpbXBvcnRhbnQ7XG4gIC8vIGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudChcbiAgLy8gICB0byBsZWZ0LFxuICAvLyAgICNkZmY3YmQsXG4gIC8vICAgIzQwZjJlYyxcbiAgLy8gICAjYWRkMmVkLFxuICAvLyAgICNmZmIyZmZcbiAgLy8gKTtcbiAgLy8gY29sb3I6IGJsYWNrO1xuICBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIFRpbWVzLCBzZXJpZjtcbn1cbi5wb3NpdGlvbiB7XG4gIC8vIGNvbG9yOiBibGFjaztcbn1cbi5tYXQtY2FyZC1hdmF0YXIge1xuICBoZWlnaHQ6IDUwcHg7XG4gIHdpZHRoOiA1MHB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGZsZXgtc2hyaW5rOiAwO1xuICBvYmplY3QtZml0OiBjb3Zlcjtcbn1cblxubWF0LWljb24ge1xuICBtYXJnaW4tcmlnaHQ6IDVweDtcbn1cbi5tYXQtZ2xvYmFsIHtcbiAgcGFkZGluZzogMDtcbiAgYm9yZGVyLXJhZGl1czogMHJlbTtcbiAgYm94LXNoYWRvdzogbm9uZTtcbn1cbi50aGVtZS1zd2l0Y2gtZGl2IHtcbiAgZmxvYXQ6IHJpZ2h0O1xufVxuLmV4YW1wbGUtc3BhY2VyIHtcbiAgZmxleDogMSAxIGF1dG87XG59XG4udGhlbWUtc3dpdGNoLWJ0biB7XG4gIHBhZGRpbmc6IDByZW07XG59XG4vLyB1c2VkIGZvciBkYXJrIHRoZW1lXG4vLyBiYWNrZ3JvdW5kLWNvbG9yOiAjNDQ0NDQ0ICFpbXBvcnRhbnQ7XG4iXX0= */',
+            '.top-header-bacground-image[_ngcontent-%COMP%] {\n  border-radius: 0px !important;\n  padding-top: 20px;\n  background-color: #a5d6ed;\n  color: black;\n  font-family: "Times New Roman", Times, serif;\n}\n\n.position[_ngcontent-%COMP%] {\n  color: black;\n}\n\n.mat-card-avatar[_ngcontent-%COMP%] {\n  height: 50px;\n  width: 50px;\n  border-radius: 50%;\n  flex-shrink: 0;\n  object-fit: cover;\n}\n\nmat-icon[_ngcontent-%COMP%] {\n  margin-right: 5px;\n}\n\n.mat-global[_ngcontent-%COMP%] {\n  padding: 0;\n  border-radius: 0rem;\n  box-shadow: none;\n}\n\n.theme-switch-div[_ngcontent-%COMP%] {\n  float: right;\n}\n\n.example-spacer[_ngcontent-%COMP%] {\n  flex: 1 1 auto;\n}\n\n.theme-switch-btn[_ngcontent-%COMP%] {\n  padding: 0rem;\n}\n\n.mat-card-header[_ngcontent-%COMP%]   .mat-card-title[_ngcontent-%COMP%] {\n  margin-bottom: 0rem;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUVFLDZCQUFBO0VBQ0EsaUJBQUE7RUFDQSx5QkFBQTtFQVFBLFlBQUE7RUFDQSw0Q0FBQTtBQVBGOztBQVNBO0VBQ0UsWUFBQTtBQU5GOztBQVFBO0VBQ0UsWUFBQTtFQUNBLFdBQUE7RUFDQSxrQkFBQTtFQUNBLGNBQUE7RUFDQSxpQkFBQTtBQUxGOztBQVFBO0VBQ0UsaUJBQUE7QUFMRjs7QUFPQTtFQUNFLFVBQUE7RUFDQSxtQkFBQTtFQUNBLGdCQUFBO0FBSkY7O0FBTUE7RUFDRSxZQUFBO0FBSEY7O0FBS0E7RUFDRSxjQUFBO0FBRkY7O0FBSUE7RUFDRSxhQUFBO0FBREY7O0FBTUE7RUFDRSxtQkFBQTtBQUhGIiwiZmlsZSI6ImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi50b3AtaGVhZGVyLWJhY2dyb3VuZC1pbWFnZSB7XG4gIC8vIGJveC1zaGFkb3c6IG5vbmUgIWltcG9ydGFudDtcbiAgYm9yZGVyLXJhZGl1czogMHB4ICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmctdG9wOiAyMHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjYTVkNmVkO1xuICAvLyBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQoXG4gIC8vICAgdG8gbGVmdCxcbiAgLy8gICAjZGZmN2JkLFxuICAvLyAgICM0MGYyZWMsXG4gIC8vICAgI2FkZDJlZCxcbiAgLy8gICAjZmZiMmZmXG4gIC8vICk7XG4gIGNvbG9yOiBibGFjaztcbiAgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBUaW1lcywgc2VyaWY7XG59XG4ucG9zaXRpb24ge1xuICBjb2xvcjogYmxhY2s7XG59XG4ubWF0LWNhcmQtYXZhdGFyIHtcbiAgaGVpZ2h0OiA1MHB4O1xuICB3aWR0aDogNTBweDtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICBmbGV4LXNocmluazogMDtcbiAgb2JqZWN0LWZpdDogY292ZXI7XG59XG5cbm1hdC1pY29uIHtcbiAgbWFyZ2luLXJpZ2h0OiA1cHg7XG59XG4ubWF0LWdsb2JhbCB7XG4gIHBhZGRpbmc6IDA7XG4gIGJvcmRlci1yYWRpdXM6IDByZW07XG4gIGJveC1zaGFkb3c6IG5vbmU7XG59XG4udGhlbWUtc3dpdGNoLWRpdiB7XG4gIGZsb2F0OiByaWdodDtcbn1cbi5leGFtcGxlLXNwYWNlciB7XG4gIGZsZXg6IDEgMSBhdXRvO1xufVxuLnRoZW1lLXN3aXRjaC1idG4ge1xuICBwYWRkaW5nOiAwcmVtO1xufVxuLy8gdXNlZCBmb3IgZGFyayB0aGVtZVxuLy8gYmFja2dyb3VuZC1jb2xvcjogIzQ0NDQ0NCAhaW1wb3J0YW50O1xuXG4ubWF0LWNhcmQtaGVhZGVyIC5tYXQtY2FyZC10aXRsZSB7XG4gIG1hcmdpbi1ib3R0b206IDByZW07XG59XG4iXX0= */',
           ],
         });
         /*@__PURE__*/ (function () {
@@ -4727,17 +4561,17 @@
         /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
           /*! @angular/core */ "../../node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js"
         );
-        /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-          /*! @angular/material/card */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/card.js"
+        /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+          /*! @angular/common */ "../../node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js"
         );
         /* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
           /*! @angular/material/button */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js"
         );
-        /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-          /*! @angular/common */ "../../node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js"
+        /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+          /*! @angular/material/card */ "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/card.js"
         );
 
-        function TestimoniesComponent_ng_container_35_Template(rf, ctx) {
+        function TestimoniesComponent_ng_container_6_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__[
               "ɵɵelementContainerStart"
@@ -4745,28 +4579,25 @@
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               1,
               "mat-card",
-              3
+              8
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               2,
               "mat-card",
-              15
+              9
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               3,
               "mat-card-content",
-              5
+              10
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               4,
               "p",
-              6
+              11
             );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "i", 7);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              6,
-              " He was my peer when i was working in Synopsys banglore. He is very hardworking and can adapt to the existing system in very faster way. He played a key role in optimizing the VCS incremental build issues. Wish you all the best for furture endeavours \uD83D\uDE01 "
-            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "i", 12);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
@@ -4776,137 +4607,19 @@
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
               8,
               "div",
-              16
+              13
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               9,
               "mat-card-title"
             );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              10,
-              "Yasaswy Aluri"
-            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               11,
               "mat-card-subtitle"
             );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              12,
-              "Sr Data Analyst at Synopsys Inc"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              13,
-              "mat-card",
-              3
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              14,
-              "mat-card",
-              17
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              15,
-              "mat-card-content"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              16,
-              "p",
-              6
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "i", 7);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              18,
-              " I coached a student hackathon, where Chandra and his teammates did an outstanding job working together and ultimately placing in the competition. Chandra was focused and adaptable during this high stress time, and was a pleasure to work with! I would highly recommend Chandra in any position, because he worked so well within a team, and was always open to suggestion for the project! "
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              19,
-              "mat-card-header"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              20,
-              "div",
-              18
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              21,
-              "mat-card-title"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              22,
-              "Kristen Carros"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              23,
-              "mat-card-subtitle"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              24,
-              "Cloud Software Engineer at Cloudreach"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              25,
-              "mat-card",
-              3
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              26,
-              "mat-card",
-              19
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              27,
-              "mat-card-content"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              28,
-              "p",
-              6
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](29, "i", 7);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              30,
-              " I had the pleasure of serving as Chandra's coach during the 2018 Dominion Enterprises Hackathon. Through out the Hackathon, Chandra stayed focused and collaborated with his team to deliver a great product. I was particularly impressed Chandra's ability remain calm while being under such a short turn around time for his project. With his assistance his team took home the third place prize. I would highly recommend Chandra and would welcome the opportunity to work with him again in the future. "
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              31,
-              "mat-card-header"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-              32,
-              "div",
-              20
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              33,
-              "mat-card-title"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              34,
-              "Justin Russell"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-              35,
-              "mat-card-subtitle"
-            );
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-              36,
-              "Product Manager"
-            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -4915,12 +4628,224 @@
               "ɵɵelementContainerEnd"
             ]();
           }
+          if (rf & 2) {
+            const item_r2 = ctx.$implicit;
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"](
+              "id",
+              item_r2.id
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](
+              " ",
+              item_r2.content,
+              " "
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](
+              item_r2.class
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](
+              item_r2.name
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](
+              item_r2.role
+            );
+          }
+        }
+        function TestimoniesComponent_ng_container_12_ng_container_1_Template(
+          rf,
+          ctx
+        ) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵelementContainerStart"
+            ](0);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              1,
+              "mat-card",
+              8
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              2,
+              "mat-card",
+              9
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              3,
+              "mat-card-content",
+              10
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              4,
+              "p",
+              11
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "i", 12);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              7,
+              "mat-card-header"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
+              8,
+              "div",
+              13
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              9,
+              "mat-card-title"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              11,
+              "mat-card-subtitle"
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵelementContainerEnd"
+            ]();
+          }
+          if (rf & 2) {
+            const item_r4 = ctx.$implicit;
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"](
+              "id",
+              item_r4.id
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](
+              " ",
+              item_r4.content,
+              " "
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](
+              item_r4.class
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](
+              item_r4.name
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](
+              item_r4.role
+            );
+          }
+        }
+        function TestimoniesComponent_ng_container_12_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵelementContainerStart"
+            ](0);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
+              1,
+              TestimoniesComponent_ng_container_12_ng_container_1_Template,
+              13,
+              7,
+              "ng-container",
+              3
+            );
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵelementContainerEnd"
+            ]();
+          }
+          if (rf & 2) {
+            const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__[
+              "ɵɵnextContext"
+            ]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
+              "ngForOf",
+              ctx_r1.testimonialsViewMore
+            );
+          }
         }
         class TestimoniesComponent {
           constructor() {
             this.isCollapsed = false;
             this.testimonyToggleText = "VIEW MORE";
             this.testimonyToggleIcon = "expand_more";
+            this.note = "Note: Loaded from LinkedIn recommendation section.";
+            this.testimonialsViewMore = [
+              {
+                id: "yasaswy",
+                name: "Yasaswy Aluri",
+                content: ` He was my peer when i was working in Synopsys banglore. He is very
+    hardworking and can adapt to the existing system in very faster way.
+    He played a key role in optimizing the VCS incremental build issues.
+    Wish you all the best for furture endeavours 😁`,
+                class: "yasaswy-img",
+                role: "Sr Data Analyst at Synopsys Inc",
+              },
+              {
+                id: "kristen",
+                name: "Kristen Carros",
+                content: ` I coached a student hackathon, where Chandra and his teammates did
+    an outstanding job working together and ultimately placing in the
+    competition. Chandra was focused and adaptable during this high
+    stress time, and was a pleasure to work with! I would highly
+    recommend Chandra in any position, because he worked so well within
+    a team, and was always open to suggestion for the project!`,
+                class: "kristen-img",
+                role: "Cloud Software Engineer at Cloudreach",
+              },
+              {
+                id: "justin",
+                name: "Justin Russell",
+                content: `I had the pleasure of serving as Chandra's coach during the 2018
+    Dominion Enterprises Hackathon. Through out the Hackathon, Chandra
+    stayed focused and collaborated with his team to deliver a great
+    product. I was particularly impressed Chandra's ability remain calm
+    while being under such a short turn around time for his project.
+    With his assistance his team took home the third place prize. I
+    would highly recommend Chandra and would welcome the opportunity to
+    work with him again in the future.`,
+                class: "justin-img",
+                role: "Product Manager",
+              },
+            ];
+            this.testimonials = [
+              {
+                id: "timKing",
+                name: "Tim King",
+                content: `I currently work with Chandrasekhar (Chandu) on the same team at
+      Highmark Health. It has been my pleasure to work along side him on
+      multiple projects. With every project or task that Chandu has been
+      assigned, he makes it his personal business to master the technologies
+      involved. This is particularly noteworthy as our team requires true,
+      full-stack, expertise. Chandu has successfully completed work in a
+      variety of platforms and languages ranging from nodejs and google
+      cloud, to sql and java. Chandu is extremely hard working, and learns
+      very quickly. He would be a tremendous addition to any software
+      development team.`,
+                class: "timKing-img",
+                role: "Software Engineer at Highmark Health",
+              },
+              {
+                id: "jyothi",
+                name: "Jyothi Gummadi",
+                content: ` Chandrasekhar is focused, calm and committed and is a great addition
+      to any team. He worked with me on a collaboration project for the
+      Center of Learning and Teaching in Old Dominion University. He quickly
+      established himself as an invaluable member and came up with several
+      fresh ideas at the meetings that we successfully implemented. A
+      confident and friendly co-worker, Chandrasekhar is popular with his
+      colleagues and stakeholders alike and has a real passion and
+      enthusiasm for the software industry.`,
+                class: "jyothi-img",
+                role: "Senior Delivery Data Analyst at ConnectYourCare",
+              },
+            ];
           }
           ngOnInit() {}
           toggleViewMore() {
@@ -4941,20 +4866,13 @@
         ]({
           type: TestimoniesComponent,
           selectors: [["cmuthyala-testimonies"]],
-          decls: 36,
-          vars: 3,
+          decls: 13,
+          vars: 5,
           consts: [
             [1, "testimonial-section"],
             [1, "testimonial-title"],
             [1, "p-note"],
-            [1, "mat-card-border"],
-            ["id", "timKing", 1, "mat-card-1"],
-            [1, "mat-card-content-style"],
-            [1, "p-text"],
-            ["aria-hidden", "true", 1, "fa", "fa-quote-left"],
-            ["mat-card-avatar", "", 1, "timKing-img"],
-            ["id", "jyothi", 1, "mat-card-1", "left-side"],
-            ["mat-card-avatar", "", 1, "jyothi-img"],
+            [4, "ngFor", "ngForOf"],
             [1, "viewMoreButtonDiv"],
             [
               "mat-button",
@@ -4968,12 +4886,12 @@
             ],
             [1, "material-icons"],
             [4, "ngIf"],
-            ["id", "yasaswy", 1, "mat-card-1"],
-            ["mat-card-avatar", "", 1, "yasaswy-img"],
-            ["id", "kristen", 1, "mat-card-1", "left-side"],
-            ["mat-card-avatar", "", 1, "kristen-img"],
-            ["id", "justin", 1, "mat-card-1"],
-            ["mat-card-avatar", "", 1, "justin-img"],
+            [1, "mat-card-border"],
+            [1, "mat-card-1", 3, "id"],
+            [1, "mat-card-content-style"],
+            [1, "p-text"],
+            ["aria-hidden", "true", 1, "fa", "fa-quote-left"],
+            ["mat-card-avatar", ""],
           ],
           template: function TestimoniesComponent_Template(rf, ctx) {
             if (rf & 1) {
@@ -5001,172 +4919,64 @@
                 "p",
                 2
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                5,
-                "Note: Loaded from LinkedIn recommendation section."
-              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
                 6,
-                "mat-card",
+                TestimoniesComponent_ng_container_6_Template,
+                13,
+                7,
+                "ng-container",
                 3
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
                 7,
-                "mat-card",
+                "div",
                 4
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
                 8,
-                "mat-card-content",
-                5
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                9,
-                "p",
-                6
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                10,
-                "i",
-                7
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                11,
-                " I currently work with Chandrasekhar (Chandu) on the same team at Highmark Health. It has been my pleasure to work along side him on multiple projects. With every project or task that Chandu has been assigned, he makes it his personal business to master the technologies involved. This is particularly noteworthy as our team requires true, full-stack, expertise. Chandu has successfully completed work in a variety of platforms and languages ranging from nodejs and google cloud, to sql and java. Chandu is extremely hard working, and learns very quickly. He would be a tremendous addition to any software development team. "
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                12,
-                "mat-card-header"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                13,
-                "div",
-                8
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                14,
-                "mat-card-title"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                15,
-                "Tim King"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                16,
-                "mat-card-subtitle"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                17,
-                "Software Engineer at Highmark Health"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                18,
-                "mat-card",
-                3
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                19,
-                "mat-card",
-                9
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                20,
-                "mat-card-content",
-                5
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                21,
-                "p",
-                6
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                22,
-                "i",
-                7
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                23,
-                " Chandrasekhar is focused, calm and committed and is a great addition to any team. He worked with me on a collaboration project for the Center of Learning and Teaching in Old Dominion University. He quickly established himself as an invaluable member and came up with several fresh ideas at the meetings that we successfully implemented. A confident and friendly co-worker, Chandrasekhar is popular with his colleagues and stakeholders alike and has a real passion and enthusiasm for the software industry. "
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                24,
-                "mat-card-header"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                25,
-                "div",
-                10
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                26,
-                "mat-card-title"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                27,
-                "Jyothi Gummadi"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                28,
-                "mat-card-subtitle"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                29,
-                "Senior Delivery Data Analyst at ConnectYourCare"
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                30,
-                "div",
-                11
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                31,
                 "button",
-                12
+                5
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"](
                 "click",
-                function TestimoniesComponent_Template_button_click_31_listener() {
+                function TestimoniesComponent_Template_button_click_8_listener() {
                   return ctx.toggleViewMore();
                 }
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                33,
+                10,
                 "i",
-                13
+                6
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
-                35,
-                TestimoniesComponent_ng_container_35_Template,
-                37,
-                0,
+                12,
+                TestimoniesComponent_ng_container_12_Template,
+                2,
+                1,
                 "ng-container",
-                14
+                7
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             }
             if (rf & 2) {
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](32);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](
+                ctx.note
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
+                "ngForOf",
+                ctx.testimonials
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](
                 " ",
                 ctx.testimonyToggleText,
@@ -5186,25 +4996,26 @@
             }
           },
           directives: [
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCard"],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_1__[
+            _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"],
+            _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButton"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCard"],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_3__[
               "MatCardContent"
             ],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_1__[
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_3__[
               "MatCardHeader"
             ],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_1__[
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_3__[
               "MatCardAvatar"
             ],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardTitle"],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_1__[
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardTitle"],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_3__[
               "MatCardSubtitle"
             ],
-            _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButton"],
-            _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"],
           ],
           styles: [
-            '.testimonial-section[_ngcontent-%COMP%] {\n  padding: 1% 10%;\n}\n\n.timKing-img[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C4D03AQFL3pM_d1LwPw/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=gO1mNe0OH-D4WvjZSFsC7K2odOdJeLwspj027NXF1Ek");\n  background-size: cover;\n}\n\n.justin-img[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C5603AQEjUj94UWR07g/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=ytYb8ad6B45tmy5Im1i_Fh0V6aEJDlnHcm30C-OgBGI");\n  background-size: cover;\n}\n\n.jyothi-img[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQGeg7xc94G5Lg/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=utf4iFKcUtjoCqNH30VyPbuqcjpvkHuVjTXjEO7-dzA");\n  background-size: cover;\n}\n\n.yasaswy-img[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C5103AQGcCrKRjLWQQg/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=IMoXkKMjg02eAk5SP75lPj_bfhOx6QBi2AEPph-EL70");\n  background-size: cover;\n}\n\n.kristen-img[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQE9GsQJK30m5w/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=U7qVwUZYWZ64gOvj5qqlNmiZUMM2U7tlUxH8dPwD_xM");\n  background-size: cover;\n}\n\n.mat-card-1[_ngcontent-%COMP%] {\n  background: inherit;\n  box-shadow: none !important;\n  border-top-left-radius: 10px;\n  border-top-right-radius: 10px;\n  padding: 0px;\n}\n\n.testimonial-mat-card-main[_ngcontent-%COMP%] {\n  display: grid;\n  box-shadow: none;\n  background: inherit;\n}\n\n.testimonial-title[_ngcontent-%COMP%] {\n  font-family: cursive;\n  line-height: normal;\n  font-size: 2.5rem;\n  font-weight: 500;\n  text-align: center;\n  margin-bottom: 0px;\n}\n\n.p-text[_ngcontent-%COMP%] {\n  line-height: 1.5rem;\n  padding: 1rem;\n  font-size: 1rem;\n  border-top-left-radius: 10px;\n  border-top-right-radius: 10px;\n  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;\n  font-family: "Times New Roman", Times, serif;\n}\n\n.viewMoreButton[_ngcontent-%COMP%] {\n  padding: 0.5rem;\n  border-radius: 3px;\n  font-size: 1rem;\n  transition: background 0.5s ease;\n}\n\n.arrow1[_ngcontent-%COMP%] {\n  margin-left: 10px;\n  color: #673ab7;\n  font-size: 30px;\n  animation: slide1 1s ease-in-out infinite;\n  margin-left: 9px;\n}\n\n@keyframes slide1 {\n  0%, 100% {\n    transform: translate(0, 0);\n  }\n  50% {\n    transform: translate(10px, 0);\n  }\n}\n\n.mat-card-border[_ngcontent-%COMP%] {\n  border: 1px solid lightgrey;\n  border-top-left-radius: 10px;\n  border-top-right-radius: 10px;\n  margin-bottom: 2%;\n  box-shadow: none !important;\n  padding: 0;\n}\n\n.p-note[_ngcontent-%COMP%] {\n  color: coral;\n  font-size: 0.6rem;\n  text-align: center;\n  margin: 0px;\n  font-family: "Times New Roman", Times, serif;\n}\n\n.mat-card-header[_ngcontent-%COMP%]   .mat-card-title[_ngcontent-%COMP%] {\n  font-size: 1rem !important;\n  font-style: normal;\n  font-family: "Times New Roman", Times, serif;\n}\n\nmat-card-subtitle[_ngcontent-%COMP%] {\n  font-family: "Times New Roman", Times, serif;\n}\n\nmat-card-header[_ngcontent-%COMP%] {\n  padding-left: 1rem !important;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvdGVzdGltb25pZXMvdGVzdGltb25pZXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxlQUFBO0FBQ0Y7O0FBQ0E7RUFDRSwyTEFBQTtFQUNBLHNCQUFBO0FBRUY7O0FBQUE7RUFDRSwyTEFBQTtFQUNBLHNCQUFBO0FBR0Y7O0FBQUE7RUFDRSwyTEFBQTtFQUNBLHNCQUFBO0FBR0Y7O0FBREE7RUFDRSwyTEFBQTtFQUNBLHNCQUFBO0FBSUY7O0FBRkE7RUFDRSwyTEFBQTtFQUNBLHNCQUFBO0FBS0Y7O0FBRkE7RUFDRSxtQkFBQTtFQUNBLDJCQUFBO0VBQ0EsNEJBQUE7RUFDQSw2QkFBQTtFQUNBLFlBQUE7QUFLRjs7QUFGQTtFQUNFLGFBQUE7RUFDQSxnQkFBQTtFQUNBLG1CQUFBO0FBS0Y7O0FBSEE7RUFDRSxvQkFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7QUFNRjs7QUFIQTtFQUNFLG1CQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7RUFFQSw0QkFBQTtFQUNBLDZCQUFBO0VBQ0Esb0lBQUE7RUFFQSw0Q0FBQTtBQUlGOztBQUZBO0VBQ0UsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLGdDQUFBO0FBS0Y7O0FBRkE7RUFDRSxpQkFBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0VBQ0EseUNBQUE7RUFDQSxnQkFBQTtBQUtGOztBQUhBO0VBQ0U7SUFFRSwwQkFBQTtFQUtGO0VBRkE7SUFDRSw2QkFBQTtFQUlGO0FBQ0Y7O0FBRkE7RUFDRSwyQkFBQTtFQUNBLDRCQUFBO0VBQ0EsNkJBQUE7RUFDQSxpQkFBQTtFQUNBLDJCQUFBO0VBRUEsVUFBQTtBQUdGOztBQURBO0VBQ0UsWUFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQUFBO0VBQ0EsNENBQUE7QUFJRjs7QUFEQTtFQUNFLDBCQUFBO0VBQ0Esa0JBQUE7RUFDQSw0Q0FBQTtBQUlGOztBQUZBO0VBQ0UsNENBQUE7QUFLRjs7QUFIQTtFQUNFLDZCQUFBO0FBTUYiLCJmaWxlIjoiYXBwcy9wb3J0Zm9saW8vc3JjL2FwcC90ZXN0aW1vbmllcy90ZXN0aW1vbmllcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi50ZXN0aW1vbmlhbC1zZWN0aW9uIHtcbiAgcGFkZGluZzogMSUgMTAlO1xufVxuLnRpbUtpbmctaW1nIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCdodHRwczovL21lZGlhLWV4cDEubGljZG4uY29tL2Rtcy9pbWFnZS9DNEQwM0FRRkwzcE1fZDFMd1B3L3Byb2ZpbGUtZGlzcGxheXBob3RvLXNocmlua180MDBfNDAwLzA/ZT0xNjAyMTE1MjAwJnY9YmV0YSZ0PWdPMW1OZTBPSC1ENFd2alpTRnNDN0syb2RPZEplTHdzcGowMjdOWEYxRWsnKTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cbi5qdXN0aW4taW1nIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCdodHRwczovL21lZGlhLWV4cDEubGljZG4uY29tL2Rtcy9pbWFnZS9DNTYwM0FRRWpVajk0VVdSMDdnL3Byb2ZpbGUtZGlzcGxheXBob3RvLXNocmlua180MDBfNDAwLzA/ZT0xNjAyMTE1MjAwJnY9YmV0YSZ0PXl0WWI4YWQ2QjQ1dG15NUltMWlfRmgwVjZhRUpEbG5IY20zMEMtT2dCR0knKTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cblxuLmp5b3RoaS1pbWcge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJ2h0dHBzOi8vbWVkaWEtZXhwMS5saWNkbi5jb20vZG1zL2ltYWdlL0M0RTAzQVFHZWc3eGM5NEc1TGcvcHJvZmlsZS1kaXNwbGF5cGhvdG8tc2hyaW5rXzQwMF80MDAvMD9lPTE2MDIxMTUyMDAmdj1iZXRhJnQ9dXRmNGlGS2NVdGpvQ3FOSDMwVnlQYnVxY2pwdmtIdVZqVFhqRU83LWR6QScpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuLnlhc2Fzd3ktaW1nIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCdodHRwczovL21lZGlhLWV4cDEubGljZG4uY29tL2Rtcy9pbWFnZS9DNTEwM0FRR2NDcktSakxXUVFnL3Byb2ZpbGUtZGlzcGxheXBob3RvLXNocmlua180MDBfNDAwLzA/ZT0xNjAyMTE1MjAwJnY9YmV0YSZ0PUlNb1hrS01qZzAyZUFrNVNQNzVsUGpfYmZoT3g2UUJpMkFFUHBoLUVMNzAnKTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cbi5rcmlzdGVuLWltZyB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzRFMDNBUUU5R3NRSkszMG01dy9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfNDAwXzQwMC8wP2U9MTYwMjExNTIwMCZ2PWJldGEmdD1VN3FWd1VaWVdaNjRnT3ZqNXFxbE5taVpVTU0yVTd0bFV4SDhkUHdEX3hNJyk7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG5cbi5tYXQtY2FyZC0xIHtcbiAgYmFja2dyb3VuZDogaW5oZXJpdDtcbiAgYm94LXNoYWRvdzogbm9uZSAhaW1wb3J0YW50O1xuICBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAxMHB4O1xuICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMTBweDtcbiAgcGFkZGluZzogMHB4O1xuICAvLyBtYXJnaW4tdG9wOiAxcmVtO1xufVxuLnRlc3RpbW9uaWFsLW1hdC1jYXJkLW1haW4ge1xuICBkaXNwbGF5OiBncmlkO1xuICBib3gtc2hhZG93OiBub25lO1xuICBiYWNrZ3JvdW5kOiBpbmhlcml0O1xufVxuLnRlc3RpbW9uaWFsLXRpdGxlIHtcbiAgZm9udC1mYW1pbHk6IGN1cnNpdmU7XG4gIGxpbmUtaGVpZ2h0OiBub3JtYWw7XG4gIGZvbnQtc2l6ZTogMi41cmVtO1xuICBmb250LXdlaWdodDogNTAwO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbi1ib3R0b206IDBweDtcbn1cblxuLnAtdGV4dCB7XG4gIGxpbmUtaGVpZ2h0OiAxLjVyZW07XG4gIHBhZGRpbmc6IDFyZW07XG4gIGZvbnQtc2l6ZTogMXJlbTtcbiAgLy8gYmFja2dyb3VuZDogd2hpdGU7XG4gIGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDEwcHg7XG4gIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4O1xuICBib3gtc2hhZG93OiAwcHggMnB4IDFweCAtMXB4IHJnYmEoMCwgMCwgMCwgMC4yKSxcbiAgICAwcHggMXB4IDFweCAwcHggcmdiYSgwLCAwLCAwLCAwLjE0KSwgMHB4IDFweCAzcHggMHB4IHJnYmEoMCwgMCwgMCwgMC4xMikgIWltcG9ydGFudDtcbiAgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBUaW1lcywgc2VyaWY7XG59XG4udmlld01vcmVCdXR0b24ge1xuICBwYWRkaW5nOiAwLjVyZW07XG4gIGJvcmRlci1yYWRpdXM6IDNweDtcbiAgZm9udC1zaXplOiAxcmVtO1xuICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kIDAuNXMgZWFzZTtcbn1cblxuLmFycm93MSB7XG4gIG1hcmdpbi1sZWZ0OiAxMHB4O1xuICBjb2xvcjogIzY3M2FiNztcbiAgZm9udC1zaXplOiAzMHB4O1xuICBhbmltYXRpb246IHNsaWRlMSAxcyBlYXNlLWluLW91dCBpbmZpbml0ZTtcbiAgbWFyZ2luLWxlZnQ6IDlweDtcbn1cbkBrZXlmcmFtZXMgc2xpZGUxIHtcbiAgMCUsXG4gIDEwMCUge1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKDAsIDApO1xuICB9XG5cbiAgNTAlIHtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgxMHB4LCAwKTtcbiAgfVxufVxuLm1hdC1jYXJkLWJvcmRlciB7XG4gIGJvcmRlcjogMXB4IHNvbGlkIGxpZ2h0Z3JleTtcbiAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMTBweDtcbiAgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDEwcHg7XG4gIG1hcmdpbi1ib3R0b206IDIlO1xuICBib3gtc2hhZG93OiBub25lICFpbXBvcnRhbnQ7XG4gIC8vIGJvcmRlci1yYWRpdXM6IDBweDtcbiAgcGFkZGluZzogMDtcbn1cbi5wLW5vdGUge1xuICBjb2xvcjogY29yYWw7XG4gIGZvbnQtc2l6ZTogMC42cmVtO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbjogMHB4O1xuICBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIFRpbWVzLCBzZXJpZjtcbn1cblxuLm1hdC1jYXJkLWhlYWRlciAubWF0LWNhcmQtdGl0bGUge1xuICBmb250LXNpemU6IDFyZW0gIWltcG9ydGFudDtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIFRpbWVzLCBzZXJpZjtcbn1cbm1hdC1jYXJkLXN1YnRpdGxlIHtcbiAgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBUaW1lcywgc2VyaWY7XG59XG5tYXQtY2FyZC1oZWFkZXIge1xuICBwYWRkaW5nLWxlZnQ6IDFyZW0gIWltcG9ydGFudDtcbn1cbiJdfQ== */',
+            '.testimonial-section[_ngcontent-%COMP%] {\n  padding: 1% 10%;\n}\n\n.timKing-img[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C4D03AQFL3pM_d1LwPw/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=gO1mNe0OH-D4WvjZSFsC7K2odOdJeLwspj027NXF1Ek");\n  background-size: cover;\n}\n\n.justin-img[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C5603AQEjUj94UWR07g/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=ytYb8ad6B45tmy5Im1i_Fh0V6aEJDlnHcm30C-OgBGI");\n  background-size: cover;\n}\n\n.jyothi-img[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQGeg7xc94G5Lg/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=utf4iFKcUtjoCqNH30VyPbuqcjpvkHuVjTXjEO7-dzA");\n  background-size: cover;\n}\n\n.yasaswy-img[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C5103AQGcCrKRjLWQQg/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=IMoXkKMjg02eAk5SP75lPj_bfhOx6QBi2AEPph-EL70");\n  background-size: cover;\n}\n\n.kristen-img[_ngcontent-%COMP%] {\n  background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQE9GsQJK30m5w/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=U7qVwUZYWZ64gOvj5qqlNmiZUMM2U7tlUxH8dPwD_xM");\n  background-size: cover;\n}\n\n.mat-card-1[_ngcontent-%COMP%] {\n  background: inherit;\n  box-shadow: none !important;\n  border-top-left-radius: 10px;\n  border-top-right-radius: 10px;\n  padding: 0px;\n}\n\n.testimonial-mat-card-main[_ngcontent-%COMP%] {\n  display: grid;\n  box-shadow: none;\n  background: inherit;\n}\n\n.testimonial-title[_ngcontent-%COMP%] {\n  font-family: cursive;\n  line-height: normal;\n  font-size: 2.5rem;\n  font-weight: 500;\n  text-align: center;\n  margin-bottom: 0px;\n}\n\n.p-text[_ngcontent-%COMP%] {\n  line-height: 1.5rem;\n  padding: 1rem;\n  font-size: 1rem;\n  border-top-left-radius: 10px;\n  border-top-right-radius: 10px;\n  font-family: "Times New Roman", Times, serif;\n}\n\n.viewMoreButton[_ngcontent-%COMP%] {\n  padding: 0.5rem;\n  border-radius: 3px;\n  font-size: 1rem;\n  transition: background 0.5s ease;\n}\n\n.arrow1[_ngcontent-%COMP%] {\n  margin-left: 10px;\n  color: #673ab7;\n  font-size: 30px;\n  animation: slide1 1s ease-in-out infinite;\n  margin-left: 9px;\n}\n\n@keyframes slide1 {\n  0%, 100% {\n    transform: translate(0, 0);\n  }\n  50% {\n    transform: translate(10px, 0);\n  }\n}\n\n.mat-card-border[_ngcontent-%COMP%] {\n  border: 1px solid lightgrey;\n  border-top-left-radius: 10px;\n  border-top-right-radius: 10px;\n  margin-bottom: 2%;\n  box-shadow: none !important;\n  padding: 0;\n}\n\n.p-note[_ngcontent-%COMP%] {\n  color: coral;\n  font-size: 0.6rem;\n  text-align: center;\n  margin: 0px;\n  font-family: "Times New Roman", Times, serif;\n}\n\n.mat-card-header[_ngcontent-%COMP%]   .mat-card-title[_ngcontent-%COMP%] {\n  font-size: 1rem !important;\n  font-style: normal;\n  font-family: "Times New Roman", Times, serif;\n}\n\nmat-card-subtitle[_ngcontent-%COMP%] {\n  font-family: "Times New Roman", Times, serif;\n}\n\nmat-card-header[_ngcontent-%COMP%] {\n  padding-left: 1rem !important;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvdGVzdGltb25pZXMvdGVzdGltb25pZXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxlQUFBO0FBQ0Y7O0FBQ0E7RUFDRSwyTEFBQTtFQUNBLHNCQUFBO0FBRUY7O0FBQUE7RUFDRSwyTEFBQTtFQUNBLHNCQUFBO0FBR0Y7O0FBQUE7RUFDRSwyTEFBQTtFQUNBLHNCQUFBO0FBR0Y7O0FBREE7RUFDRSwyTEFBQTtFQUNBLHNCQUFBO0FBSUY7O0FBRkE7RUFDRSwyTEFBQTtFQUNBLHNCQUFBO0FBS0Y7O0FBRkE7RUFDRSxtQkFBQTtFQUNBLDJCQUFBO0VBQ0EsNEJBQUE7RUFDQSw2QkFBQTtFQUNBLFlBQUE7QUFLRjs7QUFEQTtFQUNFLGFBQUE7RUFDQSxnQkFBQTtFQUNBLG1CQUFBO0FBSUY7O0FBRkE7RUFDRSxvQkFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7QUFLRjs7QUFGQTtFQUNFLG1CQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7RUFFQSw0QkFBQTtFQUNBLDZCQUFBO0VBR0EsNENBQUE7QUFFRjs7QUFBQTtFQUNFLGVBQUE7RUFDQSxrQkFBQTtFQUNBLGVBQUE7RUFDQSxnQ0FBQTtBQUdGOztBQUFBO0VBQ0UsaUJBQUE7RUFDQSxjQUFBO0VBQ0EsZUFBQTtFQUNBLHlDQUFBO0VBQ0EsZ0JBQUE7QUFHRjs7QUFEQTtFQUNFO0lBRUUsMEJBQUE7RUFHRjtFQUFBO0lBQ0UsNkJBQUE7RUFFRjtBQUNGOztBQUFBO0VBQ0UsMkJBQUE7RUFDQSw0QkFBQTtFQUNBLDZCQUFBO0VBQ0EsaUJBQUE7RUFDQSwyQkFBQTtFQUVBLFVBQUE7QUFDRjs7QUFFQTtFQUNFLFlBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLDRDQUFBO0FBQ0Y7O0FBRUE7RUFDRSwwQkFBQTtFQUNBLGtCQUFBO0VBQ0EsNENBQUE7QUFDRjs7QUFDQTtFQUNFLDRDQUFBO0FBRUY7O0FBQUE7RUFDRSw2QkFBQTtBQUdGIiwiZmlsZSI6ImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvdGVzdGltb25pZXMvdGVzdGltb25pZXMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudGVzdGltb25pYWwtc2VjdGlvbiB7XG4gIHBhZGRpbmc6IDElIDEwJTtcbn1cbi50aW1LaW5nLWltZyB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzREMDNBUUZMM3BNX2QxTHdQdy9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfNDAwXzQwMC8wP2U9MTYwMjExNTIwMCZ2PWJldGEmdD1nTzFtTmUwT0gtRDRXdmpaU0ZzQzdLMm9kT2RKZUx3c3BqMDI3TlhGMUVrJyk7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4uanVzdGluLWltZyB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUVqVWo5NFVXUjA3Zy9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfNDAwXzQwMC8wP2U9MTYwMjExNTIwMCZ2PWJldGEmdD15dFliOGFkNkI0NXRteTVJbTFpX0ZoMFY2YUVKRGxuSGNtMzBDLU9nQkdJJyk7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG5cbi5qeW90aGktaW1nIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCdodHRwczovL21lZGlhLWV4cDEubGljZG4uY29tL2Rtcy9pbWFnZS9DNEUwM0FRR2VnN3hjOTRHNUxnL3Byb2ZpbGUtZGlzcGxheXBob3RvLXNocmlua180MDBfNDAwLzA/ZT0xNjAyMTE1MjAwJnY9YmV0YSZ0PXV0ZjRpRktjVXRqb0NxTkgzMFZ5UGJ1cWNqcHZrSHVWalRYakVPNy1kekEnKTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cbi55YXNhc3d5LWltZyB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzUxMDNBUUdjQ3JLUmpMV1FRZy9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfNDAwXzQwMC8wP2U9MTYwMjExNTIwMCZ2PWJldGEmdD1JTW9Ya0tNamcwMmVBazVTUDc1bFBqX2JmaE94NlFCaTJBRVBwaC1FTDcwJyk7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4ua3Jpc3Rlbi1pbWcge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJ2h0dHBzOi8vbWVkaWEtZXhwMS5saWNkbi5jb20vZG1zL2ltYWdlL0M0RTAzQVFFOUdzUUpLMzBtNXcvcHJvZmlsZS1kaXNwbGF5cGhvdG8tc2hyaW5rXzQwMF80MDAvMD9lPTE2MDIxMTUyMDAmdj1iZXRhJnQ9VTdxVndVWllXWjY0Z092ajVxcWxObWlaVU1NMlU3dGxVeEg4ZFB3RF94TScpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuXG4ubWF0LWNhcmQtMSB7XG4gIGJhY2tncm91bmQ6IGluaGVyaXQ7XG4gIGJveC1zaGFkb3c6IG5vbmUgIWltcG9ydGFudDtcbiAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMTBweDtcbiAgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDEwcHg7XG4gIHBhZGRpbmc6IDBweDtcblxuICAvLyBtYXJnaW4tdG9wOiAxcmVtO1xufVxuLnRlc3RpbW9uaWFsLW1hdC1jYXJkLW1haW4ge1xuICBkaXNwbGF5OiBncmlkO1xuICBib3gtc2hhZG93OiBub25lO1xuICBiYWNrZ3JvdW5kOiBpbmhlcml0O1xufVxuLnRlc3RpbW9uaWFsLXRpdGxlIHtcbiAgZm9udC1mYW1pbHk6IGN1cnNpdmU7XG4gIGxpbmUtaGVpZ2h0OiBub3JtYWw7XG4gIGZvbnQtc2l6ZTogMi41cmVtO1xuICBmb250LXdlaWdodDogNTAwO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbi1ib3R0b206IDBweDtcbn1cblxuLnAtdGV4dCB7XG4gIGxpbmUtaGVpZ2h0OiAxLjVyZW07XG4gIHBhZGRpbmc6IDFyZW07XG4gIGZvbnQtc2l6ZTogMXJlbTtcbiAgLy8gYmFja2dyb3VuZDogd2hpdGU7XG4gIGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDEwcHg7XG4gIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4O1xuICAvLyBib3gtc2hhZG93OiAwcHggMnB4IDFweCAtMXB4IHJnYmEoMCwgMCwgMCwgMC4yKSxcbiAgLy8gMHB4IDFweCAxcHggMHB4IHJnYmEoMCwgMCwgMCwgMC4xNCksIDBweCAxcHggM3B4IDBweCByZ2JhKDAsIDAsIDAsIDAuMTIpICFpbXBvcnRhbnQ7XG4gIGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgVGltZXMsIHNlcmlmO1xufVxuLnZpZXdNb3JlQnV0dG9uIHtcbiAgcGFkZGluZzogMC41cmVtO1xuICBib3JkZXItcmFkaXVzOiAzcHg7XG4gIGZvbnQtc2l6ZTogMXJlbTtcbiAgdHJhbnNpdGlvbjogYmFja2dyb3VuZCAwLjVzIGVhc2U7XG59XG5cbi5hcnJvdzEge1xuICBtYXJnaW4tbGVmdDogMTBweDtcbiAgY29sb3I6ICM2NzNhYjc7XG4gIGZvbnQtc2l6ZTogMzBweDtcbiAgYW5pbWF0aW9uOiBzbGlkZTEgMXMgZWFzZS1pbi1vdXQgaW5maW5pdGU7XG4gIG1hcmdpbi1sZWZ0OiA5cHg7XG59XG5Aa2V5ZnJhbWVzIHNsaWRlMSB7XG4gIDAlLFxuICAxMDAlIHtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgwLCAwKTtcbiAgfVxuXG4gIDUwJSB7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoMTBweCwgMCk7XG4gIH1cbn1cbi5tYXQtY2FyZC1ib3JkZXIge1xuICBib3JkZXI6IDFweCBzb2xpZCBsaWdodGdyZXk7XG4gIGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDEwcHg7XG4gIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4O1xuICBtYXJnaW4tYm90dG9tOiAyJTtcbiAgYm94LXNoYWRvdzogbm9uZSAhaW1wb3J0YW50O1xuICAvLyBib3JkZXItcmFkaXVzOiAwcHg7XG4gIHBhZGRpbmc6IDA7XG4gIC8vIGJvcmRlci1sZWZ0OiAzcHggc29saWQgb3JhbmdlO1xufVxuLnAtbm90ZSB7XG4gIGNvbG9yOiBjb3JhbDtcbiAgZm9udC1zaXplOiAwLjZyZW07XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luOiAwcHg7XG4gIGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgVGltZXMsIHNlcmlmO1xufVxuXG4ubWF0LWNhcmQtaGVhZGVyIC5tYXQtY2FyZC10aXRsZSB7XG4gIGZvbnQtc2l6ZTogMXJlbSAhaW1wb3J0YW50O1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgVGltZXMsIHNlcmlmO1xufVxubWF0LWNhcmQtc3VidGl0bGUge1xuICBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIFRpbWVzLCBzZXJpZjtcbn1cbm1hdC1jYXJkLWhlYWRlciB7XG4gIHBhZGRpbmctbGVmdDogMXJlbSAhaW1wb3J0YW50O1xufVxuIl19 */',
           ],
         });
         /*@__PURE__*/ (function () {
