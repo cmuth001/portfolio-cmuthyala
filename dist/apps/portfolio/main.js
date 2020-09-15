@@ -1950,7 +1950,7 @@
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           }
         }
-        function ContactFormComponent_mat_error_16_Template(rf, ctx) {
+        function ContactFormComponent_mat_error_17_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               0,
@@ -1969,7 +1969,7 @@
             );
           }
         }
-        function ContactFormComponent_mat_error_21_Template(rf, ctx) {
+        function ContactFormComponent_mat_error_22_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               0,
@@ -1982,7 +1982,7 @@
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           }
         }
-        function ContactFormComponent_mat_error_22_Template(rf, ctx) {
+        function ContactFormComponent_mat_error_23_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
               0,
@@ -2031,10 +2031,10 @@
           }
           getErrorMessage() {
             if (this.myForm.controls.email.hasError("required")) {
-              return "You must enter a value";
+              return "* You must enter a value";
             }
             return this.myForm.controls.email.hasError("email")
-              ? "Not a valid email"
+              ? "* Not a valid email"
               : "";
           }
           onSubmit(form) {
@@ -2067,7 +2067,7 @@
         ]({
           type: ContactFormComponent,
           selectors: [["cmuthyala-contact-form"]],
-          decls: 28,
+          decls: 29,
           vars: 7,
           consts: [
             [1, "contact-form-section"],
@@ -2172,33 +2172,34 @@
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "br");
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                11,
+                12,
                 "div",
                 4
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                12,
+                13,
                 "mat-form-field",
                 5
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                13,
+                14,
                 "mat-label"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                14,
+                15,
                 "Enter your email"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                15,
+                16,
                 "input",
                 8
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
-                16,
-                ContactFormComponent_mat_error_16_Template,
+                17,
+                ContactFormComponent_mat_error_17_Template,
                 2,
                 1,
                 "mat-error",
@@ -2207,31 +2208,23 @@
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                17,
+                18,
                 "mat-form-field",
                 9
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                18,
+                19,
                 "mat-label"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                19,
+                20,
                 "Leave a comment"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                20,
+                21,
                 "textarea",
                 10
-              );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
-                21,
-                ContactFormComponent_mat_error_21_Template,
-                2,
-                0,
-                "mat-error",
-                7
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
                 22,
@@ -2241,31 +2234,39 @@
                 "mat-error",
                 7
               );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](
+                23,
+                ContactFormComponent_mat_error_23_Template,
+                2,
+                0,
+                "mat-error",
+                7
+              );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                23,
+                24,
                 "div",
                 11
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                24,
+                25,
                 "button",
                 12
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"](
                 "click",
-                function ContactFormComponent_Template_button_click_24_listener() {
+                function ContactFormComponent_Template_button_click_25_listener() {
                   return ctx.onSubmit(ctx.myForm);
                 }
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                25,
+                26,
                 " SUBMIT "
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                26,
+                27,
                 "div",
                 13
               );
@@ -2273,7 +2274,7 @@
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](
-                27,
+                28,
                 "section"
               );
             }
@@ -2292,7 +2293,7 @@
                 "ngIf",
                 ctx.myForm.controls.name.invalid
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
                 "ngIf",
                 ctx.myForm.controls.email.invalid

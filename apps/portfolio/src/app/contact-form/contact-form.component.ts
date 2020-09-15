@@ -20,7 +20,7 @@ export class ContactFormComponent implements OnInit {
   }
   getErrorMessage() {
     if (this.myForm.controls.email.hasError('required')) {
-      return '* You must enter a value'
+      return '* Required'
     }
 
     return this.myForm.controls.email.hasError('email')

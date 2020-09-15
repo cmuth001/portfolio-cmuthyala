@@ -1,6 +1,6 @@
 <section class="testimonial-section">
   <div>
-    <h1 class="testimonial-title">Testimonials</h1>
+    <h1 class="testimonial-title un">Testimonials</h1>
     <p class="p-note">{{ note }}</p>
   </div>
   <ng-container *ngFor="let item of testimonials">
@@ -13,8 +13,8 @@
           </p>
         </mat-card-content>
         <mat-card-header>
-          <div mat-card-avatar class="{{ item.class }}"></div>
-          <mat-card-title>{{ item.name }}</mat-card-title>
+          <div mat-card-avatar class="  request-loader {{ item.class }}"></div>
+          <mat-card-title class="un">{{ item.name }}</mat-card-title>
           <mat-card-subtitle>{{ item.role }}</mat-card-subtitle>
         </mat-card-header>
       </mat-card>
@@ -46,7 +46,7 @@
             </p>
           </mat-card-content>
           <mat-card-header>
-            <div mat-card-avatar class="{{ item.class }}"></div>
+            <div mat-card-avatar class=" request-loader {{ item.class }}"></div>
             <mat-card-title>{{ item.name }}</mat-card-title>
             <mat-card-subtitle>{{ item.role }}</mat-card-subtitle>
           </mat-card-header>

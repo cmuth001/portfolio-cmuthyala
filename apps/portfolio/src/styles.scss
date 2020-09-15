@@ -9,6 +9,25 @@ body {
   margin: 0;
   font-family: 'Times New Roman', Times, serif !important;
 }
+// .un {
+//   display: inline-block;
+//   cursor: pointer;
+//   // padding: 5px;
+//   text-align: center !important;
+// }
+
+// .un::after {
+//   content: '';
+//   width: 0px;
+//   height: 3px;
+//   display: block;
+//   background: #ea793a;
+//   transition: 500ms;
+// }
+
+// .un:hover::after {
+//   width: 100%;
+// }
 // *:not(.fa) { font-family: 'Times New Roman', Times, serif !important }
 
 /* Importing Bootstrap SCSS file. */
