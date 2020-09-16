@@ -15,44 +15,19 @@
       <span class="example-spacer"></span>
       <div class="theme-switch-div">
         <!-- <span>Dark Theme {{ darkThemeStatus }}</span> -->
-        <button class="theme-switch-btn" mat-button>
-          <mat-icon mat-list-icon>wb_sunny</mat-icon>
-          <mat-slide-toggle
+        <!-- <button class="theme-switch-btn" mat-button> -->
+        <mat-icon mat-list-icon (click)="toggleTheme($event)">
+          {{ themeIcon }}</mat-icon
+        >
+        <!-- <mat-slide-toggle
             class="theme-switch"
             [checked]="useDefaultTheme"
-            (change)="toggleTheme($event)"
+            
           ></mat-slide-toggle>
-          <mat-icon mat-list-icon>brightness_3</mat-icon>
-        </button>
+          <mat-icon mat-list-icon>brightness_3</mat-icon> -->
+        <!-- </button> -->
       </div>
     </mat-toolbar>
-
-    <!-- <mat-card class="example-card top-header-bacground-image">
-      <mat-card-header>
-        <img
-          mat-card-avatar
-          class="example-header-image"
-          src="assets/dp-1.jpg"
-        />
-        <mat-card-title>Chandrasekhar Muthyala</mat-card-title>
-        <mat-card-subtitle class="position"
-          >Full Stack Developer 👨‍🚀
-        </mat-card-subtitle>
-      </mat-card-header>
-      <span class="example-spacer"></span>
-      <div class="theme-switch-div">
-        <button class="theme-switch-btn" mat-button>
-          <mat-icon mat-list-icon>wb_sunny</mat-icon>
-          <mat-slide-toggle
-            class="theme-switch"
-            [checked]="useDefaultTheme"
-            (change)="toggleTheme($event)"
-          ></mat-slide-toggle>
-          <mat-icon mat-list-icon>brightness_3</mat-icon>
-        </button>
-      </div>
-      <br />
-    </mat-card> -->
 
     <mat-tab-group class="color-blue">
       <mat-tab class="mat-tab-padding">

@@ -13,6 +13,7 @@ export interface Tile {
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  themeIcon = 'brightness_3'
   tiles: Tile[] = [
     { text: 'Three', cols: 2, rows: 1, color: 'lightpink' },
     { text: 'Four', cols: 2, rows: 1, color: '#DDBDF1' },
@@ -24,8 +25,8 @@ export class HeaderComponent implements OnInit {
   toggleTheme(event) {
     this.useDefaultTheme = !this.useDefaultTheme
     const theme = this.useDefaultTheme ? 'dark' : 'light'
+    this.themeIcon = this.useDefaultTheme ? 'brightness_3' : 'wb_sunny'
     this.darkThemeStatus = this.useDefaultTheme ? 'ON' : 'OFF'
     this.colorSchemeService.update(theme)
-    console.log(event)
   }
 }
