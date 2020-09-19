@@ -4504,54 +4504,29 @@
           type: SocialMediaComponent,
           selectors: [["cmuthyala-social-media"]],
           decls: 14,
-          vars: 3,
+          vars: 7,
           consts: [
             ["id", "sidebar"],
             [1, "icon-bar"],
             [3, "ngClass"],
-            [
-              "href",
-              "https://www.facebook.com/people/Chandu-Muthyala/100002292512909",
-              "target",
-              "_blank",
-              1,
-              "facebook",
-              "social-item-4",
-            ],
+            ["target", "_blank", 1, "facebook", "social-item-4"],
             [1, "fa", "fa-facebook"],
-            [
-              "href",
-              "https://twitter.com/chandumuthyala1",
-              "target",
-              "_blank",
-              1,
-              "twitter",
-              "social-item-3",
-            ],
+            ["target", "_blank", 1, "twitter", "social-item-3"],
             [1, "fa", "fa-twitter"],
-            [
-              "href",
-              "https://www.instagram.com/chandu_muthyala/?hl=en",
-              "target",
-              "_blank",
-              1,
-              "instagran",
-              "social-item-2",
-            ],
+            ["target", "_blank", 1, "instagran", "social-item-2"],
             [1, "fa", "fa-instagram"],
-            [
-              "href",
-              "https://www.linkedin.com/in/cmuth001/",
-              "target",
-              "_blank",
-              1,
-              "linkedin",
-              "social-item-1",
-            ],
+            ["target", "_blank", 1, "linkedin", "social-item-1"],
             [1, "fa", "fa-linkedin"],
             [4, "ngIf"],
-            ["class", "material-icons", 3, "click", 4, "ngIf"],
-            [1, "material-icons", 3, "click"],
+            [
+              "class",
+              "material-icons social-media-display-icon",
+              3,
+              "click",
+              4,
+              "ngIf",
+            ],
+            [1, "material-icons", "social-media-display-icon", 3, "click"],
           ],
           template: function SocialMediaComponent_Template(rf, ctx) {
             if (rf & 1) {
@@ -4645,7 +4620,35 @@
               _angular_core__WEBPACK_IMPORTED_MODULE_0__[
                 "ɵɵpropertyInterpolate"
               ]("ngClass", ctx.shouldShow ? "show" : "hide");
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"](
+                "href",
+                ctx.shouldShow
+                  ? "https://www.facebook.com/people/Chandu-Muthyala/100002292512909"
+                  : null,
+                _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"](
+                "href",
+                ctx.shouldShow ? "https://twitter.com/chandumuthyala1" : null,
+                _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"](
+                "href",
+                ctx.shouldShow
+                  ? "https://www.instagram.com/chandu_muthyala/?hl=en"
+                  : null,
+                _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"](
+                "href",
+                ctx.shouldShow ? "https://www.linkedin.com/in/cmuth001/" : null,
+                _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"](
                 "ngIf",
                 ctx.shouldShow
@@ -4662,7 +4665,7 @@
             _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"],
           ],
           styles: [
-            '.icon-bar[_ngcontent-%COMP%] {\n  position: fixed;\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n.icon-bar[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  display: block;\n  text-align: center;\n  padding: 0.7rem;\n  transition: all 0.3s ease;\n  color: white;\n  font-size: 1.6rem;\n}\n\n.sidebar[_ngcontent-%COMP%] {\n  z-index: 100000;\n}\n\n.icon-bar[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  border-radius: 50%;\n}\n\n.facebook[_ngcontent-%COMP%] {\n  background: #3b5998;\n  color: white;\n}\n\n.twitter[_ngcontent-%COMP%] {\n  background: #55acee;\n  color: white;\n}\n\n.google[_ngcontent-%COMP%] {\n  background: #dd4b39;\n  color: white;\n}\n\n.linkedin[_ngcontent-%COMP%] {\n  background: #007bb5;\n  color: white;\n}\n\n.instagran[_ngcontent-%COMP%] {\n  background: #f09433;\n  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f09433", endColorstr="#bc1888",GradientType=1 );\n}\n\n.show[_ngcontent-%COMP%]   .social-item-1[_ngcontent-%COMP%] {\n  opacity: 1;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.1s;\n}\n\n.hide[_ngcontent-%COMP%]   .social-item-1[_ngcontent-%COMP%] {\n  opacity: 0;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;\n}\n\n.show[_ngcontent-%COMP%]   .social-item-2[_ngcontent-%COMP%] {\n  opacity: 1;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;\n}\n\n.hide[_ngcontent-%COMP%]   .social-item-2[_ngcontent-%COMP%] {\n  opacity: 0;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;\n}\n\n.show[_ngcontent-%COMP%]   .social-item-3[_ngcontent-%COMP%] {\n  opacity: 1;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;\n}\n\n.hide[_ngcontent-%COMP%]   .social-item-3[_ngcontent-%COMP%] {\n  opacity: 0;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;\n}\n\n.show[_ngcontent-%COMP%]   .social-item-4[_ngcontent-%COMP%] {\n  opacity: 1;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;\n}\n\n.hide[_ngcontent-%COMP%]   .social-item-4[_ngcontent-%COMP%] {\n  opacity: 0;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.1s;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvc29jaWFsLW1lZGlhL3NvY2lhbC1tZWRpYS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGVBQUE7RUFDQSxRQUFBO0VBR0EsMkJBQUE7QUFDRjs7QUFFQTtFQUNFLGNBQUE7RUFDQSxrQkFBQTtFQUNBLGVBQUE7RUFDQSx5QkFBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtBQUNGOztBQUlBO0VBQ0UsZUFBQTtBQURGOztBQUdBO0VBQ0Usa0JBQUE7QUFBRjs7QUFHQTtFQUNFLG1CQUFBO0VBQ0EsWUFBQTtBQUFGOztBQUdBO0VBQ0UsbUJBQUE7RUFDQSxZQUFBO0FBQUY7O0FBR0E7RUFDRSxtQkFBQTtFQUNBLFlBQUE7QUFBRjs7QUFHQTtFQUNFLG1CQUFBO0VBQ0EsWUFBQTtBQUFGOztBQUVBO0VBQ0UsbUJBQUE7RUFpQkEsbUdBQUE7RUFRQSxtSEFBQTtBQXBCRjs7QUEwQkU7RUFDRSxVQUFBO0VBQ0EsaUVBQUE7QUF2Qko7O0FBeUJFO0VBQ0UsVUFBQTtFQUNBLGlFQUFBO0FBdEJKOztBQWdCRTtFQUNFLFVBQUE7RUFDQSxpRUFBQTtBQWJKOztBQWVFO0VBQ0UsVUFBQTtFQUNBLGlFQUFBO0FBWko7O0FBTUU7RUFDRSxVQUFBO0VBQ0EsaUVBQUE7QUFISjs7QUFLRTtFQUNFLFVBQUE7RUFDQSxpRUFBQTtBQUZKOztBQUpFO0VBQ0UsVUFBQTtFQUNBLGlFQUFBO0FBT0o7O0FBTEU7RUFDRSxVQUFBO0VBQ0EsaUVBQUE7QUFRSiIsImZpbGUiOiJhcHBzL3BvcnRmb2xpby9zcmMvYXBwL3NvY2lhbC1tZWRpYS9zb2NpYWwtbWVkaWEuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaWNvbi1iYXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHRvcDogNTAlO1xuICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcbiAgLW1zLXRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xufVxuXG4uaWNvbi1iYXIgYSB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBhZGRpbmc6IDAuN3JlbTtcbiAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZTtcbiAgY29sb3I6IHdoaXRlO1xuICBmb250LXNpemU6IDEuNnJlbTtcbiAgLy8gbWFyZ2luLXRvcDogNXB4O1xuXG4gIC8vIG1hcmdpbi10b3A6IDVweDtcbn1cbi5zaWRlYmFyIHtcbiAgei1pbmRleDogMTAwMDAwO1xufVxuLmljb24tYmFyIGE6aG92ZXIge1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG59XG5cbi5mYWNlYm9vayB7XG4gIGJhY2tncm91bmQ6ICMzYjU5OTg7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLnR3aXR0ZXIge1xuICBiYWNrZ3JvdW5kOiAjNTVhY2VlO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5nb29nbGUge1xuICBiYWNrZ3JvdW5kOiAjZGQ0YjM5O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5saW5rZWRpbiB7XG4gIGJhY2tncm91bmQ6ICMwMDdiYjU7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cbi5pbnN0YWdyYW4ge1xuICBiYWNrZ3JvdW5kOiAjZjA5NDMzO1xuICBiYWNrZ3JvdW5kOiAtbW96LWxpbmVhci1ncmFkaWVudChcbiAgICA0NWRlZyxcbiAgICAjZjA5NDMzIDAlLFxuICAgICNlNjY4M2MgMjUlLFxuICAgICNkYzI3NDMgNTAlLFxuICAgICNjYzIzNjYgNzUlLFxuICAgICNiYzE4ODggMTAwJVxuICApO1xuICBiYWNrZ3JvdW5kOiAtd2Via2l0LWxpbmVhci1ncmFkaWVudChcbiAgICA0NWRlZyxcbiAgICAjZjA5NDMzIDAlLFxuICAgICNlNjY4M2MgMjUlLFxuICAgICNkYzI3NDMgNTAlLFxuICAgICNjYzIzNjYgNzUlLFxuICAgICNiYzE4ODggMTAwJVxuICApO1xuICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoXG4gICAgNDVkZWcsXG4gICAgI2YwOTQzMyAwJSxcbiAgICAjZTY2ODNjIDI1JSxcbiAgICAjZGMyNzQzIDUwJSxcbiAgICAjY2MyMzY2IDc1JSxcbiAgICAjYmMxODg4IDEwMCVcbiAgKTtcbiAgZmlsdGVyOiBwcm9naWQ6RFhJbWFnZVRyYW5zZm9ybS5NaWNyb3NvZnQuZ3JhZGllbnQoIHN0YXJ0Q29sb3JzdHI9JyNmMDk0MzMnLCBlbmRDb2xvcnN0cj0nI2JjMTg4OCcsR3JhZGllbnRUeXBlPTEgKTtcbn1cblxuJG1lbnUtaXRlbXM6IDQ7XG4kaTogMTtcbkB3aGlsZSAkaSA8PSAkbWVudS1pdGVtcyB7XG4gIC5zaG93IC5zb2NpYWwtaXRlbS0jeyRpfSB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiBhbGwgNTAwbXMgY3ViaWMtYmV6aWVyKDAuNjgsIC0wLjU1LCAwLjI2NSwgMS41NSkgJGkgKiAwLjFzO1xuICB9XG4gIC5oaWRlIC5zb2NpYWwtaXRlbS0jeyRpfSB7XG4gICAgb3BhY2l0eTogMDtcbiAgICB0cmFuc2l0aW9uOiBhbGxcbiAgICAgIDUwMG1zXG4gICAgICBjdWJpYy1iZXppZXIoMC42OCwgLTAuNTUsIDAuMjY1LCAxLjU1KVxuICAgICAgKCRtZW51LWl0ZW1zIC0gJGkgKyAxKSAqXG4gICAgICAwLjFzO1xuICB9XG4gICRpOiAkaSArIDE7XG59XG4iXX0= */',
+            '.icon-bar[_ngcontent-%COMP%] {\n  position: fixed;\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n.icon-bar[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  display: block;\n  text-align: center;\n  padding: 0.7rem;\n  transition: all 0.3s ease;\n  color: white;\n  font-size: 1.6rem;\n}\n\n.sidebar[_ngcontent-%COMP%] {\n  z-index: 100000;\n}\n\n.icon-bar[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  border-radius: 50%;\n}\n\n.facebook[_ngcontent-%COMP%] {\n  background: #3b5998;\n  color: white;\n}\n\n.twitter[_ngcontent-%COMP%] {\n  background: #55acee;\n  color: white;\n}\n\n.google[_ngcontent-%COMP%] {\n  background: #dd4b39;\n  color: white;\n}\n\n.linkedin[_ngcontent-%COMP%] {\n  background: #007bb5;\n  color: white;\n}\n\n.instagran[_ngcontent-%COMP%] {\n  background: #f09433;\n  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f09433", endColorstr="#bc1888",GradientType=1 );\n}\n\n.social-media-display-icon[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n\n.show[_ngcontent-%COMP%]   .social-item-1[_ngcontent-%COMP%] {\n  opacity: 1;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.1s;\n}\n\n.hide[_ngcontent-%COMP%]   .social-item-1[_ngcontent-%COMP%] {\n  opacity: 0;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;\n}\n\n.show[_ngcontent-%COMP%]   .social-item-2[_ngcontent-%COMP%] {\n  opacity: 1;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;\n}\n\n.hide[_ngcontent-%COMP%]   .social-item-2[_ngcontent-%COMP%] {\n  opacity: 0;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;\n}\n\n.show[_ngcontent-%COMP%]   .social-item-3[_ngcontent-%COMP%] {\n  opacity: 1;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;\n}\n\n.hide[_ngcontent-%COMP%]   .social-item-3[_ngcontent-%COMP%] {\n  opacity: 0;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;\n}\n\n.show[_ngcontent-%COMP%]   .social-item-4[_ngcontent-%COMP%] {\n  opacity: 1;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;\n}\n\n.hide[_ngcontent-%COMP%]   .social-item-4[_ngcontent-%COMP%] {\n  opacity: 0;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.1s;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcHMvcG9ydGZvbGlvL3NyYy9hcHAvc29jaWFsLW1lZGlhL3NvY2lhbC1tZWRpYS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGVBQUE7RUFDQSxRQUFBO0VBR0EsMkJBQUE7QUFDRjs7QUFFQTtFQUNFLGNBQUE7RUFDQSxrQkFBQTtFQUNBLGVBQUE7RUFDQSx5QkFBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtBQUNGOztBQUlBO0VBQ0UsZUFBQTtBQURGOztBQUdBO0VBQ0Usa0JBQUE7QUFBRjs7QUFHQTtFQUNFLG1CQUFBO0VBQ0EsWUFBQTtBQUFGOztBQUdBO0VBQ0UsbUJBQUE7RUFDQSxZQUFBO0FBQUY7O0FBR0E7RUFDRSxtQkFBQTtFQUNBLFlBQUE7QUFBRjs7QUFHQTtFQUNFLG1CQUFBO0VBQ0EsWUFBQTtBQUFGOztBQUVBO0VBQ0UsbUJBQUE7RUFpQkEsbUdBQUE7RUFRQSxtSEFBQTtBQXBCRjs7QUFzQkE7RUFDRSxlQUFBO0FBbkJGOztBQXlCRTtFQUNFLFVBQUE7RUFDQSxpRUFBQTtBQXRCSjs7QUF3QkU7RUFDRSxVQUFBO0VBQ0EsaUVBQUE7QUFyQko7O0FBZUU7RUFDRSxVQUFBO0VBQ0EsaUVBQUE7QUFaSjs7QUFjRTtFQUNFLFVBQUE7RUFDQSxpRUFBQTtBQVhKOztBQUtFO0VBQ0UsVUFBQTtFQUNBLGlFQUFBO0FBRko7O0FBSUU7RUFDRSxVQUFBO0VBQ0EsaUVBQUE7QUFESjs7QUFMRTtFQUNFLFVBQUE7RUFDQSxpRUFBQTtBQVFKOztBQU5FO0VBQ0UsVUFBQTtFQUNBLGlFQUFBO0FBU0oiLCJmaWxlIjoiYXBwcy9wb3J0Zm9saW8vc3JjL2FwcC9zb2NpYWwtbWVkaWEvc29jaWFsLW1lZGlhLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmljb24tYmFyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICB0b3A6IDUwJTtcbiAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XG4gIC1tcy10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcbn1cblxuLmljb24tYmFyIGEge1xuICBkaXNwbGF5OiBibG9jaztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBwYWRkaW5nOiAwLjdyZW07XG4gIHRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2U7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC1zaXplOiAxLjZyZW07XG4gIC8vIG1hcmdpbi10b3A6IDVweDtcblxuICAvLyBtYXJnaW4tdG9wOiA1cHg7XG59XG4uc2lkZWJhciB7XG4gIHotaW5kZXg6IDEwMDAwMDtcbn1cbi5pY29uLWJhciBhOmhvdmVyIHtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xufVxuXG4uZmFjZWJvb2sge1xuICBiYWNrZ3JvdW5kOiAjM2I1OTk4O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi50d2l0dGVyIHtcbiAgYmFja2dyb3VuZDogIzU1YWNlZTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZ29vZ2xlIHtcbiAgYmFja2dyb3VuZDogI2RkNGIzOTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4ubGlua2VkaW4ge1xuICBiYWNrZ3JvdW5kOiAjMDA3YmI1O1xuICBjb2xvcjogd2hpdGU7XG59XG4uaW5zdGFncmFuIHtcbiAgYmFja2dyb3VuZDogI2YwOTQzMztcbiAgYmFja2dyb3VuZDogLW1vei1saW5lYXItZ3JhZGllbnQoXG4gICAgNDVkZWcsXG4gICAgI2YwOTQzMyAwJSxcbiAgICAjZTY2ODNjIDI1JSxcbiAgICAjZGMyNzQzIDUwJSxcbiAgICAjY2MyMzY2IDc1JSxcbiAgICAjYmMxODg4IDEwMCVcbiAgKTtcbiAgYmFja2dyb3VuZDogLXdlYmtpdC1saW5lYXItZ3JhZGllbnQoXG4gICAgNDVkZWcsXG4gICAgI2YwOTQzMyAwJSxcbiAgICAjZTY2ODNjIDI1JSxcbiAgICAjZGMyNzQzIDUwJSxcbiAgICAjY2MyMzY2IDc1JSxcbiAgICAjYmMxODg4IDEwMCVcbiAgKTtcbiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KFxuICAgIDQ1ZGVnLFxuICAgICNmMDk0MzMgMCUsXG4gICAgI2U2NjgzYyAyNSUsXG4gICAgI2RjMjc0MyA1MCUsXG4gICAgI2NjMjM2NiA3NSUsXG4gICAgI2JjMTg4OCAxMDAlXG4gICk7XG4gIGZpbHRlcjogcHJvZ2lkOkRYSW1hZ2VUcmFuc2Zvcm0uTWljcm9zb2Z0LmdyYWRpZW50KCBzdGFydENvbG9yc3RyPScjZjA5NDMzJywgZW5kQ29sb3JzdHI9JyNiYzE4ODgnLEdyYWRpZW50VHlwZT0xICk7XG59XG4uc29jaWFsLW1lZGlhLWRpc3BsYXktaWNvbiB7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuJG1lbnUtaXRlbXM6IDQ7XG4kaTogMTtcbkB3aGlsZSAkaSA8PSAkbWVudS1pdGVtcyB7XG4gIC5zaG93IC5zb2NpYWwtaXRlbS0jeyRpfSB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiBhbGwgNTAwbXMgY3ViaWMtYmV6aWVyKDAuNjgsIC0wLjU1LCAwLjI2NSwgMS41NSkgJGkgKiAwLjFzO1xuICB9XG4gIC5oaWRlIC5zb2NpYWwtaXRlbS0jeyRpfSB7XG4gICAgb3BhY2l0eTogMDtcbiAgICB0cmFuc2l0aW9uOiBhbGxcbiAgICAgIDUwMG1zXG4gICAgICBjdWJpYy1iZXppZXIoMC42OCwgLTAuNTUsIDAuMjY1LCAxLjU1KVxuICAgICAgKCRtZW51LWl0ZW1zIC0gJGkgKyAxKSAqXG4gICAgICAwLjFzO1xuICB9XG4gICRpOiAkaSArIDE7XG59XG4iXX0= */',
           ],
         });
         /*@__PURE__*/ (function () {

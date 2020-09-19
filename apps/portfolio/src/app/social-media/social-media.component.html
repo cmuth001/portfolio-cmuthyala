@@ -35,17 +35,10 @@
       ></a>
     </div>
     <ng-container>
-      <a *ngIf="shouldShow">
-        <span
-          class="material-icons social-media-display-icon"
-          (click)="shouldShow = !shouldShow"
-        >
-          {{ shouldShow ? 'arrow_left' : 'arrow_right' }}
-        </span>
-      </a>
       <span
-        *ngIf="!shouldShow"
-        class="material-icons social-media-display-icon"
+        class="material-icons social-media-display-icon {{
+          shouldShow ? 'sm-display-icon-padding' : ''
+        }}"
         (click)="shouldShow = !shouldShow"
       >
         {{ shouldShow ? 'arrow_left' : 'arrow_right' }}
