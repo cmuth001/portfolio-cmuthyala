@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core'
 })
 export class SocialMediaComponent implements OnInit {
   constructor() {}
-
+  public shouldShow = false
   ngOnInit(): void {}
+  // $(".social-open-menu").click(function() {
+  //   $(".social-itens").toggleClass("open");
+  //   $(".social-itens").toggleClass("hidden");
+  // });
+  //
 }

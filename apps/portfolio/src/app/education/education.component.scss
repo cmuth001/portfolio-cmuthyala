@@ -8,6 +8,11 @@
   padding: 1% 10%;
   font-family: 'Times New Roman', Times, serif;
 }
+@media only screen and (max-width: 600px) {
+  .cm-education-section {
+    padding: 1% 5%;
+  }
+}
 .example-header-image {
   background-size: contain;
   width: 5rem;

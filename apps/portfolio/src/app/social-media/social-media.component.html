@@ -1,28 +1,44 @@
 <div id="sidebar">
   <div class="icon-bar">
-    <a
-      href="https://www.facebook.com/people/Chandu-Muthyala/100002292512909"
-      target="_blank"
-      class="facebook"
-      ><i class="fa fa-facebook"></i
-    ></a>
-    <a
-      href="https://twitter.com/chandumuthyala1"
-      class="twitter"
-      target="_blank"
-      ><i class="fa fa-twitter"></i
-    ></a>
-    <a
-      href="https://www.instagram.com/chandu_muthyala/?hl=en"
-      target="_blank"
-      class="instagran"
-      ><i class="fa fa-instagram"></i
-    ></a>
-    <a
-      href="https://www.linkedin.com/in/cmuth001/"
-      target="_blank"
-      class="linkedin"
-      ><i class="fa fa-linkedin"></i
-    ></a>
+    <div ngClass="{{ shouldShow ? 'show' : 'hide' }}">
+      <a
+        href="https://www.facebook.com/people/Chandu-Muthyala/100002292512909"
+        target="_blank"
+        class="facebook social-item-4"
+        ><i class="fa fa-facebook"></i
+      ></a>
+      <a
+        href="https://twitter.com/chandumuthyala1"
+        class="twitter social-item-3"
+        target="_blank"
+        ><i class="fa fa-twitter"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/chandu_muthyala/?hl=en"
+        target="_blank"
+        class="instagran social-item-2"
+        ><i class="fa fa-instagram"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/cmuth001/"
+        target="_blank"
+        class="linkedin social-item-1"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+    </div>
+    <ng-container>
+      <a *ngIf="shouldShow">
+        <span class="material-icons" (click)="shouldShow = !shouldShow">
+          {{ shouldShow ? 'arrow_left' : 'arrow_right' }}
+        </span>
+      </a>
+      <span
+        *ngIf="!shouldShow"
+        class="material-icons"
+        (click)="shouldShow = !shouldShow"
+      >
+        {{ shouldShow ? 'arrow_left' : 'arrow_right' }}
+      </span>
+    </ng-container>
   </div>
 </div>

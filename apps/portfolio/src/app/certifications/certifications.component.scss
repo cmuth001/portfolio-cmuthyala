@@ -40,6 +40,11 @@
 .cm-cert-section {
   padding: 1% 10%;
 }
+@media only screen and (max-width: 600px) {
+  .cm-cert-section {
+    padding: 1% 5% !important;
+  }
+}
 .cm-cert-main-div {
   word-break: break-word;
 }

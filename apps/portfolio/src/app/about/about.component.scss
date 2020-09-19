@@ -6,6 +6,19 @@
   background: linear-gradient(90deg, #eeaeca 36%, #94c0e9 36%);
   border-radius: 15px;
 }
+@media only screen and (max-width: 640px) {
+  // .mexample-large-box{
+  //   margin-right: 10% !important;
+  //   margin-left: 5% !important;
+  //   height: 50rem !important;
+
+  // }
+  // .about-card {
+  //   margin-top: -40rem !important;
+  //   margin-right: 5% !important;
+  //   margin-left: 15% !important;
+  // }
+}
 .mat-card-subtitle {
   display: block;
   margin-bottom: 0px;

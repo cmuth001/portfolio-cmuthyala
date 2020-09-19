@@ -12,6 +12,13 @@ mat-form-field {
   width: 60%;
   margin: auto;
 }
+@media only screen and (max-width: 600px) {
+  .mat-card-form {
+    padding: 5% !important;
+    width: 95% !important;
+  }
+}
+
 .contact-title {
   font-family: cursive;
   letter-spacing: 1px;
