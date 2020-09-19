@@ -2,25 +2,33 @@
   <div class="icon-bar">
     <div ngClass="{{ shouldShow ? 'show' : 'hide' }}">
       <a
-        href="https://www.facebook.com/people/Chandu-Muthyala/100002292512909"
+        [attr.href]="
+          shouldShow
+            ? 'https://www.facebook.com/people/Chandu-Muthyala/100002292512909'
+            : null
+        "
         target="_blank"
         class="facebook social-item-4"
         ><i class="fa fa-facebook"></i
       ></a>
       <a
-        href="https://twitter.com/chandumuthyala1"
+        [attr.href]="shouldShow ? 'https://twitter.com/chandumuthyala1' : null"
         class="twitter social-item-3"
         target="_blank"
         ><i class="fa fa-twitter"></i
       ></a>
       <a
-        href="https://www.instagram.com/chandu_muthyala/?hl=en"
+        [attr.href]="
+          shouldShow ? 'https://www.instagram.com/chandu_muthyala/?hl=en' : null
+        "
         target="_blank"
         class="instagran social-item-2"
         ><i class="fa fa-instagram"></i
       ></a>
       <a
-        href="https://www.linkedin.com/in/cmuth001/"
+        [attr.href]="
+          shouldShow ? 'https://www.linkedin.com/in/cmuth001/' : null
+        "
         target="_blank"
         class="linkedin social-item-1"
         ><i class="fa fa-linkedin"></i
@@ -28,13 +36,16 @@
     </div>
     <ng-container>
       <a *ngIf="shouldShow">
-        <span class="material-icons" (click)="shouldShow = !shouldShow">
+        <span
+          class="material-icons social-media-display-icon"
+          (click)="shouldShow = !shouldShow"
+        >
           {{ shouldShow ? 'arrow_left' : 'arrow_right' }}
         </span>
       </a>
       <span
         *ngIf="!shouldShow"
-        class="material-icons"
+        class="material-icons social-media-display-icon"
         (click)="shouldShow = !shouldShow"
       >
         {{ shouldShow ? 'arrow_left' : 'arrow_right' }}
