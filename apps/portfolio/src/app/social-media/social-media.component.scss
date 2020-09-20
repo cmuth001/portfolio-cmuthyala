@@ -77,7 +77,9 @@
 .sm-display-icon-padding {
   padding: 0.7rem;
 }
-
+.sm-display-icon-padding2 {
+  padding: 0.7rem 0;
+}
 $menu-items: 4;
 $i: 1;
 @while $i <= $menu-items {
