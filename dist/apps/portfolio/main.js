@@ -5191,54 +5191,71 @@
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
                 7,
-                " Thanks are due to the following:"
+                "Thanks are due to the following:"
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "br");
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " To ");
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                10,
+                8,
+                "ul",
+                3
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+                9,
+                "li"
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " To ");
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+                11,
                 "i"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                11,
+                12,
                 "Michael Bauer(Mike) "
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                12,
-                ", your continuous support, encouragement and guidance have helped me to finish up this portfolio -Lead Software Engineer at Highmark Health"
+                13,
+                ", your continuous support, encouragement and guidance have helped me to finish up this portfolio -Lead Software Engineer at Highmark Health "
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "br");
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, " To ");
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                15,
+                14,
+                "li"
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, " To ");
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+                16,
                 "i"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                16,
+                17,
                 "Jeff Burja"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                17,
-                ", for helping me to deploy on to cloud -Lead Software Engineer at Highmark Health"
+                18,
+                ", for helping me to deploy on to cloud -Lead Software Engineer at Highmark Health "
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "br");
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, " To ");
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                20,
+                19,
+                "li"
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, " To ");
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
+                21,
                 "i"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                21,
+                22,
                 "Rohit Kandimalla"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                22,
+                23,
                 ", for constant feedback on the UI design -Software Engineer at SemanticBits "
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "br");
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
