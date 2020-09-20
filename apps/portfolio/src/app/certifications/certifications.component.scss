@@ -49,18 +49,19 @@
   word-break: break-word;
 }
 .cert-title {
-  font-family: cursive;
+  // font-family: cursive;
   letter-spacing: 1.5px;
   line-height: normal;
   font-size: 2.5rem;
   font-weight: 500;
   text-align: center;
+  font-family: 'Times New Roman', Times, serif !important;
 }
 .mat-card-header .mat-card-title {
   font-size: 1rem !important;
   font-style: normal;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif !important;
 }
 mat-card-subtitle {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif !important;
 }

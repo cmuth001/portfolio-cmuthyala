@@ -2,11 +2,21 @@
   padding: 1rem;
   margin-right: 20%;
   margin-left: 10%;
-  height: 25rem;
+  height: 23rem;
   background: linear-gradient(90deg, #eeaeca 36%, #94c0e9 36%);
   border-radius: 15px;
 }
 @media only screen and (max-width: 640px) {
+  .about-card {
+    margin-right: 5% !important;
+    margin-left: 10% !important;
+    margin-top: -48.5rem !important;
+  }
+  .example-large-box {
+    margin-right: 20% !important;
+    margin-left: 5% !important;
+    height: 50rem !important;
+  }
   // .mexample-large-box{
   //   margin-right: 10% !important;
   //   margin-left: 5% !important;
@@ -35,16 +45,17 @@
   padding: 0rem 0.5rem 2rem 0.5rem;
   line-height: 1.5rem;
   font-size: 1rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif !important;
 }
 
 .about-title {
-  font-family: cursive;
+  // font-family: cursive;
   letter-spacing: 1px;
   line-height: normal;
   font-size: 2.5rem;
   font-weight: 500;
   text-align: center;
+  font-family: 'Times New Roman', Times, serif !important;
 }
 .cs-about-section {
   padding-top: 3rem;
