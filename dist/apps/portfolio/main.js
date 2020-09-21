@@ -5146,7 +5146,7 @@
         ]({
           type: ThankYouNoteComponent,
           selectors: [["cmuthyala-thank-you-note"]],
-          decls: 24,
+          decls: 25,
           vars: 0,
           consts: [
             [1, "cm-thanks-section"],
@@ -5215,7 +5215,7 @@
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
                 13,
-                ", your continuous support, encouragement and guidance have helped me to finish up this portfolio -Lead Software Engineer at Highmark Health "
+                ", your continuous support, encouragement and guidance have helped me to finish up this portfolio "
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
@@ -5234,26 +5234,30 @@
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
                 18,
-                ", for helping me to deploy on to cloud -Lead Software Engineer at Highmark Health "
+                ", for helping me to deploy on to cloud "
+              );
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
+                19,
+                " Software Engineer at Highmark Health "
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                19,
+                20,
                 "li"
               );
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, " To ");
+              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, " To ");
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](
-                21,
+                22,
                 "i"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                22,
+                23,
                 "Rohit Kandimalla"
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
-                23,
-                ", for constant feedback on the UI design -Software Engineer at SemanticBits "
+                24,
+                ", for constant feedback on the UI design "
               );
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
               _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
