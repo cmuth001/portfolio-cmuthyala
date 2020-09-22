@@ -6,26 +6,36 @@
     padding: 1% 5%;
   }
 }
+.img-scaling:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
 .timKing-img {
   background-image: url('https://media-exp1.licdn.com/dms/image/C4D03AQFL3pM_d1LwPw/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=gO1mNe0OH-D4WvjZSFsC7K2odOdJeLwspj027NXF1Ek');
   background-size: cover;
+  transition: all 0.3s linear;
 }
 .justin-img {
   background-image: url('https://media-exp1.licdn.com/dms/image/C5603AQEjUj94UWR07g/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=ytYb8ad6B45tmy5Im1i_Fh0V6aEJDlnHcm30C-OgBGI');
   background-size: cover;
+  transition: all 0.3s linear;
 }
 
 .jyothi-img {
   background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQGeg7xc94G5Lg/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=utf4iFKcUtjoCqNH30VyPbuqcjpvkHuVjTXjEO7-dzA');
   background-size: cover;
+  transition: all 0.3s linear;
 }
 .yasaswy-img {
   background-image: url('https://media-exp1.licdn.com/dms/image/C5103AQGcCrKRjLWQQg/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=IMoXkKMjg02eAk5SP75lPj_bfhOx6QBi2AEPph-EL70');
   background-size: cover;
+  transition: all 0.3s linear;
 }
 .kristen-img {
   background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQE9GsQJK30m5w/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=U7qVwUZYWZ64gOvj5qqlNmiZUMM2U7tlUxH8dPwD_xM');
   background-size: cover;
+  transition: all 0.3s linear;
 }
 // .border:hover{
 //   border: 3px solid #ea793a !important;

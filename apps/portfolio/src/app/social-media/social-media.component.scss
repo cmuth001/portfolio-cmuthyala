@@ -22,6 +22,7 @@
 }
 .icon-bar a:hover {
   border-radius: 50%;
+  transition: all 0.3s linear;
 }
 
 .facebook {
@@ -73,6 +74,7 @@
 }
 .social-media-display-icon {
   cursor: pointer;
+  transition: all 0.3s linear;
 }
 .sm-display-icon-padding {
   padding: 0.7rem;

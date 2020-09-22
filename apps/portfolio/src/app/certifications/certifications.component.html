@@ -7,7 +7,7 @@
         <mat-divider *ngIf="i > 0" [inset]="true"></mat-divider>
         <br />
         <mat-card-header>
-          <div mat-card-avatar class="{{ cert.class }}"></div>
+          <div mat-card-avatar class=" img-scaling {{ cert.class }}"></div>
           <mat-card-title>{{ cert.title }}</mat-card-title>
           <mat-card-subtitle
             >{{ cert.issuedby }}, {{ cert.date }}, Credential ID:
@@ -26,7 +26,7 @@
           <mat-divider [inset]="true"></mat-divider>
           <br />
           <mat-card-header>
-            <div mat-card-avatar class="{{ cert.class }}"></div>
+            <div mat-card-avatar class=" img-scaling {{ cert.class }}"></div>
             <mat-card-title>{{ cert.title }}</mat-card-title>
             <mat-card-subtitle
               >{{ cert.issuedby }}, {{ cert.date }}, Credential ID:
