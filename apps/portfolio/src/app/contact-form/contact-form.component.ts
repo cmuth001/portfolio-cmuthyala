@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core'
 import { Validators, FormBuilder, FormGroup, FormControl } from '@angular/forms'
 import { MatSnackBar } from '@angular/material/snack-bar'
+import { EmailServie } from './services/email.service'
+import { tap, catchError } from 'rxjs/operators'
 @Component({
   selector: 'cmuthyala-contact-form',
   templateUrl: './contact-form.component.html',
@@ -9,7 +11,11 @@ import { MatSnackBar } from '@angular/material/snack-bar'
 export class ContactFormComponent implements OnInit {
   myForm: FormGroup
   title = `Contact me here`
-  constructor(private fb: FormBuilder, private _snackBar: MatSnackBar) {}
+  constructor(
+    private fb: FormBuilder,
+    private _snackBar: MatSnackBar,
+    private emailSvc: EmailServie
+  ) {}
 
   ngOnInit() {
     this.myForm = this.fb.group({
@@ -29,10 +35,27 @@ export class ContactFormComponent implements OnInit {
   }
   onSubmit(form: FormGroup) {
     if (this.myForm.valid) {
+      const payload = {
+        name: form.value.name,
+        email: form.value.email,
+        subject: 'Thank you for your feedback',
+        message: form.value.message,
+      }
+      this.emailSvc
+        .sendEmail(payload)
+        .pipe(
+          tap((res) => {
+            this._snackBar.open(
+              'Your response is successfully submitted!',
+              'OK',
+              {
+                duration: 5000,
+              }
+            )
+          })
+        )
+        .subscribe()
       this.myForm.reset()
-      this._snackBar.open('Your response is successfully submitted!', 'OK', {
-        duration: 5000,
-      })
     }
   }
 }
