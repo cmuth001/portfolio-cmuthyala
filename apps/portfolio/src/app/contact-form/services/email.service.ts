@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 import { catchError, retry, tap } from 'rxjs/operators'
+import { Observable } from 'rxjs'
 @Injectable({
   providedIn: 'root',
 })
@@ -10,16 +11,7 @@ export class EmailServie {
   constructor(private http: HttpClient) {}
 
   /** POST: add a new hero to the database */
-  sendEmail(payload): any {
-    return this.http
-      .post<any>(this.emailUrl, payload)
-      .pipe(
-        tap((res) => res),
-        catchError(this.handleError)
-      )
-      .subscribe()
-  }
-  handleError(error): any {
-    throw new Error(error)
+  sendEmail(payload): Observable<any> {
+    return this.http.post<any>(this.emailUrl, payload)
   }
 }

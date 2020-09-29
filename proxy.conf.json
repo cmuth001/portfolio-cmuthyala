@@ -1,0 +1,6 @@
+{
+  "/test1/contact": {
+    "target": "https://fp29cp4ohd.execute-api.us-east-1.amazonaws.com",
+    "secure": false
+  }
+}

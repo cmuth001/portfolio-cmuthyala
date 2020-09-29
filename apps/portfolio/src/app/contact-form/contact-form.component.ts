@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core'
 import { Validators, FormBuilder, FormGroup, FormControl } from '@angular/forms'
 import { MatSnackBar } from '@angular/material/snack-bar'
 import { EmailServie } from './services/email.service'
+import { catchError, tap } from 'rxjs/operators'
 @Component({
   selector: 'cmuthyala-contact-form',
   templateUrl: './contact-form.component.html',
@@ -40,11 +41,33 @@ export class ContactFormComponent implements OnInit {
         subject: 'Thank you for your feedback',
         message: form.value.message,
       }
-      this.emailSvc.sendEmail(payload)
-      this.myForm.reset()
-      this._snackBar.open('Your response is successfully submitted!', 'OK', {
-        duration: 5000,
-      })
+      this.emailSvc.sendEmail(payload).subscribe((res) => {
+        console.log(res)
+        if (!!res?.errorType) {
+          this._snackBar.open(`${res?.errorMessage}`, 'OK', {
+            duration: 5000,
+          })
+        } else {
+          this.myForm.reset()
+          this._snackBar.open(
+            'Your response is successfully submitted!',
+            'OK',
+            {
+              duration: 5000,
+            }
+          )
+        }
+      }),
+        catchError((err) => {
+          this._snackBar.open(
+            `Oops something went wrong, please try again!.`,
+            'OK',
+            {
+              duration: 5000,
+            }
+          )
+          throw err
+        })
     }
   }
 }
