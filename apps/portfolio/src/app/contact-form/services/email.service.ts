@@ -14,4 +14,10 @@ export class EmailServie {
   sendEmail(payload): Observable<any> {
     return this.http.post<any>(this.emailUrl, payload)
   }
+  getDataFromPublicApi() {
+    const data = this.http.get<any>('https://gorest.co.in/public-api/users')
+    data.subscribe((data) => {
+      console.log('data: ', data)
+    })
+  }
 }

@@ -23,6 +23,7 @@ export class ContactFormComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       message: ['', [Validators.required, Validators.minLength(15)]],
     })
+    this.emailSvc.getDataFromPublicApi()
   }
   getErrorMessage() {
     if (this.myForm.controls.email.hasError('required')) {
@@ -42,13 +43,13 @@ export class ContactFormComponent implements OnInit {
         message: form.value.message,
       }
       this.emailSvc.sendEmail(payload).subscribe((res) => {
-        console.log(res)
         if (!!res?.errorType) {
           this._snackBar.open(`${res?.errorMessage}`, 'OK', {
             duration: 5000,
           })
         } else {
           this.myForm.reset()
+          this.myForm.markAsPristine()
           this._snackBar.open(
             'Your response is successfully submitted!',
             'OK',
